@@ -1,0 +1,6 @@
+// Read only. Ambiguous legacy namespaces are never silently merged, deleted, or ignored.
+export function auditNamespaces(indexedDB,dbName,prefix,productionKey){return new Promise((resolve,reject)=>{
+ const request=indexedDB.open(dbName,1);request.onupgradeneeded=()=>request.result.createObjectStore('ledgers');request.onerror=()=>reject(request.error);request.onblocked=()=>reject(Error('namespace-audit-blocked'));
+ request.onsuccess=()=>{const db=request.result,tx=db.transaction('ledgers','readonly'),store=tx.objectStore('ledgers'),rows=[];let error;
+ const cursor=store.openCursor();cursor.onsuccess=()=>{const c=cursor.result;if(!c)return;const key=String(c.key);if(key.startsWith(prefix+'.')){const envelope=c.value;let data=null;try{data=JSON.parse(envelope.raw);}catch{}rows.push({key,production:key===productionKey,schemaVersion:data?.schemaVersion??null,revision:data?.revision??null,roundIds:data?.rounds?.map(r=>r.roundId)??[],raw:JSON.stringify(envelope)});}c.continue();};cursor.onerror=()=>{error=cursor.error;};tx.oncomplete=()=>{db.close();resolve({auditVersion:1,entries:rows,unresolved:rows.filter(row=>!row.production).map(row=>row.key)});};tx.onabort=()=>{db.close();reject(error||tx.error||Error('namespace-audit-failed'));};};
+});}

@@ -1,0 +1,1183 @@
+{
+  "schemaVersion": 1,
+  "siteBase": "/math-game-garden/",
+  "plannedURL": "https://johnson611008.github.io/math-game-garden/",
+  "buildId": "f782b5fbf3c7966399026292f72f90e5b977f9f218b089b77510873e0f829a39",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "generated",
+      "transformed": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 3723,
+      "sha256": "d1affa47f64e82d7410e01662e19f0b5e8b82cf138ed4779bed747184aafb7e1",
+      "source": "generated-root-garden",
+      "transformed": true
+    },
+    {
+      "path": "platform/game-garden/assets/garden.png",
+      "bytes": 2577938,
+      "sha256": "7abc0a0ec5eed8826ebf1eed87ce732bbee3b755cff721ba54756ebb6501fc42",
+      "source": "platform/game-garden/assets/garden.png",
+      "sourceSHA256": "7abc0a0ec5eed8826ebf1eed87ce732bbee3b755cff721ba54756ebb6501fc42",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/book.png",
+      "bytes": 12322,
+      "sha256": "1077082b5d1955bdb3aebe3aceeb5929a115797f919d969f6bf2aa8b168aeafa",
+      "source": "platform/game-garden/assets/reference/book.png",
+      "sourceSHA256": "1077082b5d1955bdb3aebe3aceeb5929a115797f919d969f6bf2aa8b168aeafa",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/challenge-source.png",
+      "bytes": 78203,
+      "sha256": "72b2cfa30a410af717275cffa90b497951cc1c2b21de281c6bbb645ded5f6872",
+      "source": "platform/game-garden/assets/reference/challenge-source.png",
+      "sourceSHA256": "72b2cfa30a410af717275cffa90b497951cc1c2b21de281c6bbb645ded5f6872",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/footer-blank.png",
+      "bytes": 1271783,
+      "sha256": "f0cd1c1102c0218bd7f8d44e32b91413a1471c37c31d55137c51b3814213fff9",
+      "source": "platform/game-garden/assets/reference/footer-blank.png",
+      "sourceSHA256": "f0cd1c1102c0218bd7f8d44e32b91413a1471c37c31d55137c51b3814213fff9",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/frame-0.png",
+      "bytes": 250313,
+      "sha256": "27aaaf3bca83fb38f6046091b5c68cf932f0392d0a28c4a0420d225d6e1dc3ed",
+      "source": "platform/game-garden/assets/reference/frame-0.png",
+      "sourceSHA256": "27aaaf3bca83fb38f6046091b5c68cf932f0392d0a28c4a0420d225d6e1dc3ed",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/frame-1.png",
+      "bytes": 182034,
+      "sha256": "2b0476ffef0bb6a987e75143378a91d88a5d055d63882a8168694b622f040ce2",
+      "source": "platform/game-garden/assets/reference/frame-1.png",
+      "sourceSHA256": "2b0476ffef0bb6a987e75143378a91d88a5d055d63882a8168694b622f040ce2",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/frame-2.png",
+      "bytes": 182092,
+      "sha256": "05ae8e2fdc249df069d4b10b7832dc1c67694bfa4a6d781d79e1289b9d8390c2",
+      "source": "platform/game-garden/assets/reference/frame-2.png",
+      "sourceSHA256": "05ae8e2fdc249df069d4b10b7832dc1c67694bfa4a6d781d79e1289b9d8390c2",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/frame-3.png",
+      "bytes": 173574,
+      "sha256": "c9a4a43de5beab285007c1ad0975ed42b84082192f128bb2a899d787dcb66fb0",
+      "source": "platform/game-garden/assets/reference/frame-3.png",
+      "sourceSHA256": "c9a4a43de5beab285007c1ad0975ed42b84082192f128bb2a899d787dcb66fb0",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/frame-4.png",
+      "bytes": 187961,
+      "sha256": "1f2cb61c81bcd9c2d5d72cbf964e6e2ecfdac824b74932aa37b84d4f33c7d0b1",
+      "source": "platform/game-garden/assets/reference/frame-4.png",
+      "sourceSHA256": "1f2cb61c81bcd9c2d5d72cbf964e6e2ecfdac824b74932aa37b84d4f33c7d0b1",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/practice-source.png",
+      "bytes": 75400,
+      "sha256": "775b86efb23143fe0cd40897051d73ca122f4125f3981410ef619d47a9854e1b",
+      "source": "platform/game-garden/assets/reference/practice-source.png",
+      "sourceSHA256": "775b86efb23143fe0cd40897051d73ca122f4125f3981410ef619d47a9854e1b",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/scene-0.png",
+      "bytes": 108916,
+      "sha256": "d052e198e2ab8417f67840b9819bf355898b8523b3d9a254662738e2ea9b9a1c",
+      "source": "platform/game-garden/assets/reference/scene-0.png",
+      "sourceSHA256": "d052e198e2ab8417f67840b9819bf355898b8523b3d9a254662738e2ea9b9a1c",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/scene-1-unlocked.png",
+      "bytes": 1670956,
+      "sha256": "0cc7feeef155efd5f596ffb539ccc555e3796cb2115abd7259ba7a0b2ca0042e",
+      "source": "platform/game-garden/assets/reference/scene-1-unlocked.png",
+      "sourceSHA256": "0cc7feeef155efd5f596ffb539ccc555e3796cb2115abd7259ba7a0b2ca0042e",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/scene-2.png",
+      "bytes": 75377,
+      "sha256": "b800ad9c9ff68cc8b96d83ec446c649e3e751a4656d6c9c8091cc943cb236fb0",
+      "source": "platform/game-garden/assets/reference/scene-2.png",
+      "sourceSHA256": "b800ad9c9ff68cc8b96d83ec446c649e3e751a4656d6c9c8091cc943cb236fb0",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/scene-3.png",
+      "bytes": 68019,
+      "sha256": "bddf02b8ec181dfd2b552bd63005222be6ab7cfa44cacad353e7b4d0d94c9f0f",
+      "source": "platform/game-garden/assets/reference/scene-3.png",
+      "sourceSHA256": "bddf02b8ec181dfd2b552bd63005222be6ab7cfa44cacad353e7b4d0d94c9f0f",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/scene-4.png",
+      "bytes": 78492,
+      "sha256": "667bfc70b8bbe8d823d4e2ef35a87fbdec8a67976cfdb873a15baef0b35fa806",
+      "source": "platform/game-garden/assets/reference/scene-4.png",
+      "sourceSHA256": "667bfc70b8bbe8d823d4e2ef35a87fbdec8a67976cfdb873a15baef0b35fa806",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/sign-blank.png",
+      "bytes": 1606968,
+      "sha256": "cc32e3fb149ff4137059bc249aad15d0229e96f9e138a512f3a83cc7841b6a4a",
+      "source": "platform/game-garden/assets/reference/sign-blank.png",
+      "sourceSHA256": "cc32e3fb149ff4137059bc249aad15d0229e96f9e138a512f3a83cc7841b6a4a",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/trophy.png",
+      "bytes": 11708,
+      "sha256": "85af464c4fbd53f56767bddf9d6778991ef51f7cbfd8c5614b1364292aa4ca65",
+      "source": "platform/game-garden/assets/reference/trophy.png",
+      "sourceSHA256": "85af464c4fbd53f56767bddf9d6778991ef51f7cbfd8c5614b1364292aa4ca65",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/welcome-left.png",
+      "bytes": 1653986,
+      "sha256": "1b4bb8d2461b6f74b865e4965c917cab410dc9861aae082d2470a9e1d96711c7",
+      "source": "platform/game-garden/assets/reference/welcome-left.png",
+      "sourceSHA256": "1b4bb8d2461b6f74b865e4965c917cab410dc9861aae082d2470a9e1d96711c7",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/reference/welcome-right.png",
+      "bytes": 1589237,
+      "sha256": "4183d81312f11e2550237d42909641c7c101b404bef1d8b3856f42858525e086",
+      "source": "platform/game-garden/assets/reference/welcome-right.png",
+      "sourceSHA256": "4183d81312f11e2550237d42909641c7c101b404bef1d8b3856f42858525e086",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/assets/sign.png",
+      "bytes": 1650376,
+      "sha256": "5886b4ba06f01129eb211f33427b0213d2f5a240d1f1be91ce0e25944a5448df",
+      "source": "platform/game-garden/assets/sign.png",
+      "sourceSHA256": "5886b4ba06f01129eb211f33427b0213d2f5a240d1f1be91ce0e25944a5448df",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/config.js",
+      "bytes": 1207,
+      "sha256": "76cfd8ff3a021d211f0b86d83b65132c5fcfbde801d58ee7a30c5569c15419ef",
+      "source": "platform/game-garden/config.js",
+      "sourceSHA256": "ed00513d7652f135d7c17b1662dac86624a6e8862cb9b605b9b232e0559ff651",
+      "transformed": true
+    },
+    {
+      "path": "platform/game-garden/fidelity.css",
+      "bytes": 11185,
+      "sha256": "9aa6fb3f79bc518c68a9e38e3edcd15891753b902b61ca9b1445828a2f8938b0",
+      "source": "platform/game-garden/fidelity.css",
+      "sourceSHA256": "9aa6fb3f79bc518c68a9e38e3edcd15891753b902b61ca9b1445828a2f8938b0",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/index.html",
+      "bytes": 3686,
+      "sha256": "52eb5fee62f96deaeb0808d3f6b1007cb8d082c08dd42c28313d974ed1fe6bbe",
+      "source": "platform/game-garden/index.html",
+      "sourceSHA256": "d0e596444edd6d256c77213442c98975366f5c733323536dd5a771615e459b68",
+      "transformed": true
+    },
+    {
+      "path": "platform/game-garden/main.js",
+      "bytes": 2700,
+      "sha256": "c3995998444cf76ab72b66bf670fe40d8bb81ac427a098edaa070fc2f7ce796c",
+      "source": "platform/game-garden/main.js",
+      "sourceSHA256": "c3995998444cf76ab72b66bf670fe40d8bb81ac427a098edaa070fc2f7ce796c",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/navigation.css",
+      "bytes": 156,
+      "sha256": "7de6c38f95dff09aa209bdeb5524cb1bfb19afa4701805268e979746d864e043",
+      "source": "platform/game-garden/navigation.css",
+      "sourceSHA256": "7de6c38f95dff09aa209bdeb5524cb1bfb19afa4701805268e979746d864e043",
+      "transformed": false
+    },
+    {
+      "path": "platform/game-garden/style.css",
+      "bytes": 9437,
+      "sha256": "2bc75710dd47b9569eaea8b1e9a27063b77fb3722633e66b5ef65e8a9ac43a9a",
+      "source": "platform/game-garden/style.css",
+      "sourceSHA256": "2bc75710dd47b9569eaea8b1e9a27063b77fb3722633e66b5ef65e8a9ac43a9a",
+      "transformed": false
+    },
+    {
+      "path": "platform/index.html",
+      "bytes": 3714,
+      "sha256": "94cadc24a686db4061174a2078d7cf284d6708cdfe13088a535a15b288b2b8fe",
+      "source": "generated-platform-garden",
+      "transformed": true
+    },
+    {
+      "path": "platform/marble-demo/a2/audio.js",
+      "bytes": 1200,
+      "sha256": "123a5d52f2752911793d6ba89bf8932bb5cc7424f6861fee062b3602a6aea6f9",
+      "source": "platform/marble-demo/a2/audio.js",
+      "sourceSHA256": "123a5d52f2752911793d6ba89bf8932bb5cc7424f6861fee062b3602a6aea6f9",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/a2/physics.js",
+      "bytes": 5697,
+      "sha256": "f5d5bbb91dd8dfdacd9e436bd0df388562f4d0ae7e389566f27fbbbb71716f1b",
+      "source": "platform/marble-demo/a2/physics.js",
+      "sourceSHA256": "f5d5bbb91dd8dfdacd9e436bd0df388562f4d0ae7e389566f27fbbbb71716f1b",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/a2/style.css",
+      "bytes": 2129,
+      "sha256": "c5447d309b4600c076cd4911cf08a526b668716667974400b6498887296502e7",
+      "source": "platform/marble-demo/a2/style.css",
+      "sourceSHA256": "c5447d309b4600c076cd4911cf08a526b668716667974400b6498887296502e7",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/ball.png",
+      "bytes": 90732,
+      "sha256": "3fcc2c6150fbaa4ca87a2b456cf8bb19bc9543cc487221ee871f6a14bf1220de",
+      "source": "platform/marble-demo/assets/ball.png",
+      "sourceSHA256": "3fcc2c6150fbaa4ca87a2b456cf8bb19bc9543cc487221ee871f6a14bf1220de",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/chain.png",
+      "bytes": 194235,
+      "sha256": "7c73323c16d7f4ab425757e1adedb7c70c752ce54c89f38845d149d5a652b2a8",
+      "source": "platform/marble-demo/assets/chain.png",
+      "sourceSHA256": "7c73323c16d7f4ab425757e1adedb7c70c752ce54c89f38845d149d5a652b2a8",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/crate.png",
+      "bytes": 196225,
+      "sha256": "0b40883aafa00146b079eae3b7fdab0bed454e464b03f9c3c7ec652a7472d108",
+      "source": "platform/marble-demo/assets/crate.png",
+      "sourceSHA256": "0b40883aafa00146b079eae3b7fdab0bed454e464b03f9c3c7ec652a7472d108",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/ice.png",
+      "bytes": 190623,
+      "sha256": "b89aca63a622b7e5e61e13e5329ee5a24dc9f4f4fcf5a996d6ee0cab72a8c754",
+      "source": "platform/marble-demo/assets/ice.png",
+      "sourceSHA256": "b89aca63a622b7e5e61e13e5329ee5a24dc9f4f4fcf5a996d6ee0cab72a8c754",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/launcher.png",
+      "bytes": 215135,
+      "sha256": "4187180ed252904e72a77b668f598b62abbe356d4e11b7cd1e6d7198d4c6d3b0",
+      "source": "platform/marble-demo/assets/launcher.png",
+      "sourceSHA256": "4187180ed252904e72a77b668f598b62abbe356d4e11b7cd1e6d7198d4c6d3b0",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/panel-source.png",
+      "bytes": 116829,
+      "sha256": "bf7b3519dc2966e66af6f2192324e03cb6d64f6b279d1ea2e4399ff0ae900250",
+      "source": "platform/marble-demo/assets/panel-source.png",
+      "sourceSHA256": "bf7b3519dc2966e66af6f2192324e03cb6d64f6b279d1ea2e4399ff0ae900250",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/stone.png",
+      "bytes": 194738,
+      "sha256": "f2ffe7c1178834feef585e147aa6cefc3bf217f3ba1a03ecc44533fd429b0294",
+      "source": "platform/marble-demo/assets/stone.png",
+      "sourceSHA256": "f2ffe7c1178834feef585e147aa6cefc3bf217f3ba1a03ecc44533fd429b0294",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/assets/workshop.png",
+      "bytes": 2337394,
+      "sha256": "19bad829724520e2c1a518fb53b66634bc1a3fddc2f06971a26765699e4dd6e8",
+      "source": "platform/marble-demo/assets/workshop.png",
+      "sourceSHA256": "19bad829724520e2c1a518fb53b66634bc1a3fddc2f06971a26765699e4dd6e8",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/b/math-session.js",
+      "bytes": 2408,
+      "sha256": "3c96f20e49b1c5e45005398fef5d0f91553b11f36ab039e8abd410b8f52959f7",
+      "source": "platform/marble-demo/b/math-session.js",
+      "sourceSHA256": "3c96f20e49b1c5e45005398fef5d0f91553b11f36ab039e8abd410b8f52959f7",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/b/physics.js",
+      "bytes": 4588,
+      "sha256": "06d0eba0d31cfa97788e5cbee1a6724b112de43e8699525706c28b66e507dde2",
+      "source": "platform/marble-demo/b/physics.js",
+      "sourceSHA256": "06d0eba0d31cfa97788e5cbee1a6724b112de43e8699525706c28b66e507dde2",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/b/questions.js",
+      "bytes": 3631,
+      "sha256": "77a74a3953a74905d831c24caa477d28d88c559b2a853d5f9173e6a3a5aba047",
+      "source": "platform/marble-demo/b/questions.js",
+      "sourceSHA256": "77a74a3953a74905d831c24caa477d28d88c559b2a853d5f9173e6a3a5aba047",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/b/style.css",
+      "bytes": 1153,
+      "sha256": "195f1509e6e14c478e605f5e594f94bab5df07d89b09fed7a9ecc706912e1f02",
+      "source": "platform/marble-demo/b/style.css",
+      "sourceSHA256": "195f1509e6e14c478e605f5e594f94bab5df07d89b09fed7a9ecc706912e1f02",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/physics.js",
+      "bytes": 5316,
+      "sha256": "41a79a8a15b682c81f5acc3115e372fa4254d189cca13882f4a58a08e9d9efca",
+      "source": "platform/marble-demo/physics.js",
+      "sourceSHA256": "41a79a8a15b682c81f5acc3115e372fa4254d189cca13882f4a58a08e9d9efca",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-demo/style.css",
+      "bytes": 5590,
+      "sha256": "0a0cda9fc62644fb2415d272552b55fd31eeffe55348532d2b9d67e0d8799390",
+      "source": "platform/marble-demo/style.css",
+      "sourceSHA256": "0a0cda9fc62644fb2415d272552b55fd31eeffe55348532d2b9d67e0d8799390",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/garden-return.css",
+      "bytes": 432,
+      "sha256": "595b78bd1f80d8a24f7ca1525b6b4339a1540dd5a0680a3677e1988a2117be21",
+      "source": "platform/marble-formal/garden-return.css",
+      "sourceSHA256": "595b78bd1f80d8a24f7ca1525b6b4339a1540dd5a0680a3677e1988a2117be21",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/index.html",
+      "bytes": 4729,
+      "sha256": "4166f199b6be91f9af9771a292f1a472ce1761bf4ad02a468707c109f41502bf",
+      "source": "platform/marble-formal/index.html",
+      "sourceSHA256": "1213c001c2a7aa624f27f6b40e63d098731acf3eeec1c638359b69d213cbf3bd",
+      "transformed": true
+    },
+    {
+      "path": "platform/marble-formal/main.js",
+      "bytes": 22133,
+      "sha256": "59201d949d10c57e0c7717605bbf3deddb3983f37ae8b129b5238e70220dc2f7",
+      "source": "platform/marble-formal/main.js",
+      "sourceSHA256": "59201d949d10c57e0c7717605bbf3deddb3983f37ae8b129b5238e70220dc2f7",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/stages.js",
+      "bytes": 2726,
+      "sha256": "d605451038682e8e25935369f24b7f8519b12ccb297dc48d2aca9094d1d60b3f",
+      "source": "platform/marble-formal/stages.js",
+      "sourceSHA256": "d605451038682e8e25935369f24b7f8519b12ccb297dc48d2aca9094d1d60b3f",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/state.js",
+      "bytes": 8741,
+      "sha256": "df7511e7f22de53257a44e9fe818966317a02679c778945c336db4ac4eb53827",
+      "source": "platform/marble-formal/state.js",
+      "sourceSHA256": "df7511e7f22de53257a44e9fe818966317a02679c778945c336db4ac4eb53827",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/store.js",
+      "bytes": 6235,
+      "sha256": "1d1eeb601cb39f88e4d77dd7714c2e21261bcf5e9fd3c987d1240000ca08386e",
+      "source": "platform/marble-formal/store.js",
+      "sourceSHA256": "1d1eeb601cb39f88e4d77dd7714c2e21261bcf5e9fd3c987d1240000ca08386e",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/style.css",
+      "bytes": 1617,
+      "sha256": "62f002656da850622f361fe3d5ffc1255a1411be0416092839e44ac2f6cb13ab",
+      "source": "platform/marble-formal/style.css",
+      "sourceSHA256": "62f002656da850622f361fe3d5ffc1255a1411be0416092839e44ac2f6cb13ab",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/world.js",
+      "bytes": 2016,
+      "sha256": "97c446d5825e35ba2dc049fa7547ac4bb464a64041970eb34d5d0c53cd2f6b6e",
+      "source": "platform/marble-formal/world.js",
+      "sourceSHA256": "97c446d5825e35ba2dc049fa7547ac4bb464a64041970eb34d5d0c53cd2f6b6e",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-challenge/actors.js",
+      "bytes": 803,
+      "sha256": "7748d95316ebc7e8bed92987e04d975fdcf78e4a3b82086f084283ee805a7504",
+      "source": "platform/mole-challenge/actors.js",
+      "sourceSHA256": "7748d95316ebc7e8bed92987e04d975fdcf78e4a3b82086f084283ee805a7504",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-challenge/style.css",
+      "bytes": 4067,
+      "sha256": "0c91f4a1e6c2610df59c1778424e25b5deea0a1bc2c07fed0a112205bdf964a6",
+      "source": "platform/mole-challenge/style.css",
+      "sourceSHA256": "0c91f4a1e6c2610df59c1778424e25b5deea0a1bc2c07fed0a112205bdf964a6",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/animation.js",
+      "bytes": 1845,
+      "sha256": "a4a65e2863d0d0d3c134ad211f4918a3629595b63c35ee2f3c04ca64d0d02990",
+      "source": "platform/mole-demo/animation.js",
+      "sourceSHA256": "a4a65e2863d0d0d3c134ad211f4918a3629595b63c35ee2f3c04ca64d0d02990",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/dizzy.png",
+      "bytes": 9604,
+      "sha256": "1f1fff7862648e7cdca4eedf3bdd8e15f07a1d14240fc453c387c5223319c7c9",
+      "source": "platform/mole-demo/assets/dizzy.png",
+      "sourceSHA256": "1f1fff7862648e7cdca4eedf3bdd8e15f07a1d14240fc453c387c5223319c7c9",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/dust.png",
+      "bytes": 8689,
+      "sha256": "51a5fed8e7d4079e62be1d546e8eabf8055d455e2fdb3b176cf258be0049f942",
+      "source": "platform/mole-demo/assets/dust.png",
+      "sourceSHA256": "51a5fed8e7d4079e62be1d546e8eabf8055d455e2fdb3b176cf258be0049f942",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/exit.png",
+      "bytes": 28844,
+      "sha256": "a7dbd328fa8ec60e18371a2907f4423bb1fe557a86b14cfb1eb22a09a60d6ea5",
+      "source": "platform/mole-demo/assets/exit.png",
+      "sourceSHA256": "a7dbd328fa8ec60e18371a2907f4423bb1fe557a86b14cfb1eb22a09a60d6ea5",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/hammer.png",
+      "bytes": 36507,
+      "sha256": "f726d45f908bb1543b359c9db4d88b0ba3ee7b1e03a0067ca572f3c2747cae7d",
+      "source": "platform/mole-demo/assets/hammer.png",
+      "sourceSHA256": "f726d45f908bb1543b359c9db4d88b0ba3ee7b1e03a0067ca572f3c2747cae7d",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/hit.png",
+      "bytes": 40280,
+      "sha256": "ba713a408b8dabd937f830ce5eaf0004d1543c5a3ddd2ea61ca5b474740f2b8b",
+      "source": "platform/mole-demo/assets/hit.png",
+      "sourceSHA256": "ba713a408b8dabd937f830ce5eaf0004d1543c5a3ddd2ea61ca5b474740f2b8b",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/hole-front.png",
+      "bytes": 17936,
+      "sha256": "73b9e87874851879833decfb7aef0b5f2bc50c6b91c8e51fdadd00f08e38d72f",
+      "source": "platform/mole-demo/assets/hole-front.png",
+      "sourceSHA256": "73b9e87874851879833decfb7aef0b5f2bc50c6b91c8e51fdadd00f08e38d72f",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/hole.png",
+      "bytes": 47570,
+      "sha256": "350e0bcecaca47d8025c6754bea18cdfb5062aecd2c5dbea99d2088348a52a59",
+      "source": "platform/mole-demo/assets/hole.png",
+      "sourceSHA256": "350e0bcecaca47d8025c6754bea18cdfb5062aecd2c5dbea99d2088348a52a59",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/idle.png",
+      "bytes": 44349,
+      "sha256": "29cd4dc2c8d5386d2f745f268310e6dd20455d9c12c95849e0cb29b3ffee3ba2",
+      "source": "platform/mole-demo/assets/idle.png",
+      "sourceSHA256": "29cd4dc2c8d5386d2f745f268310e6dd20455d9c12c95849e0cb29b3ffee3ba2",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/left.png",
+      "bytes": 45777,
+      "sha256": "574319f7937e56f1f6bd0297fcc3a5bfc3174b40f8c6264c16944efce7ea5cdf",
+      "source": "platform/mole-demo/assets/left.png",
+      "sourceSHA256": "574319f7937e56f1f6bd0297fcc3a5bfc3174b40f8c6264c16944efce7ea5cdf",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/peek.png",
+      "bytes": 45721,
+      "sha256": "fba2d32a47e537add5dda6a9b4a15a1053d02071e3f93fe7d14e721408f94dc6",
+      "source": "platform/mole-demo/assets/peek.png",
+      "sourceSHA256": "fba2d32a47e537add5dda6a9b4a15a1053d02071e3f93fe7d14e721408f94dc6",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/right.png",
+      "bytes": 44545,
+      "sha256": "4a7630845ace5045458e6c79e60d73253438b820b828502aff4838f4ba4d0d67",
+      "source": "platform/mole-demo/assets/right.png",
+      "sourceSHA256": "4a7630845ace5045458e6c79e60d73253438b820b828502aff4838f4ba4d0d67",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/smile.png",
+      "bytes": 43671,
+      "sha256": "77da25dbe855bad9930c1ea0fb4a8919b4562bb0760a9acd251aa67fd59bce53",
+      "source": "platform/mole-demo/assets/smile.png",
+      "sourceSHA256": "77da25dbe855bad9930c1ea0fb4a8919b4562bb0760a9acd251aa67fd59bce53",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/stars.png",
+      "bytes": 7184,
+      "sha256": "ff84d48936e408d5d8d009d6155554b78c0c59580a63707426b89052b5d1fa36",
+      "source": "platform/mole-demo/assets/stars.png",
+      "sourceSHA256": "ff84d48936e408d5d8d009d6155554b78c0c59580a63707426b89052b5d1fa36",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/assets/surprise.png",
+      "bytes": 45846,
+      "sha256": "8f2c0aefe8411fa93015d49d6f03226b0613c5b735396f9d84d8b7231bb25d71",
+      "source": "platform/mole-demo/assets/surprise.png",
+      "sourceSHA256": "8f2c0aefe8411fa93015d49d6f03226b0613c5b735396f9d84d8b7231bb25d71",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-demo/style.css",
+      "bytes": 2565,
+      "sha256": "a898ef8d449ff548b59b658f2c97ea0daab132278c3d183d93c60c989318a675",
+      "source": "platform/mole-demo/style.css",
+      "sourceSHA256": "a898ef8d449ff548b59b658f2c97ea0daab132278c3d183d93c60c989318a675",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/armor-hit.png",
+      "bytes": 44157,
+      "sha256": "0a7f7f77e9b8defaa6704c83775cdcdbde9b808cf552ebabde4f3d84db265e8c",
+      "source": "platform/mole-formal/assets/armor-hit.png",
+      "sourceSHA256": "0a7f7f77e9b8defaa6704c83775cdcdbde9b808cf552ebabde4f3d84db265e8c",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/armor-idle.png",
+      "bytes": 43623,
+      "sha256": "b923da9eddca520b597ed98b79b55992487617c86108e5938aa91e2577a79a04",
+      "source": "platform/mole-formal/assets/armor-idle.png",
+      "sourceSHA256": "b923da9eddca520b597ed98b79b55992487617c86108e5938aa91e2577a79a04",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/king-hit.png",
+      "bytes": 48595,
+      "sha256": "1a6e48a8bf240c3e5ed4aae21e71ef78b20b7770c7a234a0595779897bfa2ecf",
+      "source": "platform/mole-formal/assets/king-hit.png",
+      "sourceSHA256": "1a6e48a8bf240c3e5ed4aae21e71ef78b20b7770c7a234a0595779897bfa2ecf",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/king-idle.png",
+      "bytes": 52255,
+      "sha256": "8286fa28589e15714032692be041dfc6123f4257e36c615879608fad28543975",
+      "source": "platform/mole-formal/assets/king-idle.png",
+      "sourceSHA256": "8286fa28589e15714032692be041dfc6123f4257e36c615879608fad28543975",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/magic-hit.png",
+      "bytes": 39712,
+      "sha256": "022fa6c82105db46040fd8f7c50ad1366379e2cc4a3c1306173626176035ef81",
+      "source": "platform/mole-formal/assets/magic-hit.png",
+      "sourceSHA256": "022fa6c82105db46040fd8f7c50ad1366379e2cc4a3c1306173626176035ef81",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/magic-idle.png",
+      "bytes": 37344,
+      "sha256": "3b05f9a65cc5092980a62515094a32a60dff2d1f3b8eed39cde17bea8e70973a",
+      "source": "platform/mole-formal/assets/magic-idle.png",
+      "sourceSHA256": "3b05f9a65cc5092980a62515094a32a60dff2d1f3b8eed39cde17bea8e70973a",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/magic-smile.png",
+      "bytes": 40546,
+      "sha256": "5e684c190d37f166f2de18335cb3da4263320d168a407e9eee83c461b101efac",
+      "source": "platform/mole-formal/assets/magic-smile.png",
+      "sourceSHA256": "5e684c190d37f166f2de18335cb3da4263320d168a407e9eee83c461b101efac",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/trick-hide.png",
+      "bytes": 44431,
+      "sha256": "73385d2f26977b525739339f997411b509e65dfe5e83aa76a26e56162682d552",
+      "source": "platform/mole-formal/assets/trick-hide.png",
+      "sourceSHA256": "73385d2f26977b525739339f997411b509e65dfe5e83aa76a26e56162682d552",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/trick-hit.png",
+      "bytes": 46720,
+      "sha256": "2020e7c63090feab73e0f6e697958d735e1a34c2587ea1a7dbd541541e07c218",
+      "source": "platform/mole-formal/assets/trick-hit.png",
+      "sourceSHA256": "2020e7c63090feab73e0f6e697958d735e1a34c2587ea1a7dbd541541e07c218",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/trick-idle.png",
+      "bytes": 46467,
+      "sha256": "a1c71a445757bcba4d429519e9e9d8dc307be3c70fa6b30a0ed63314dea5b183",
+      "source": "platform/mole-formal/assets/trick-idle.png",
+      "sourceSHA256": "a1c71a445757bcba4d429519e9e9d8dc307be3c70fa6b30a0ed63314dea5b183",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/assets/trick-smile.png",
+      "bytes": 46213,
+      "sha256": "121aa4319dcd5642f59ab254cff44f71f8c71212335849063d12cbefa3783888",
+      "source": "platform/mole-formal/assets/trick-smile.png",
+      "sourceSHA256": "121aa4319dcd5642f59ab254cff44f71f8c71212335849063d12cbefa3783888",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/garden.js",
+      "bytes": 10188,
+      "sha256": "fddb896ebe89591683024f81b1e2b843519bb30bd448ad2212f891616fdc25cd",
+      "source": "platform/mole-formal/garden.js",
+      "sourceSHA256": "fddb896ebe89591683024f81b1e2b843519bb30bd448ad2212f891616fdc25cd",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/index.html",
+      "bytes": 2310,
+      "sha256": "15b5d1a44162cb395c2321ac0771ec1fa5dd717105267455eb4da84939bc7bba",
+      "source": "platform/mole-formal/index.html",
+      "sourceSHA256": "abd1bd24d3b5361f566c223f924309ed93956d976baf9d20fe8ee1adcba91d1f",
+      "transformed": true
+    },
+    {
+      "path": "platform/mole-formal/main.js",
+      "bytes": 8305,
+      "sha256": "bc0bd673eb3d43c6bcd891d4d8bed2357816aa476845894cb5e19edad3c75ab6",
+      "source": "platform/mole-formal/main.js",
+      "sourceSHA256": "8d5b38541f3792877ad39f9a5291df4bcb83125a2442a3a079e939d432cb7ee6",
+      "transformed": true
+    },
+    {
+      "path": "platform/mole-formal/questions.js",
+      "bytes": 3001,
+      "sha256": "40b18563a2af5625d9940879eb46bfe2c5062e49471b4fb8a42507589e0a35a6",
+      "source": "platform/mole-formal/questions.js",
+      "sourceSHA256": "40b18563a2af5625d9940879eb46bfe2c5062e49471b4fb8a42507589e0a35a6",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/state.js",
+      "bytes": 3297,
+      "sha256": "57005bd8a82bc1f241c66ef2a1e7ed2cfb954a0429c967a5e628547279af0da6",
+      "source": "platform/mole-formal/state.js",
+      "sourceSHA256": "57005bd8a82bc1f241c66ef2a1e7ed2cfb954a0429c967a5e628547279af0da6",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/store.js",
+      "bytes": 3176,
+      "sha256": "af187cacf7f5b4db123c79629fe447d63fd579dc9c00c7f6f880fd4cc25ffefd",
+      "source": "platform/mole-formal/store.js",
+      "sourceSHA256": "af187cacf7f5b4db123c79629fe447d63fd579dc9c00c7f6f880fd4cc25ffefd",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/style.css",
+      "bytes": 2330,
+      "sha256": "be18e5de48d263c0f87b70fdd2ec3cc1e87a5be151bce72b8cf47e353dba2b77",
+      "source": "platform/mole-formal/style.css",
+      "sourceSHA256": "be18e5de48d263c0f87b70fdd2ec3cc1e87a5be151bce72b8cf47e353dba2b77",
+      "transformed": false
+    },
+    {
+      "path": "platform/practice/index.html",
+      "bytes": 1416,
+      "sha256": "3f7699c7bf33f2d17ac5b36a05794d4023c571b3f3b6309f5edc4546ff751c56",
+      "source": "platform/practice/index.html",
+      "sourceSHA256": "73bcf82a337c5babbb5fb9630dc9a577e55337fdd8949588fd43087644113067",
+      "transformed": true
+    },
+    {
+      "path": "platform/src/app.js",
+      "bytes": 10536,
+      "sha256": "531225faf6c8b40fcba5cb8e723516d26424a4ae17568716c8feb38571eeb174",
+      "source": "platform/src/app.js",
+      "sourceSHA256": "ba19414b6912d956316fe0b20414e647a5361c6fb7aafd3737afbaac1ed4f884",
+      "transformed": true
+    },
+    {
+      "path": "platform/src/assessment/challenge-composite.js",
+      "bytes": 7896,
+      "sha256": "a5c15d41429893ec318920fcc911f5efcdc5e5e09492228b83cf433958084ab8",
+      "source": "platform/src/assessment/challenge-composite.js",
+      "sourceSHA256": "a5c15d41429893ec318920fcc911f5efcdc5e5e09492228b83cf433958084ab8",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/assessment/diagnostic-rules.js",
+      "bytes": 2302,
+      "sha256": "6f24642b7a4a5a6912861b21f8749682a891183edd33b29e3ce2427057dea65d",
+      "source": "platform/src/assessment/diagnostic-rules.js",
+      "sourceSHA256": "6f24642b7a4a5a6912861b21f8749682a891183edd33b29e3ce2427057dea65d",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/assessment/evaluator.js",
+      "bytes": 4298,
+      "sha256": "e65ea545fc662fa38dc339b9784fe37b1a62858174998f5f79ed82561b38ac60",
+      "source": "platform/src/assessment/evaluator.js",
+      "sourceSHA256": "e65ea545fc662fa38dc339b9784fe37b1a62858174998f5f79ed82561b38ac60",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/assessment/hint-planner.js",
+      "bytes": 1644,
+      "sha256": "cd59f1c2c6b456ddde04baadb081a184e0682a8267ebb2d09d4c0059cbe79356",
+      "source": "platform/src/assessment/hint-planner.js",
+      "sourceSHA256": "cd59f1c2c6b456ddde04baadb081a184e0682a8267ebb2d09d4c0059cbe79356",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/assessment/steps.js",
+      "bytes": 3328,
+      "sha256": "35db67146c962479a042c9a0dc95f73e45ed529ce19c054c298d6d96cd2ee3d0",
+      "source": "platform/src/assessment/steps.js",
+      "sourceSHA256": "35db67146c962479a042c9a0dc95f73e45ed529ce19c054c298d6d96cd2ee3d0",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/config/policies.js",
+      "bytes": 650,
+      "sha256": "3ced5990222f728287971218431c5c1aff1358c24d2ac875f4f2ea54a2995a82",
+      "source": "platform/src/config/policies.js",
+      "sourceSHA256": "3ced5990222f728287971218431c5c1aff1358c24d2ac875f4f2ea54a2995a82",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/config/units.js",
+      "bytes": 1668,
+      "sha256": "ce8328029509079540894b8cd8a797a55e737d2b6a1e176ccac5109e47552ac8",
+      "source": "platform/src/config/units.js",
+      "sourceSHA256": "e62761719e8de265a97424529b911b81ca6787890b12f667a06534037b7bab62",
+      "transformed": true
+    },
+    {
+      "path": "platform/src/contracts/challenge.js",
+      "bytes": 9397,
+      "sha256": "2af08d03f5424d5c36fe4b115a0d81072a28640e483abe2576112d1ced1a4938",
+      "source": "platform/src/contracts/challenge.js",
+      "sourceSHA256": "2af08d03f5424d5c36fe4b115a0d81072a28640e483abe2576112d1ced1a4938",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/contracts/learning.js",
+      "bytes": 4373,
+      "sha256": "81e463c372fa4b3e9c75f2985c0b441f7b258652b240fb6d233032043bbe8ff8",
+      "source": "platform/src/contracts/learning.js",
+      "sourceSHA256": "81e463c372fa4b3e9c75f2985c0b441f7b258652b240fb6d233032043bbe8ff8",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/contracts/math.js",
+      "bytes": 1038,
+      "sha256": "d2cdef3b31ef7d93eac3e5841d8d91dc6b95f5673c80511bce74aecc1c153186",
+      "source": "platform/src/contracts/math.js",
+      "sourceSHA256": "d2cdef3b31ef7d93eac3e5841d8d91dc6b95f5673c80511bce74aecc1c153186",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/contracts/questions.js",
+      "bytes": 2589,
+      "sha256": "28cde7ee8f7d72340e5965a716678034ac4faeffe7c007111c53d2e433d9e09d",
+      "source": "platform/src/contracts/questions.js",
+      "sourceSHA256": "28cde7ee8f7d72340e5965a716678034ac4faeffe7c007111c53d2e433d9e09d",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/factory/records/codec.js",
+      "bytes": 3886,
+      "sha256": "baca5a8e54f8b3556c6a1e4aed51b1eee1df3365ff50e7e394c3f4e8514126e9",
+      "source": "platform/src/factory/records/codec.js",
+      "sourceSHA256": "baca5a8e54f8b3556c6a1e4aed51b1eee1df3365ff50e7e394c3f4e8514126e9",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/factory/records/indexeddb.js",
+      "bytes": 5038,
+      "sha256": "79a4d2a92e4193fe2f4c3d01cca79c59bf084559f4d4a98ede45f1d79d8b84ab",
+      "source": "platform/src/factory/records/indexeddb.js",
+      "sourceSHA256": "79a4d2a92e4193fe2f4c3d01cca79c59bf084559f4d4a98ede45f1d79d8b84ab",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/factory/records/store.js",
+      "bytes": 11233,
+      "sha256": "1a4f6cda6472256000c065c72bcab9923cb45c28df73d176b3f1caec66369451",
+      "source": "platform/src/factory/records/store.js",
+      "sourceSHA256": "1a4f6cda6472256000c065c72bcab9923cb45c28df73d176b3f1caec66369451",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/input/parser.js",
+      "bytes": 3456,
+      "sha256": "69f329d0bdf03817df812ea043ce68097d88d3bd62f647bc5e8f6cb32c1d311a",
+      "source": "platform/src/input/parser.js",
+      "sourceSHA256": "69f329d0bdf03817df812ea043ce68097d88d3bd62f647bc5e8f6cb32c1d311a",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/learning/attempt-snapshot.js",
+      "bytes": 996,
+      "sha256": "0ce0db3d065dad34fb295a2ecccc0e84a8c57726494318db0a34f3b2e31c6db6",
+      "source": "platform/src/learning/attempt-snapshot.js",
+      "sourceSHA256": "0ce0db3d065dad34fb295a2ecccc0e84a8c57726494318db0a34f3b2e31c6db6",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/learning/attempt.js",
+      "bytes": 11316,
+      "sha256": "2d2b08758856566da48d9fa58e62d8f9c1ba181545bbc73be027fa3f1c90589e",
+      "source": "platform/src/learning/attempt.js",
+      "sourceSHA256": "2d2b08758856566da48d9fa58e62d8f9c1ba181545bbc73be027fa3f1c90589e",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/learning/challenge-events.js",
+      "bytes": 11504,
+      "sha256": "b371e4aef0d444a486ab1e2a961fa1a374fc3b03e1c3aaa95360335b96420a50",
+      "source": "platform/src/learning/challenge-events.js",
+      "sourceSHA256": "b371e4aef0d444a486ab1e2a961fa1a374fc3b03e1c3aaa95360335b96420a50",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/main.js",
+      "bytes": 557,
+      "sha256": "46abc6b3e753d336f86b8a9a9f1965a1dc5422aed344ae7036b93d9f8f6fdb7c",
+      "source": "platform/src/main.js",
+      "sourceSHA256": "46abc6b3e753d336f86b8a9a9f1965a1dc5422aed344ae7036b93d9f8f6fdb7c",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/math/errors.js",
+      "bytes": 371,
+      "sha256": "403b046a078e27277073a030ec0dc9d315a127ad5da9b06b97b1947d05493d7a",
+      "source": "platform/src/math/errors.js",
+      "sourceSHA256": "403b046a078e27277073a030ec0dc9d315a127ad5da9b06b97b1947d05493d7a",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/math/form-checker.js",
+      "bytes": 2662,
+      "sha256": "62f22d9ddf3c92ddbba820d2417e68ccb4f55daaafffd7162cf4744baeeb0c4a",
+      "source": "platform/src/math/form-checker.js",
+      "sourceSHA256": "62f22d9ddf3c92ddbba820d2417e68ccb4f55daaafffd7162cf4744baeeb0c4a",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/math/format.js",
+      "bytes": 395,
+      "sha256": "c6d19a43007e010fd2d0123a6c01821be5d70088f987d517b8ee289e3896328d",
+      "source": "platform/src/math/format.js",
+      "sourceSHA256": "c6d19a43007e010fd2d0123a6c01821be5d70088f987d517b8ee289e3896328d",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/math/integer-factorization.js",
+      "bytes": 796,
+      "sha256": "749504d88ece67c663f06ce00046f20e4ca8259987ace849130452b2f0d0cadc",
+      "source": "platform/src/math/integer-factorization.js",
+      "sourceSHA256": "749504d88ece67c663f06ce00046f20e4ca8259987ace849130452b2f0d0cadc",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/math/operations.js",
+      "bytes": 1102,
+      "sha256": "9a72f8e8d072751d6f9cdd96b297e9d3f58df527fa34f315d5b4e67788c3fcb9",
+      "source": "platform/src/math/operations.js",
+      "sourceSHA256": "9a72f8e8d072751d6f9cdd96b297e9d3f58df527fa34f315d5b4e67788c3fcb9",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/math/radical-value.js",
+      "bytes": 3423,
+      "sha256": "ceeaf635d42be3422c2dd6f3f90f26839a4d483557ee5a87ebb1fccacfa0f6b7",
+      "source": "platform/src/math/radical-value.js",
+      "sourceSHA256": "ceeaf635d42be3422c2dd6f3f90f26839a4d483557ee5a87ebb1fccacfa0f6b7",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/math/rational.js",
+      "bytes": 877,
+      "sha256": "accb73e4fe5e67b23e4254c2ae14b0625aa97d6f22588c8d0fb0412269f6945d",
+      "source": "platform/src/math/rational.js",
+      "sourceSHA256": "accb73e4fe5e67b23e4254c2ae14b0625aa97d6f22588c8d0fb0412269f6945d",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/practice-live/controller.js",
+      "bytes": 4345,
+      "sha256": "b839054bd876693ed9adf80b8436b46c41649cfa68da30270ddf317e146f01fe",
+      "source": "platform/src/practice-live/controller.js",
+      "sourceSHA256": "b839054bd876693ed9adf80b8436b46c41649cfa68da30270ddf317e146f01fe",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/practice-live/session.js",
+      "bytes": 6879,
+      "sha256": "ba504d35c91f9a763696c1d7f5a89b376216f3c1983960ff6248196a4e1645b4",
+      "source": "platform/src/practice-live/session.js",
+      "sourceSHA256": "ba504d35c91f9a763696c1d7f5a89b376216f3c1983960ff6248196a4e1645b4",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/practice-live/view.js",
+      "bytes": 14061,
+      "sha256": "4b0fb8ec15a513b852c1fd04bc2e24d49d804923177db424ab0f3a0da974caf2",
+      "source": "platform/src/practice-live/view.js",
+      "sourceSHA256": "4b0fb8ec15a513b852c1fd04bc2e24d49d804923177db424ab0f3a0da974caf2",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/practice-records/codec.js",
+      "bytes": 2924,
+      "sha256": "f575ade8d624b55b046a2c5399caf49390521eb46fc62dc71f6e63f0323d118f",
+      "source": "platform/src/practice-records/codec.js",
+      "sourceSHA256": "f575ade8d624b55b046a2c5399caf49390521eb46fc62dc71f6e63f0323d118f",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/practice-records/report.js",
+      "bytes": 2423,
+      "sha256": "2f05ce1d8671100fcc8e03bf8b0db25d865b6d4d0416ea4ff5979a840f9aa608",
+      "source": "platform/src/practice-records/report.js",
+      "sourceSHA256": "2f05ce1d8671100fcc8e03bf8b0db25d865b6d4d0416ea4ff5979a840f9aa608",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/practice-records/store.js",
+      "bytes": 8425,
+      "sha256": "ae149d7932272482f24f4f156f438e6773eef4ce8409329667de7a4ba73eee3a",
+      "source": "platform/src/practice-records/store.js",
+      "sourceSHA256": "ae149d7932272482f24f4f156f438e6773eef4ce8409329667de7a4ba73eee3a",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/practice-records/view.js",
+      "bytes": 7373,
+      "sha256": "12182d2f816638f24cc18c2c4a4f96153e35c939fe8b5fd6e4cc52cc21436d01",
+      "source": "platform/src/practice-records/view.js",
+      "sourceSHA256": "12182d2f816638f24cc18c2c4a4f96153e35c939fe8b5fd6e4cc52cc21436d01",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/fingerprint.js",
+      "bytes": 147,
+      "sha256": "7f14d13f3d9135e1fafaddd7f6fe197b60e95025c9a11ad100e970f3498481ff",
+      "source": "platform/src/questions/fingerprint.js",
+      "sourceSHA256": "7f14d13f3d9135e1fafaddd7f6fe197b60e95025c9a11ad100e970f3498481ff",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/generator.js",
+      "bytes": 4650,
+      "sha256": "d4fdd12079e254915acc7e4b78f464210cb02ab2b2986c94b13644ab858b1a9c",
+      "source": "platform/src/questions/generator.js",
+      "sourceSHA256": "d4fdd12079e254915acc7e4b78f464210cb02ab2b2986c94b13644ab858b1a9c",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/power-presentation.js",
+      "bytes": 1109,
+      "sha256": "8f29a54ae8ca7adb516192920eca348e3333cfc35907bbe035d25c0fca2b3131",
+      "source": "platform/src/questions/power-presentation.js",
+      "sourceSHA256": "8f29a54ae8ca7adb516192920eca348e3333cfc35907bbe035d25c0fca2b3131",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/seeded-random.js",
+      "bytes": 688,
+      "sha256": "551c45be06784b8b8473caab0989dd147872235f039cbfe368157b124add80c5",
+      "source": "platform/src/questions/seeded-random.js",
+      "sourceSHA256": "551c45be06784b8b8473caab0989dd147872235f039cbfe368157b124add80c5",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/unit-one/blueprints.js",
+      "bytes": 499,
+      "sha256": "ce95b2b6f4e34a01a6793715de7027f5b45cc7a96c754d6381d582f3509c4e99",
+      "source": "platform/src/questions/unit-one/blueprints.js",
+      "sourceSHA256": "ce95b2b6f4e34a01a6793715de7027f5b45cc7a96c754d6381d582f3509c4e99",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/unit-one/station-a.js",
+      "bytes": 3714,
+      "sha256": "db2df4ae5d08c6b01e252dd1e5d28bad361ec39f11115261044970918e78382f",
+      "source": "platform/src/questions/unit-one/station-a.js",
+      "sourceSHA256": "db2df4ae5d08c6b01e252dd1e5d28bad361ec39f11115261044970918e78382f",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/unit-one/station-b.js",
+      "bytes": 3337,
+      "sha256": "e58c10bf9ec243512fb68670322826b3da597ad485483af23ed57e67fa88e884",
+      "source": "platform/src/questions/unit-one/station-b.js",
+      "sourceSHA256": "e58c10bf9ec243512fb68670322826b3da597ad485483af23ed57e67fa88e884",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/questions/unit-one/station-c.js",
+      "bytes": 2017,
+      "sha256": "956fbe2c7c3ceb11b52025965d475baafe1f6ce5d8946273aaac1e7f5f17ab6c",
+      "source": "platform/src/questions/unit-one/station-c.js",
+      "sourceSHA256": "956fbe2c7c3ceb11b52025965d475baafe1f6ce5d8946273aaac1e7f5f17ab6c",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/rpg-factory/direct-contract.js",
+      "bytes": 2485,
+      "sha256": "39b260ff2542cb9ed72abb39bb97659112bf196ff1fdf48034ce453bec35dd49",
+      "source": "platform/src/rpg-factory/direct-contract.js",
+      "sourceSHA256": "39b260ff2542cb9ed72abb39bb97659112bf196ff1fdf48034ce453bec35dd49",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/state/initial-state.js",
+      "bytes": 335,
+      "sha256": "ce761d516e0242f1b3705b2c794a02faef5ce3d0990d05fe0a297c8bfbc0af70",
+      "source": "platform/src/state/initial-state.js",
+      "sourceSHA256": "ce761d516e0242f1b3705b2c794a02faef5ce3d0990d05fe0a297c8bfbc0af70",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/ui/home.js",
+      "bytes": 3781,
+      "sha256": "94150e64e6bba33b89f09a14d628ecb1aad70a9a484e31b3fd3cf1fa85293dd0",
+      "source": "platform/src/ui/home.js",
+      "sourceSHA256": "8073af1567ea8c1f89562099e9b21e1f4d45fbcd75fb98005a491d27355c1830",
+      "transformed": true
+    },
+    {
+      "path": "platform/src/ui/math-input.js",
+      "bytes": 1084,
+      "sha256": "cc02a12b80d2e85a9f12b610e0b6d45ac1b6b16a0c0ab984466ff8c698b7bbd0",
+      "source": "platform/src/ui/math-input.js",
+      "sourceSHA256": "cc02a12b80d2e85a9f12b610e0b6d45ac1b6b16a0c0ab984466ff8c698b7bbd0",
+      "transformed": false
+    },
+    {
+      "path": "platform/src/ui/practice-format.js",
+      "bytes": 1889,
+      "sha256": "754f5ccb6b872cdb301af8ea8829a7707ee585849d8ace50b00e006faaa76c17",
+      "source": "platform/src/ui/practice-format.js",
+      "sourceSHA256": "754f5ccb6b872cdb301af8ea8829a7707ee585849d8ace50b00e006faaa76c17",
+      "transformed": false
+    },
+    {
+      "path": "platform/styles/platform.css",
+      "bytes": 5972,
+      "sha256": "b710885e377cd9a8ac99b0470bd1b62bedfcf80927c6a88501653c1652907ed8",
+      "source": "platform/styles/platform.css",
+      "sourceSHA256": "b710885e377cd9a8ac99b0470bd1b62bedfcf80927c6a88501653c1652907ed8",
+      "transformed": false
+    },
+    {
+      "path": "platform/styles/practice.css",
+      "bytes": 10084,
+      "sha256": "321b02d0ca1a6170a3b4c7346d77ba24523ec39b028ba4452ba6dc483ad505d8",
+      "source": "platform/styles/practice.css",
+      "sourceSHA256": "321b02d0ca1a6170a3b4c7346d77ba24523ec39b028ba4452ba6dc483ad505d8",
+      "transformed": false
+    },
+    {
+      "path": "platform/unit-two/factory-links.js",
+      "bytes": 1301,
+      "sha256": "3298e6e08ba27592a412ae758d221383bbcdf97d6579c713f0a5d279c2707272",
+      "source": "platform/unit-two/factory-links.js",
+      "sourceSHA256": "3298e6e08ba27592a412ae758d221383bbcdf97d6579c713f0a5d279c2707272",
+      "transformed": false
+    },
+    {
+      "path": "platform/unit-two/index.html",
+      "bytes": 2687,
+      "sha256": "2a0256dd43abeebb5eb87b47aaecd9276df8f04dc2df005886532090e06db675",
+      "source": "platform/unit-two/index.html",
+      "sourceSHA256": "1443921fc15a90aeaf5a315eb51ef218042956d1ac8922362785a4235517f242",
+      "transformed": true
+    },
+    {
+      "path": "platform/unit-two/learning.js",
+      "bytes": 8106,
+      "sha256": "d1e216716f5bd1e99ea7710d059491f4568c84af7fa5373b5ef61ce6f9030d29",
+      "source": "platform/unit-two/learning.js",
+      "sourceSHA256": "d1e216716f5bd1e99ea7710d059491f4568c84af7fa5373b5ef61ce6f9030d29",
+      "transformed": false
+    },
+    {
+      "path": "platform/unit-two/main.js",
+      "bytes": 8230,
+      "sha256": "e97cabd42cb9aec4a76d8a46aca2385a73ae05fd83c2470c9882f347d47707a8",
+      "source": "platform/unit-two/main.js",
+      "sourceSHA256": "e97cabd42cb9aec4a76d8a46aca2385a73ae05fd83c2470c9882f347d47707a8",
+      "transformed": false
+    },
+    {
+      "path": "platform/unit-two/namespace-audit.js",
+      "bytes": 1258,
+      "sha256": "5e966d5b0b80c2efa99e99f38260ff846387d2a302c57f9bdb98e13b2ab1e585",
+      "source": "platform/unit-two/namespace-audit.js",
+      "sourceSHA256": "5e966d5b0b80c2efa99e99f38260ff846387d2a302c57f9bdb98e13b2ab1e585",
+      "transformed": false
+    },
+    {
+      "path": "platform/unit-two/remediation.html",
+      "bytes": 2645,
+      "sha256": "5c6d3c491947cb0649071033d07c955a25d95f521d85824423bc76f5de0c24c0",
+      "source": "platform/unit-two/remediation.html",
+      "sourceSHA256": "f5a1bee3141aae29e43bba79756b67621e8a7b667b64ef7e27ff577afb062956",
+      "transformed": true
+    },
+    {
+      "path": "platform/unit-two/style.css",
+      "bytes": 1673,
+      "sha256": "fea5d09d04abaecc2b58a9aa598cb411ffcdafd23cb9d189d2e3b6f4b0a2fcc4",
+      "source": "platform/unit-two/style.css",
+      "sourceSHA256": "fea5d09d04abaecc2b58a9aa598cb411ffcdafd23cb9d189d2e3b6f4b0a2fcc4",
+      "transformed": false
+    }
+  ],
+  "manifestFile": "deployment-manifest.json",
+  "excluded": "development evidence, student exports, backups, browser profiles, test scripts and secrets"
+}

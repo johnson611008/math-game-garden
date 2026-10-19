@@ -1,0 +1,2 @@
+/* The second existing wooden frame is narrower. Fit its newly opened label only. */
+@media(min-width:1101px){.game:nth-child(2) .entry{font-size:1.35cqw}}
