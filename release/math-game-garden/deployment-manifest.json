@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "siteBase": "/math-game-garden/",
   "plannedURL": "https://johnson611008.github.io/math-game-garden/",
-  "buildId": "f782b5fbf3c7966399026292f72f90e5b977f9f218b089b77510873e0f829a39",
+  "buildId": "58fe647367bd571e95b8e4b0526d81cb39ccbdb2e73926c1331eebd5b37a6b25",
   "files": [
     {
       "path": ".nojekyll",
@@ -387,10 +387,10 @@
     },
     {
       "path": "platform/marble-formal/main.js",
-      "bytes": 22133,
-      "sha256": "59201d949d10c57e0c7717605bbf3deddb3983f37ae8b129b5238e70220dc2f7",
+      "bytes": 22261,
+      "sha256": "f9d5c8e5901901f7ebf1ef6ef84074a59d8e8e97f7a066366ce973b2ee7ed486",
       "source": "platform/marble-formal/main.js",
-      "sourceSHA256": "59201d949d10c57e0c7717605bbf3deddb3983f37ae8b129b5238e70220dc2f7",
+      "sourceSHA256": "f9d5c8e5901901f7ebf1ef6ef84074a59d8e8e97f7a066366ce973b2ee7ed486",
       "transformed": false
     },
     {
@@ -419,10 +419,26 @@
     },
     {
       "path": "platform/marble-formal/style.css",
-      "bytes": 1617,
-      "sha256": "62f002656da850622f361fe3d5ffc1255a1411be0416092839e44ac2f6cb13ab",
+      "bytes": 1644,
+      "sha256": "924945664b4df55d23d95d549dfd417980b771ab0d29a64fb8eebb922a9f1a0d",
       "source": "platform/marble-formal/style.css",
-      "sourceSHA256": "62f002656da850622f361fe3d5ffc1255a1411be0416092839e44ac2f6cb13ab",
+      "sourceSHA256": "924945664b4df55d23d95d549dfd417980b771ab0d29a64fb8eebb922a9f1a0d",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/tablet.css",
+      "bytes": 3137,
+      "sha256": "8728a6d555eff46798ae44281eb7d9fea867ef091024f08f15b5bcaa9d4cab7d",
+      "source": "platform/marble-formal/tablet.css",
+      "sourceSHA256": "8728a6d555eff46798ae44281eb7d9fea867ef091024f08f15b5bcaa9d4cab7d",
+      "transformed": false
+    },
+    {
+      "path": "platform/marble-formal/viewport.js",
+      "bytes": 2859,
+      "sha256": "bbbd2f9081c09f9e3808548c13c390c34083eb3f266a9776ce9065d09906bb49",
+      "source": "platform/marble-formal/viewport.js",
+      "sourceSHA256": "bbbd2f9081c09f9e3808548c13c390c34083eb3f266a9776ce9065d09906bb49",
       "transformed": false
     },
     {
@@ -683,11 +699,11 @@
     },
     {
       "path": "platform/mole-formal/main.js",
-      "bytes": 8305,
-      "sha256": "bc0bd673eb3d43c6bcd891d4d8bed2357816aa476845894cb5e19edad3c75ab6",
+      "bytes": 8917,
+      "sha256": "1e4f46446cf58a2cdb2096e4a66574376bffdebc926c11f069ac109dd8e3cf13",
       "source": "platform/mole-formal/main.js",
-      "sourceSHA256": "8d5b38541f3792877ad39f9a5291df4bcb83125a2442a3a079e939d432cb7ee6",
-      "transformed": true
+      "sourceSHA256": "1e4f46446cf58a2cdb2096e4a66574376bffdebc926c11f069ac109dd8e3cf13",
+      "transformed": false
     },
     {
       "path": "platform/mole-formal/questions.js",
@@ -695,6 +711,30 @@
       "sha256": "40b18563a2af5625d9940879eb46bfe2c5062e49471b4fb8a42507589e0a35a6",
       "source": "platform/mole-formal/questions.js",
       "sourceSHA256": "40b18563a2af5625d9940879eb46bfe2c5062e49471b4fb8a42507589e0a35a6",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/remediation-main.js",
+      "bytes": 8313,
+      "sha256": "77c22d7977e08ba3d3ba5a128d4c810b11f85bc061350561e9a2100ab6700b72",
+      "source": "platform/mole-formal/remediation-main.js",
+      "sourceSHA256": "77c22d7977e08ba3d3ba5a128d4c810b11f85bc061350561e9a2100ab6700b72",
+      "transformed": false
+    },
+    {
+      "path": "platform/mole-formal/remediation.html",
+      "bytes": 1648,
+      "sha256": "6d7c106dfc6740b41b7deb2b4d4498aff6fb3d3f828d9757f64770d17b16cdb8",
+      "source": "platform/mole-formal/remediation.html",
+      "sourceSHA256": "200ed19e9cdcad508a6cd9e2bcdf1c05d1d245387b201020785b94ccf85909f6",
+      "transformed": true
+    },
+    {
+      "path": "platform/mole-formal/remediation.js",
+      "bytes": 7730,
+      "sha256": "6c37ab4b6aecd6f73f00240fc3d0d308c1cf34e5b4a829de28f8bbb0eb99eade",
+      "source": "platform/mole-formal/remediation.js",
+      "sourceSHA256": "6c37ab4b6aecd6f73f00240fc3d0d308c1cf34e5b4a829de28f8bbb0eb99eade",
       "transformed": false
     },
     {
@@ -707,10 +747,10 @@
     },
     {
       "path": "platform/mole-formal/store.js",
-      "bytes": 3176,
-      "sha256": "af187cacf7f5b4db123c79629fe447d63fd579dc9c00c7f6f880fd4cc25ffefd",
+      "bytes": 5692,
+      "sha256": "c0e74843ba7b63c0fa72e3826fa2a15c3fc31ed898773737aaf033171acf1170",
       "source": "platform/mole-formal/store.js",
-      "sourceSHA256": "af187cacf7f5b4db123c79629fe447d63fd579dc9c00c7f6f880fd4cc25ffefd",
+      "sourceSHA256": "c0e74843ba7b63c0fa72e3826fa2a15c3fc31ed898773737aaf033171acf1170",
       "transformed": false
     },
     {
@@ -947,10 +987,10 @@
     },
     {
       "path": "platform/src/practice-live/controller.js",
-      "bytes": 4345,
-      "sha256": "b839054bd876693ed9adf80b8436b46c41649cfa68da30270ddf317e146f01fe",
+      "bytes": 4513,
+      "sha256": "2d8d83fa68a6f558b82c47c2e790367ec6586d5dc11586f25dc447d6e7b2be3a",
       "source": "platform/src/practice-live/controller.js",
-      "sourceSHA256": "b839054bd876693ed9adf80b8436b46c41649cfa68da30270ddf317e146f01fe",
+      "sourceSHA256": "2d8d83fa68a6f558b82c47c2e790367ec6586d5dc11586f25dc447d6e7b2be3a",
       "transformed": false
     },
     {
@@ -1098,11 +1138,27 @@
       "transformed": false
     },
     {
+      "path": "platform/src/ui/math-keyboard-focus.js",
+      "bytes": 1934,
+      "sha256": "b2c47edf3e2f9aacffa35acb4653ea5cf3c5ae247520bbc5e5c6376df544ec88",
+      "source": "platform/src/ui/math-keyboard-focus.js",
+      "sourceSHA256": "b2c47edf3e2f9aacffa35acb4653ea5cf3c5ae247520bbc5e5c6376df544ec88",
+      "transformed": false
+    },
+    {
       "path": "platform/src/ui/practice-format.js",
       "bytes": 1889,
       "sha256": "754f5ccb6b872cdb301af8ea8829a7707ee585849d8ace50b00e006faaa76c17",
       "source": "platform/src/ui/practice-format.js",
       "sourceSHA256": "754f5ccb6b872cdb301af8ea8829a7707ee585849d8ace50b00e006faaa76c17",
+      "transformed": false
+    },
+    {
+      "path": "platform/styles/math-keyboard.css",
+      "bytes": 474,
+      "sha256": "042780ba88d5ebc3a90e9b040e3e0ecd46e12a9bdb372a396c695b9bc96c996b",
+      "source": "platform/styles/math-keyboard.css",
+      "sourceSHA256": "042780ba88d5ebc3a90e9b040e3e0ecd46e12a9bdb372a396c695b9bc96c996b",
       "transformed": false
     },
     {
@@ -1115,10 +1171,10 @@
     },
     {
       "path": "platform/styles/practice.css",
-      "bytes": 10084,
-      "sha256": "321b02d0ca1a6170a3b4c7346d77ba24523ec39b028ba4452ba6dc483ad505d8",
+      "bytes": 10118,
+      "sha256": "2a4c04967611ede19a6336ee184373c04d6fcce7544b1bfc0721f4129f6c63c3",
       "source": "platform/styles/practice.css",
-      "sourceSHA256": "321b02d0ca1a6170a3b4c7346d77ba24523ec39b028ba4452ba6dc483ad505d8",
+      "sourceSHA256": "2a4c04967611ede19a6336ee184373c04d6fcce7544b1bfc0721f4129f6c63c3",
       "transformed": false
     },
     {
@@ -1147,10 +1203,10 @@
     },
     {
       "path": "platform/unit-two/main.js",
-      "bytes": 8230,
-      "sha256": "e97cabd42cb9aec4a76d8a46aca2385a73ae05fd83c2470c9882f347d47707a8",
+      "bytes": 8568,
+      "sha256": "d70dc0919906896857e950668142aa170513bdeab518a274bf3332476f4d3300",
       "source": "platform/unit-two/main.js",
-      "sourceSHA256": "e97cabd42cb9aec4a76d8a46aca2385a73ae05fd83c2470c9882f347d47707a8",
+      "sourceSHA256": "d70dc0919906896857e950668142aa170513bdeab518a274bf3332476f4d3300",
       "transformed": false
     },
     {
@@ -1171,10 +1227,10 @@
     },
     {
       "path": "platform/unit-two/style.css",
-      "bytes": 1673,
-      "sha256": "fea5d09d04abaecc2b58a9aa598cb411ffcdafd23cb9d189d2e3b6f4b0a2fcc4",
+      "bytes": 1717,
+      "sha256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
       "source": "platform/unit-two/style.css",
-      "sourceSHA256": "fea5d09d04abaecc2b58a9aa598cb411ffcdafd23cb9d189d2e3b6f4b0a2fcc4",
+      "sourceSHA256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
       "transformed": false
     }
   ],

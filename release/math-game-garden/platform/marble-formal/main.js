@@ -1,4 +1,5 @@
 import {StageWorld,W,H,R} from './world.js';import {stages,SLOT_IDS} from './stages.js';import {grade} from './state.js';import {browserStore} from './store.js';import {createAudio} from '../marble-demo/a2/audio.js';import {mountRemediationLinks} from '../unit-two/factory-links.js';
+import {mountViewport} from './viewport.js';
 const $=id=>document.getElementById(id),canvas=$('court'),strip=$('steer'),ctx=canvas.getContext('2d'),images={},audio=createAudio();
 const store=browserStore(),updateRemediation=mountRemediationLinks();let cached=store.view(),round=null,world=null,busy=false,canWrite=false,loaded=false,dirty=false,historyId=null,reviewStage=null,drag=null,steering=null,aimed=false,last=0,lastSound=0,lastSavedCode='',shown=null,frames=[],unsaved=null,reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const keys=new Set(),message=text=>$('status').textContent=text,mathDialog=$('energy-dialog'),uid=()=>crypto.randomUUID();
@@ -62,6 +63,7 @@ function draw(){const origin=world.origin();const sx=canvas.width/W,sy=canvas.he
 
 function resize(){const ratio=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(canvas.clientWidth*ratio);canvas.height=Math.round(canvas.clientHeight*ratio);}
 window.addEventListener('resize',resize);document.addEventListener('visibilitychange',()=>{last=0;if(document.hidden&&usable())pause();});
+mountViewport({canvas,resize,beforeOpen:async()=>{if(usable())await pause();}});
 activate($('start'),begin);activate($('reload'),load);activate($('pause'),pause);activate($('fire'),launch);activate($('cancel'),cancel);activate($('retry'),retry);activate($('settle'),()=>send('settle'));activate($('safe-resume'),e=>{e.stopPropagation();if(world?.phase!=='recovering')return;clearInput();send('continue');});
 $('mute').onclick=()=>{audio.toggle();controls();};$('motion').onclick=()=>{reduced=!reduced;$('motion').setAttribute('aria-pressed',String(reduced));controls();};$('motion').setAttribute('aria-pressed',String(reduced));
 mathDialog.addEventListener('cancel',e=>e.preventDefault());$('history').onchange=e=>switchReview(null,e.target.value===cached.state?.roundId?null:e.target.value);$('back-current').onclick=()=>{historyId=null;reviewStage=null;adopt(cached,true);};

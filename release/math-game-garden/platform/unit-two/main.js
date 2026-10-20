@@ -2,8 +2,11 @@ import {browserStore} from '../marble-formal/store.js';
 import {grade} from '../marble-formal/state.js';
 import {summary,hintText} from './learning.js';
 import {editWithSymbol} from '../src/ui/math-input.js';
+import {mountMathKeyboard} from '../src/ui/math-keyboard-focus.js';
 const $=id=>document.getElementById(id),mode=location.pathname.endsWith('/remediation.html')?'remediation':'practice',store=browserStore();
 let view=store.view(),busy=false,selected=null,localDraft='',draftDirty=false;
+for(const symbol of [...'1234567890','*','-','+','clear']){const b=document.createElement('button');b.type='button';b.dataset.symbol=symbol;b.textContent=({clear:'清除','*':'×','-':'−'})[symbol]||symbol;$('symbols').append(b);}
+const keyboard=mountMathKeyboard(document,[$('answer')],$('symbols'));
 const current=()=>view.learning.attempts.find(a=>a.attemptId===selected)||view.learning.attempts.filter(a=>a.mode===mode).at(-1),question=()=>current()?.questions[current().index];
 const id=()=>crypto.randomUUID(),message=text=>$('message').textContent=text;
 function render(){
@@ -30,8 +33,8 @@ async function send(type,more={}){if(busy||view.readOnly)return false;busy=true;
 async function saveDraft(){if(!draftDirty)return true;return send('draft',{questionId:question().id,answer:localDraft});}
 async function load(){if(busy)return;busy=true;render();view=await store.load();busy=false;selected=view.learning.attempts.find(a=>a.mode===mode&&a.status!=='completed')?.attemptId||null;localDraft=current()?.drafts[question()?.id]||'';draftDirty=false;render();}
 localDraft='';$('answer').oninput=e=>{localDraft=e.target.value;draftDirty=true;$('save-status').textContent='目前輸入尚未保存；提交、換題或暫停時保存。';};
-$('answer-form').onsubmit=async e=>{e.preventDefault();if(await send('submit',{questionId:question().id,answer:localDraft}))$('answer').focus();};
-$('symbols').onclick=e=>{const b=e.target.closest('[data-symbol]');if(!b||b.disabled)return;const input=$('answer'),edit=editWithSymbol(input.value,input.selectionStart,input.selectionEnd,b.dataset.symbol);localDraft=edit.value;draftDirty=true;input.value=edit.value;input.focus();input.setSelectionRange(edit.caret,edit.caret);$('save-status').textContent='目前輸入尚未保存。';};
+$('answer-form').onsubmit=async e=>{e.preventDefault();await send('submit',{questionId:question().id,answer:localDraft});};
+$('symbols').onclick=e=>{const b=e.target.closest('[data-symbol]');if(!b||b.disabled)return;const input=$('answer'),edit=editWithSymbol(input.value,input.selectionStart,input.selectionEnd,b.dataset.symbol);localDraft=edit.value;draftDirty=true;input.value=edit.value;keyboard.restore(input,edit.caret);$('save-status').textContent=edit.error||'目前輸入尚未保存。';};
 $('hint').onclick=async()=>{if(!await saveDraft())return;const q=question(),levels=current().responses[q.id]?.hints||[];await send('hint',{questionId:q.id,level:levels.length?2:1});};
 for(const [name,delta]of [['previous',-1],['next',1]])$(name).onclick=async()=>{if(!await saveDraft())return;await send('navigate',{index:current().index+delta});};
 $('pause').onclick=async()=>{if(!await saveDraft())return;await send(current().status==='paused'?'resume':'pause');};

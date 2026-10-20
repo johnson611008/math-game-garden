@@ -1,11 +1,13 @@
 import { liveTemplate, renderLive } from './view.js';
 import { practiceSummary } from './session.js';
 import { editWithSymbol } from '../ui/math-input.js';
+import { mountMathKeyboard } from '../ui/math-keyboard-focus.js';
 
 export function mountLivePractice(root, session, { onRestart = () => {}, onHome = () => {} } = {}) {
   let error = '', lastInput = 'answer-input';
   root.innerHTML = liveTemplate(); session.resume();
   const get = id => root.querySelector(`#${id}`);
+  const keyboard = mountMathKeyboard(root, root.querySelectorAll('input[data-field]'), get('symbol-keypad'));
   const render = () => { const state = session.getState(); renderLive(root, state, session.hintText(), practiceSummary(state), error); };
   const state = () => session.getState();
   function activeInput() {
@@ -46,7 +48,7 @@ export function mountLivePractice(root, session, { onRestart = () => {}, onHome 
     if (button.id === 'restart-button') { onRestart(); return; }
     if (button.dataset.symbol !== undefined) {
       const target = activeInput(), edit = editWithSymbol(target.value, target.selectionStart ?? target.value.length, target.selectionEnd ?? target.value.length, button.dataset.symbol);
-      session.update(target.dataset.field, edit.value); error = edit.error; render(); target.focus(); target.setSelectionRange(edit.caret, edit.caret); return;
+      session.update(target.dataset.field, edit.value); error = edit.error; render(); keyboard.restore(target, edit.caret); return;
     }
     error = '';
     safely(() => {
@@ -72,5 +74,5 @@ export function mountLivePractice(root, session, { onRestart = () => {}, onHome 
   };
   for (const [name, handler] of Object.entries(handlers)) root.addEventListener(name, handler);
   render();
-  return { dispose() { for (const [name, handler] of Object.entries(handlers)) root.removeEventListener(name, handler); } };
+  return { dispose() { keyboard.dispose(); for (const [name, handler] of Object.entries(handlers)) root.removeEventListener(name, handler); } };
 }
