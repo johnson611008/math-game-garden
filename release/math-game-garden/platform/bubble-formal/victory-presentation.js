@@ -1,0 +1,19 @@
+import {browserStore} from './store.js';
+import {verifyOutcome} from './victory-gate.js';
+export function mountVictory({onReturn,onError,reduced=()=>false}){
+ const modal=document.createElement('dialog');modal.id='victory-dialog';modal.setAttribute('aria-label','花栗鼠勝利之舞');
+ const bar=document.createElement('div');bar.className='victory-toolbar';const heading=document.createElement('strong');heading.textContent='達標慶典';const exit=document.createElement('button');exit.id='victory-exit';exit.textContent='跳過動畫，查看成果';bar.append(heading,exit);const host=document.createElement('div');host.className='victory-host';modal.append(bar,host);document.body.append(modal);
+ let frame=null,encourage=null,timer=null,nonce=null,request=0,expected=null;
+ const fresh=async()=>{const reader=browserStore();return reader.load();};
+ async function check(value){return verifyOutcome(fresh,value);}
+ function removeFrame(){clearTimeout(timer);if(frame){frame.contentWindow?.postMessage({type:'victory-dispose',nonce},location.origin);frame._dispose?.();frame.remove();frame=null;}host.replaceChildren();nonce=null;}
+ function finish(){request++;removeFrame();if(modal.open)modal.close();onReturn();}
+ exit.onclick=finish;modal.oncancel=e=>{e.preventDefault();finish();};
+ function wireFrame(target,mode,token,onReady){const salt=crypto.randomUUID();let deadline;const receive=e=>{if(e.origin!==location.origin||e.source!==target.contentWindow||!e.data)return;if(e.data.type==='victory-ready'){target.contentWindow.postMessage({type:'victory-init',nonce:salt,mode,reduced:reduced()},location.origin);}else if(e.data.nonce===salt&&e.data.type==='victory-started'){clearTimeout(deadline);target.style.visibility='visible';onReady?.();}else if(e.data.nonce===salt&&e.data.type==='victory-finished'&&mode==='play'&&token===request)finish();};
+  addEventListener('message',receive);target.addEventListener('load',()=>{if(mode==='play')nonce=salt;});deadline=setTimeout(()=>{if(target.isConnected){target.remove();removeEventListener('message',receive);if(mode==='play'&&token===request){if(modal.open)modal.close();onError('慶祝素材載入逾時，正式成果仍已保存。');onReturn();}}},20000);target._dispose=()=>{clearTimeout(deadline);removeEventListener('message',receive);};return salt;}
+ const makeFrame=()=>{const f=document.createElement('iframe');f.title='森林夥伴慶祝畫面';f.src=new URL('../bubble-victory-demo/',import.meta.url).href;f.style.visibility='hidden';return f;};
+ async function play(value){const token=++request;expected=value;try{const outcome=await check(value);if(token!==request)return false;if(!outcome.eligible){onError('正式達標結算尚未確認，沒有播放勝利動畫。');return false;}if(encourage){encourage._dispose?.();encourage.remove();encourage=null;}removeFrame();frame=makeFrame();nonce=wireFrame(frame,'play',token);host.append(frame);const results=document.getElementById('result-dialog');if(results.open)results.close();modal.showModal();return true;}catch(e){onError('無法確認正式結算：'+e.message);return false;}}
+ async function refresh(value){const token=++request;expected=value;document.getElementById('victory-replay').hidden=true;const box=document.getElementById('encouragement');box.hidden=true;if(encourage){encourage._dispose?.();encourage.remove();encourage=null;}try{const outcome=await check(value);if(token!==request)return outcome;document.getElementById('victory-replay').hidden=!outcome.eligible;if(outcome.needsRemediation){box.hidden=false;encourage=makeFrame();encourage.title='森林夥伴鼓勵你繼續練習';wireFrame(encourage,'encourage',token);const caption=document.createElement('p');caption.textContent='森林夥伴陪你一起練習！先補充根式能量，再回來挑戰。';box.replaceChildren(caption,encourage);}return outcome;}catch(e){onError('成果權威驗證尚未完成：'+e.message);return null;}}
+ document.getElementById('victory-replay').onclick=()=>expected&&play(expected);
+ return {play,refresh,close:finish};
+}

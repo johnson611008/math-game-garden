@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "siteBase": "/math-game-garden/",
   "plannedURL": "https://johnson611008.github.io/math-game-garden/",
-  "buildId": "58fe647367bd571e95b8e4b0526d81cb39ccbdb2e73926c1331eebd5b37a6b25",
+  "buildId": "0d7b41c1b369c1a2f9131921cba0f4b15c11e2525f15baf85ac555462992b8e9",
   "files": [
     {
       "path": ".nojekyll",
@@ -13,10 +13,218 @@
     },
     {
       "path": "index.html",
-      "bytes": 3723,
-      "sha256": "d1affa47f64e82d7410e01662e19f0b5e8b82cf138ed4779bed747184aafb7e1",
+      "bytes": 3757,
+      "sha256": "4a345f0fe62c756b564e740694c29f913665e33756483d2d393cb673ea8f8598",
       "source": "generated-root-garden",
       "transformed": true
+    },
+    {
+      "path": "platform/bubble-demo/aim-guide.js",
+      "bytes": 2486,
+      "sha256": "f33c4c95943e8aac42914c639fca8331619bc5e35dfe9575c751f74513c05b02",
+      "source": "platform/bubble-demo/aim-guide.js",
+      "sourceSHA256": "f33c4c95943e8aac42914c639fca8331619bc5e35dfe9575c751f74513c05b02",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-demo/assets/forest.png",
+      "bytes": 2776134,
+      "sha256": "fec4e289e7879d4b780493ceca294e18d34d1795f78315b9594d4dfc0f5f9b8e",
+      "source": "platform/bubble-demo/assets/forest.png",
+      "sourceSHA256": "fec4e289e7879d4b780493ceca294e18d34d1795f78315b9594d4dfc0f5f9b8e",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-demo/b/style.css",
+      "bytes": 11020,
+      "sha256": "2c5ca760064357411addcc652b3064b2aca34cc5c21e9c34f334a2a7ad373ffe",
+      "source": "platform/bubble-demo/b/style.css",
+      "sourceSHA256": "2c5ca760064357411addcc652b3064b2aca34cc5c21e9c34f334a2a7ad373ffe",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-demo/descent.js",
+      "bytes": 740,
+      "sha256": "dfe1da5f05e4636b0f8ee74f74670dffbae0dc4a153d37ad62b2e639a3448956",
+      "source": "platform/bubble-demo/descent.js",
+      "sourceSHA256": "dfe1da5f05e4636b0f8ee74f74670dffbae0dc4a153d37ad62b2e639a3448956",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-demo/engine.js",
+      "bytes": 6462,
+      "sha256": "fecb42e121b3d12c2034de5b7fa4469a3e268a16e09e2a4b57da816d45e7186c",
+      "source": "platform/bubble-demo/engine.js",
+      "sourceSHA256": "fecb42e121b3d12c2034de5b7fa4469a3e268a16e09e2a4b57da816d45e7186c",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-demo/operator.js",
+      "bytes": 1704,
+      "sha256": "e93415bfbf47330f42817ce3fb513302013d1df7929c1665c36d97178bea3814",
+      "source": "platform/bubble-demo/operator.js",
+      "sourceSHA256": "e93415bfbf47330f42817ce3fb513302013d1df7929c1665c36d97178bea3814",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-demo/render.js",
+      "bytes": 4174,
+      "sha256": "d309976cf121fb4751ccc6354062ede406527a38e8f06e196a01fee186bec508",
+      "source": "platform/bubble-demo/render.js",
+      "sourceSHA256": "d309976cf121fb4751ccc6354062ede406527a38e8f06e196a01fee186bec508",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-demo/style.css",
+      "bytes": 4853,
+      "sha256": "443214047a2865e7c64f07633d1b2814fae16ae204cc78e0ea2e52c1444fc677",
+      "source": "platform/bubble-demo/style.css",
+      "sourceSHA256": "443214047a2865e7c64f07633d1b2814fae16ae204cc78e0ea2e52c1444fc677",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/index.html",
+      "bytes": 5735,
+      "sha256": "eabaf5734e0267929e16d01b53612669ede9b861c008a0b51646e43137781165",
+      "source": "platform/bubble-formal/index.html",
+      "sourceSHA256": "b12a762f157aa56b6139ee9ac6e11862028e80d0a022ddd024f3d9c94a898152",
+      "transformed": true
+    },
+    {
+      "path": "platform/bubble-formal/main.js",
+      "bytes": 15694,
+      "sha256": "ec2ae8a64e2f3c3ad0293c0d59af82e18c72f00ad2ee4697460aa56683544400",
+      "source": "platform/bubble-formal/main.js",
+      "sourceSHA256": "ec2ae8a64e2f3c3ad0293c0d59af82e18c72f00ad2ee4697460aa56683544400",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/questions.js",
+      "bytes": 3772,
+      "sha256": "ea971b838a42f84308f8ebe7a16dc126b0c54dbe9ecc7242f997627c429af382",
+      "source": "platform/bubble-formal/questions.js",
+      "sourceSHA256": "ea971b838a42f84308f8ebe7a16dc126b0c54dbe9ecc7242f997627c429af382",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/session.js",
+      "bytes": 1829,
+      "sha256": "81db84618e039b8b5f64c28d0beff576ae0cdff2d360f8e9b722149c85017b54",
+      "source": "platform/bubble-formal/session.js",
+      "sourceSHA256": "81db84618e039b8b5f64c28d0beff576ae0cdff2d360f8e9b722149c85017b54",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/stages.js",
+      "bytes": 350,
+      "sha256": "8a88f8ee5c5bdb06affca5b128b12933c4f71222b2caede7187a5fd74cd504d2",
+      "source": "platform/bubble-formal/stages.js",
+      "sourceSHA256": "8a88f8ee5c5bdb06affca5b128b12933c4f71222b2caede7187a5fd74cd504d2",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/state.js",
+      "bytes": 4695,
+      "sha256": "7f81856a58cafe4b66046b6ab0713d34a7d01cfe07091e59bf672da69df38fcb",
+      "source": "platform/bubble-formal/state.js",
+      "sourceSHA256": "7f81856a58cafe4b66046b6ab0713d34a7d01cfe07091e59bf672da69df38fcb",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/store.js",
+      "bytes": 5453,
+      "sha256": "be18b9ea15dc20f92046579175f637868024ab86986188f59c835ec650fdb52c",
+      "source": "platform/bubble-formal/store.js",
+      "sourceSHA256": "be18b9ea15dc20f92046579175f637868024ab86986188f59c835ec650fdb52c",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/style.css",
+      "bytes": 2246,
+      "sha256": "d8ecd756b6b9703933ec8ffc5f82b2542363174cbaed9e4339f94fd7262f0ed7",
+      "source": "platform/bubble-formal/style.css",
+      "sourceSHA256": "d8ecd756b6b9703933ec8ffc5f82b2542363174cbaed9e4339f94fd7262f0ed7",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/victory-gate.js",
+      "bytes": 793,
+      "sha256": "b24f51f661a17f2b7abb04e1db4b91548a0022b5a67b7e865e8971a71898e040",
+      "source": "platform/bubble-formal/victory-gate.js",
+      "sourceSHA256": "b24f51f661a17f2b7abb04e1db4b91548a0022b5a67b7e865e8971a71898e040",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/victory-presentation.js",
+      "bytes": 4066,
+      "sha256": "2129e55d3a09226de1bab2b444c8b98b8c6b1ad35192eeffe37853b786509c83",
+      "source": "platform/bubble-formal/victory-presentation.js",
+      "sourceSHA256": "2129e55d3a09226de1bab2b444c8b98b8c6b1ad35192eeffe37853b786509c83",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-formal/world.js",
+      "bytes": 4951,
+      "sha256": "c9c06ab5da53be0aacf8603a62702168b0fc3c97ed3016f1f0bd2eb0bc53001d",
+      "source": "platform/bubble-formal/world.js",
+      "sourceSHA256": "c9c06ab5da53be0aacf8603a62702168b0fc3c97ed3016f1f0bd2eb0bc53001d",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-victory-demo/assets/celebration-atlas.png",
+      "bytes": 2599283,
+      "sha256": "a5345f6442a170ee8b43c9487438016a58b61a50b74cf7ce02bc04aaa5350533",
+      "source": "platform/bubble-victory-demo/assets/celebration-atlas.png",
+      "sourceSHA256": "a5345f6442a170ee8b43c9487438016a58b61a50b74cf7ce02bc04aaa5350533",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-victory-demo/assets/frames.json",
+      "bytes": 8306,
+      "sha256": "0094b502c48614892ce5b58140f3ccde665dbe1f16db5eb55c521584f7244cb4",
+      "source": "platform/bubble-victory-demo/assets/frames.json",
+      "sourceSHA256": "0094b502c48614892ce5b58140f3ccde665dbe1f16db5eb55c521584f7244cb4",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-victory-demo/embed.js",
+      "bytes": 897,
+      "sha256": "682fdd2ea2c89cbbc400c1e34852fe9ff1b06b2f89f15bd7006c7f20f57d736a",
+      "source": "platform/bubble-victory-demo/embed.js",
+      "sourceSHA256": "682fdd2ea2c89cbbc400c1e34852fe9ff1b06b2f89f15bd7006c7f20f57d736a",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-victory-demo/index.html",
+      "bytes": 2153,
+      "sha256": "2fc1daae0ab8b7e6439bf7ed6b96c6ef684b45f79ab702eae1d6cd0c6941c6ca",
+      "source": "platform/bubble-victory-demo/index.html",
+      "sourceSHA256": "722f5ea47c50b5ffde56425f396a421c0320383ccfc20750448d806ed638b236",
+      "transformed": true
+    },
+    {
+      "path": "platform/bubble-victory-demo/main.js",
+      "bytes": 10496,
+      "sha256": "203dd37c5476f566d8d3e5befa52b83c3dea3afe5effe0517b36f71dc141e6a4",
+      "source": "platform/bubble-victory-demo/main.js",
+      "sourceSHA256": "203dd37c5476f566d8d3e5befa52b83c3dea3afe5effe0517b36f71dc141e6a4",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-victory-demo/style.css",
+      "bytes": 4260,
+      "sha256": "7c34f4a5ec4a0a36218c924f641932338a06399f45b5f2902b80eefa20c55884",
+      "source": "platform/bubble-victory-demo/style.css",
+      "sourceSHA256": "7c34f4a5ec4a0a36218c924f641932338a06399f45b5f2902b80eefa20c55884",
+      "transformed": false
+    },
+    {
+      "path": "platform/bubble-victory-demo/timeline.js",
+      "bytes": 2092,
+      "sha256": "a593f6fa03ce60d8e88fb87705e2e6e5da7a085fba2fd79352e6862262e4ce61",
+      "source": "platform/bubble-victory-demo/timeline.js",
+      "sourceSHA256": "a593f6fa03ce60d8e88fb87705e2e6e5da7a085fba2fd79352e6862262e4ce61",
+      "transformed": false
     },
     {
       "path": "platform/game-garden/assets/garden.png",
@@ -115,6 +323,14 @@
       "transformed": false
     },
     {
+      "path": "platform/game-garden/assets/reference/scene-2-unlocked.png",
+      "bytes": 1764625,
+      "sha256": "be40ed1ead0c71e57bc654386fd33390aac2ed0e5e34dbc0ca7b82ba74dc481e",
+      "source": "platform/game-garden/assets/reference/scene-2-unlocked.png",
+      "sourceSHA256": "be40ed1ead0c71e57bc654386fd33390aac2ed0e5e34dbc0ca7b82ba74dc481e",
+      "transformed": false
+    },
+    {
       "path": "platform/game-garden/assets/reference/scene-2.png",
       "bytes": 75377,
       "sha256": "b800ad9c9ff68cc8b96d83ec446c649e3e751a4656d6c9c8091cc943cb236fb0",
@@ -180,11 +396,11 @@
     },
     {
       "path": "platform/game-garden/config.js",
-      "bytes": 1207,
-      "sha256": "76cfd8ff3a021d211f0b86d83b65132c5fcfbde801d58ee7a30c5569c15419ef",
+      "bytes": 1286,
+      "sha256": "4cbb129f595d98bba0df3f1568a2936067413d26a32f04d6ea79153612318cb4",
       "source": "platform/game-garden/config.js",
-      "sourceSHA256": "ed00513d7652f135d7c17b1662dac86624a6e8862cb9b605b9b232e0559ff651",
-      "transformed": true
+      "sourceSHA256": "4cbb129f595d98bba0df3f1568a2936067413d26a32f04d6ea79153612318cb4",
+      "transformed": false
     },
     {
       "path": "platform/game-garden/fidelity.css",
@@ -196,18 +412,18 @@
     },
     {
       "path": "platform/game-garden/index.html",
-      "bytes": 3686,
-      "sha256": "52eb5fee62f96deaeb0808d3f6b1007cb8d082c08dd42c28313d974ed1fe6bbe",
+      "bytes": 3720,
+      "sha256": "f678ce6e2dda502d5628a93602f5d71744a0336f328a4bb05a5bf5ed47fcd5e0",
       "source": "platform/game-garden/index.html",
-      "sourceSHA256": "d0e596444edd6d256c77213442c98975366f5c733323536dd5a771615e459b68",
+      "sourceSHA256": "bbe2a65f44938ab84566b24620026c22444d3a6eefda77b6bdfd99bf37d49875",
       "transformed": true
     },
     {
       "path": "platform/game-garden/main.js",
-      "bytes": 2700,
-      "sha256": "c3995998444cf76ab72b66bf670fe40d8bb81ac427a098edaa070fc2f7ce796c",
+      "bytes": 2763,
+      "sha256": "aa032833490e526ed14364b60d4bfc0486d3bf338c6bf09e356c252e368542c2",
       "source": "platform/game-garden/main.js",
-      "sourceSHA256": "c3995998444cf76ab72b66bf670fe40d8bb81ac427a098edaa070fc2f7ce796c",
+      "sourceSHA256": "aa032833490e526ed14364b60d4bfc0486d3bf338c6bf09e356c252e368542c2",
       "transformed": false
     },
     {
@@ -228,8 +444,8 @@
     },
     {
       "path": "platform/index.html",
-      "bytes": 3714,
-      "sha256": "94cadc24a686db4061174a2078d7cf284d6708cdfe13088a535a15b288b2b8fe",
+      "bytes": 3748,
+      "sha256": "02a653f4c00935cd197cc03df8367c355171d573768a7b36f485dfd52217a9a7",
       "source": "generated-platform-garden",
       "transformed": true
     },
@@ -699,10 +915,10 @@
     },
     {
       "path": "platform/mole-formal/main.js",
-      "bytes": 8917,
-      "sha256": "1e4f46446cf58a2cdb2096e4a66574376bffdebc926c11f069ac109dd8e3cf13",
+      "bytes": 8802,
+      "sha256": "dd37422490222e295b0d32a82396d5635c333858ee9396f8c4ba3fe06255c1a9",
       "source": "platform/mole-formal/main.js",
-      "sourceSHA256": "1e4f46446cf58a2cdb2096e4a66574376bffdebc926c11f069ac109dd8e3cf13",
+      "sourceSHA256": "dd37422490222e295b0d32a82396d5635c333858ee9396f8c4ba3fe06255c1a9",
       "transformed": false
     },
     {
@@ -715,10 +931,10 @@
     },
     {
       "path": "platform/mole-formal/remediation-main.js",
-      "bytes": 8313,
-      "sha256": "77c22d7977e08ba3d3ba5a128d4c810b11f85bc061350561e9a2100ab6700b72",
+      "bytes": 8325,
+      "sha256": "4a35d7f98f005c1697b42d62806a3a6a558d7baeaceb6f1d45e1a8896f6d204a",
       "source": "platform/mole-formal/remediation-main.js",
-      "sourceSHA256": "77c22d7977e08ba3d3ba5a128d4c810b11f85bc061350561e9a2100ab6700b72",
+      "sourceSHA256": "4a35d7f98f005c1697b42d62806a3a6a558d7baeaceb6f1d45e1a8896f6d204a",
       "transformed": false
     },
     {
@@ -1154,6 +1370,14 @@
       "transformed": false
     },
     {
+      "path": "platform/src/ui/remediation-entry.js",
+      "bytes": 3295,
+      "sha256": "6bb0b2c419b09ce1cf889e499ca37ff4f6d8c396f62574311a66394b33ab3281",
+      "source": "platform/src/ui/remediation-entry.js",
+      "sourceSHA256": "6bb0b2c419b09ce1cf889e499ca37ff4f6d8c396f62574311a66394b33ab3281",
+      "transformed": false
+    },
+    {
       "path": "platform/styles/math-keyboard.css",
       "bytes": 474,
       "sha256": "042780ba88d5ebc3a90e9b040e3e0ecd46e12a9bdb372a396c695b9bc96c996b",
@@ -1178,11 +1402,51 @@
       "transformed": false
     },
     {
+      "path": "platform/unit-three/index.html",
+      "bytes": 2694,
+      "sha256": "555e6727459430b977d23919c3dd465c65f992946d50e4247b3fe63dffc6e29b",
+      "source": "platform/unit-three/index.html",
+      "sourceSHA256": "4850addd9a02bfb8f04570514bb730b09555e30d330884604077d9dc367f177b",
+      "transformed": true
+    },
+    {
+      "path": "platform/unit-three/learning.js",
+      "bytes": 7712,
+      "sha256": "8cd0d513c29cdeffcb5de58b8b303375d4ca03bfbdf1e3df6f6ab95fc49a1f06",
+      "source": "platform/unit-three/learning.js",
+      "sourceSHA256": "8cd0d513c29cdeffcb5de58b8b303375d4ca03bfbdf1e3df6f6ab95fc49a1f06",
+      "transformed": false
+    },
+    {
+      "path": "platform/unit-three/main.js",
+      "bytes": 9527,
+      "sha256": "5859fbb6f931fbcf50b2a0f8d6f19733020568bea71ec2ac087eafdfdcfd66e2",
+      "source": "platform/unit-three/main.js",
+      "sourceSHA256": "5859fbb6f931fbcf50b2a0f8d6f19733020568bea71ec2ac087eafdfdcfd66e2",
+      "transformed": false
+    },
+    {
+      "path": "platform/unit-three/remediation.html",
+      "bytes": 2652,
+      "sha256": "c8951ab7aaaf12e380ca0a320c9ba4dc8d59ef82d326b57191c5332c8f22220a",
+      "source": "platform/unit-three/remediation.html",
+      "sourceSHA256": "ce5fcfe0a00efb8a4182cc7c9a7c5532ad5d317db8b9748df984fb63571e309e",
+      "transformed": true
+    },
+    {
+      "path": "platform/unit-three/style.css",
+      "bytes": 1717,
+      "sha256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
+      "source": "platform/unit-three/style.css",
+      "sourceSHA256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
+      "transformed": false
+    },
+    {
       "path": "platform/unit-two/factory-links.js",
-      "bytes": 1301,
-      "sha256": "3298e6e08ba27592a412ae758d221383bbcdf97d6579c713f0a5d279c2707272",
+      "bytes": 623,
+      "sha256": "06c7ab4cd9e78fa5c260f320d3066b8c1bb97f580ed497b87ce0b8de0c961450",
       "source": "platform/unit-two/factory-links.js",
-      "sourceSHA256": "3298e6e08ba27592a412ae758d221383bbcdf97d6579c713f0a5d279c2707272",
+      "sourceSHA256": "06c7ab4cd9e78fa5c260f320d3066b8c1bb97f580ed497b87ce0b8de0c961450",
       "transformed": false
     },
     {

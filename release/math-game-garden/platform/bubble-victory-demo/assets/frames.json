@@ -1,0 +1,506 @@
+{
+  "source": "歡樂動物慶典動畫精靈表格.png",
+  "sourceSHA256": "a5345f6442a170ee8b43c9487438016a58b61a50b74cf7ce02bc04aaa5350533",
+  "width": 1536,
+  "height": 1024,
+  "threshold": 160,
+  "edgeRadius": 3,
+  "minimumEdgeAlpha": 32,
+  "frames": [
+    {
+      "label": 5,
+      "actor": "red",
+      "box": [
+        17,
+        80,
+        254,
+        285
+      ],
+      "footX": 181.03,
+      "footY": 285,
+      "solidPixels": 31046,
+      "index": 0,
+      "action": "idle"
+    },
+    {
+      "label": 1,
+      "actor": "red",
+      "box": [
+        256,
+        62,
+        467,
+        269
+      ],
+      "footX": 396.79,
+      "footY": 269,
+      "solidPixels": 26371,
+      "index": 1,
+      "action": "jump"
+    },
+    {
+      "label": 4,
+      "actor": "red",
+      "box": [
+        471,
+        77,
+        615,
+        290
+      ],
+      "footX": 531.77,
+      "footY": 290,
+      "solidPixels": 19478,
+      "index": 2,
+      "action": "walk"
+    },
+    {
+      "label": 8,
+      "actor": "red",
+      "box": [
+        619,
+        86,
+        796,
+        286
+      ],
+      "footX": 735.04,
+      "footY": 286,
+      "solidPixels": 21020,
+      "index": 3,
+      "action": "side-back"
+    },
+    {
+      "label": 9,
+      "actor": "red",
+      "box": [
+        797,
+        87,
+        990,
+        289
+      ],
+      "footX": 892.68,
+      "footY": 289,
+      "solidPixels": 23405,
+      "index": 4,
+      "action": "clap"
+    },
+    {
+      "label": 10,
+      "actor": "red",
+      "box": [
+        996,
+        87,
+        1166,
+        279
+      ],
+      "footX": 1083.76,
+      "footY": 279,
+      "solidPixels": 18403,
+      "index": 5,
+      "action": "laugh"
+    },
+    {
+      "label": 14,
+      "actor": "red",
+      "box": [
+        1150,
+        101,
+        1320,
+        288
+      ],
+      "footX": 1214,
+      "footY": 288,
+      "solidPixels": 19666,
+      "index": 6,
+      "action": "cheer"
+    },
+    {
+      "label": 15,
+      "actor": "red",
+      "box": [
+        1354,
+        102,
+        1529,
+        288
+      ],
+      "footX": 1452.04,
+      "footY": 288,
+      "solidPixels": 20205,
+      "index": 7,
+      "action": "victory"
+    },
+    {
+      "label": 22,
+      "actor": "blue",
+      "box": [
+        11,
+        310,
+        189,
+        530
+      ],
+      "footX": 125.13,
+      "footY": 530,
+      "solidPixels": 25787,
+      "index": 0,
+      "action": "idle"
+    },
+    {
+      "label": 23,
+      "actor": "blue",
+      "box": [
+        196,
+        314,
+        422,
+        543
+      ],
+      "footX": 335.35,
+      "footY": 543,
+      "solidPixels": 31826,
+      "index": 1,
+      "action": "hop"
+    },
+    {
+      "label": 24,
+      "actor": "blue",
+      "box": [
+        416,
+        316,
+        621,
+        538
+      ],
+      "footX": 566,
+      "footY": 538,
+      "solidPixels": 29457,
+      "index": 2,
+      "action": "clap"
+    },
+    {
+      "label": 31,
+      "actor": "blue",
+      "box": [
+        638,
+        339,
+        862,
+        547
+      ],
+      "footX": 731.39,
+      "footY": 547,
+      "solidPixels": 28507,
+      "index": 3,
+      "action": "turn-front"
+    },
+    {
+      "label": 28,
+      "actor": "blue",
+      "box": [
+        865,
+        331,
+        1002,
+        546
+      ],
+      "footX": 933.58,
+      "footY": 546,
+      "solidPixels": 19864,
+      "index": 4,
+      "action": "turn-back"
+    },
+    {
+      "label": 30,
+      "actor": "blue",
+      "box": [
+        997,
+        336,
+        1167,
+        546
+      ],
+      "footX": 1111.7,
+      "footY": 546,
+      "solidPixels": 24512,
+      "index": 5,
+      "action": "turn-side"
+    },
+    {
+      "label": 27,
+      "actor": "blue",
+      "box": [
+        1168,
+        330,
+        1355,
+        547
+      ],
+      "footX": 1277.59,
+      "footY": 547,
+      "solidPixels": 25524,
+      "index": 6,
+      "action": "clap"
+    },
+    {
+      "label": 33,
+      "actor": "blue",
+      "box": [
+        1359,
+        352,
+        1529,
+        545
+      ],
+      "footX": 1447.38,
+      "footY": 545,
+      "solidPixels": 21426,
+      "index": 7,
+      "action": "victory"
+    },
+    {
+      "label": 40,
+      "actor": "pink",
+      "box": [
+        10,
+        560,
+        188,
+        753
+      ],
+      "footX": 119.76,
+      "footY": 753,
+      "solidPixels": 22195,
+      "index": 0,
+      "action": "clap"
+    },
+    {
+      "label": 44,
+      "actor": "pink",
+      "box": [
+        186,
+        571,
+        343,
+        759
+      ],
+      "footX": 280.15,
+      "footY": 759,
+      "solidPixels": 19753,
+      "index": 1,
+      "action": "clap"
+    },
+    {
+      "label": 43,
+      "actor": "pink",
+      "box": [
+        370,
+        569,
+        536,
+        759
+      ],
+      "footX": 450.82,
+      "footY": 759,
+      "solidPixels": 19662,
+      "index": 2,
+      "action": "clap-rest"
+    },
+    {
+      "label": 39,
+      "actor": "pink",
+      "box": [
+        539,
+        556,
+        683,
+        745
+      ],
+      "footX": 610.38,
+      "footY": 745,
+      "solidPixels": 17600,
+      "index": 3,
+      "action": "dance"
+    },
+    {
+      "label": 45,
+      "actor": "pink",
+      "box": [
+        694,
+        572,
+        884,
+        762
+      ],
+      "footX": 803.85,
+      "footY": 762,
+      "solidPixels": 23034,
+      "index": 4,
+      "action": "cheer"
+    },
+    {
+      "label": 37,
+      "actor": "pink",
+      "box": [
+        891,
+        549,
+        1041,
+        752
+      ],
+      "footX": 960.73,
+      "footY": 752,
+      "solidPixels": 17903,
+      "index": 5,
+      "action": "side"
+    },
+    {
+      "label": 42,
+      "actor": "pink",
+      "box": [
+        1050,
+        565,
+        1199,
+        758
+      ],
+      "footX": 1129.85,
+      "footY": 758,
+      "solidPixels": 17384,
+      "index": 6,
+      "action": "dance"
+    },
+    {
+      "label": 49,
+      "actor": "pink",
+      "box": [
+        1202,
+        579,
+        1370,
+        758
+      ],
+      "footX": 1291.67,
+      "footY": 758,
+      "solidPixels": 17969,
+      "index": 7,
+      "action": "clap"
+    },
+    {
+      "label": 48,
+      "actor": "pink",
+      "box": [
+        1383,
+        577,
+        1526,
+        759
+      ],
+      "footX": 1461.01,
+      "footY": 759,
+      "solidPixels": 15826,
+      "index": 8,
+      "action": "victory"
+    },
+    {
+      "label": 62,
+      "actor": "mole",
+      "box": [
+        10,
+        793,
+        169,
+        951
+      ],
+      "footX": 88.38,
+      "footY": 951,
+      "solidPixels": 19030,
+      "index": 0,
+      "action": "idle"
+    },
+    {
+      "label": 61,
+      "actor": "mole",
+      "box": [
+        174,
+        790,
+        353,
+        957
+      ],
+      "footX": 262.08,
+      "footY": 957,
+      "solidPixels": 21633,
+      "index": 1,
+      "action": "cheer"
+    },
+    {
+      "label": 64,
+      "actor": "mole",
+      "box": [
+        360,
+        801,
+        532,
+        946
+      ],
+      "footX": 445.62,
+      "footY": 946,
+      "solidPixels": 17410,
+      "index": 2,
+      "action": "idle"
+    },
+    {
+      "label": 63,
+      "actor": "mole",
+      "box": [
+        543,
+        795,
+        707,
+        949
+      ],
+      "footX": 624.6,
+      "footY": 949,
+      "solidPixels": 18758,
+      "index": 3,
+      "action": "clap"
+    },
+    {
+      "label": 65,
+      "actor": "mole",
+      "box": [
+        715,
+        804,
+        889,
+        956
+      ],
+      "footX": 793.88,
+      "footY": 956,
+      "solidPixels": 17635,
+      "index": 4,
+      "action": "side-left"
+    },
+    {
+      "label": 69,
+      "actor": "mole",
+      "box": [
+        902,
+        808,
+        1099,
+        958
+      ],
+      "footX": 1002.96,
+      "footY": 958,
+      "solidPixels": 19150,
+      "index": 5,
+      "action": "side-right"
+    },
+    {
+      "label": 68,
+      "actor": "mole",
+      "box": [
+        1111,
+        806,
+        1293,
+        957
+      ],
+      "footX": 1203.39,
+      "footY": 957,
+      "solidPixels": 19338,
+      "index": 6,
+      "action": "cheer"
+    },
+    {
+      "label": 59,
+      "actor": "mole",
+      "box": [
+        1314,
+        788,
+        1522,
+        960
+      ],
+      "footX": 1411.95,
+      "footY": 960,
+      "solidPixels": 24130,
+      "index": 7,
+      "action": "victory"
+    }
+  ]
+}

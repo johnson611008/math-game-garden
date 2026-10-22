@@ -2,8 +2,9 @@ import {createGarden} from './garden.js';
 import {browserStore} from './store.js';
 import {STAGES,display} from './questions.js';
 import {summary} from './state.js';
+import {mountRemediationEntry} from '../src/ui/remediation-entry.js';
 const $=id=>document.getElementById(id),canvas=$('garden'),garden=createGarden(canvas),store=browserStore(),tags=[];
-const remediationLink=document.createElement('a');remediationLink.id='mole-remediation-entry';remediationLink.href='remediation.html';remediationLink.textContent='前往根式化簡指定補救（十題）';remediationLink.hidden=true;$('results').after(remediationLink);
+const updateRemediation=mountRemediationEntry({anchor:$('ending').querySelector('h2'),href:'remediation.html',linkId:'mole-remediation-entry'});
 let loaded=false,busy=false,last=0,selected=null,renderedPhase='',reduced=matchMedia('(prefers-reduced-motion: reduce)').matches,cachedView=store.view();
 const state=()=>cachedView.state;
 const formula=s=>{const m=/^(\d*)sqrt\((\d+)\)$/.exec(s);return m?`${m[1]}<span class="radical">√<span class="radicand">${m[2]}</span></span>`:String(Number(s));};
@@ -11,7 +12,8 @@ function questionHTML(q){const rad=q.powers?q.powers.map(([b,e])=>`${b}<sup>${e}
 function syncScene(){const s=state();garden.reset();selected=null;if(!s)return;garden.setStage(s.questions[s.index].stage);if(s.phase==='choosing')garden.show();renderedPhase=s.phase;}
 function update(){const v=store.view();cachedView=v;const s=v.state,locked=busy||v.readOnly||!loaded,q=s?.questions[s.index],t=s?summary(s):null;
  const required=s?.phase==='settled'&&!s.settlement.passed;
- $('start').hidden=!!s;$('start').disabled=locked;$('start').textContent='開始五關';$('again').disabled=locked||required&&!v.unlock;remediationLink.hidden=!required||!!v.unlock;remediationLink.setAttribute('aria-disabled',String(locked));$('pause').hidden=!s||s.phase==='settled';$('pause').textContent=s?.phase==='paused'?'繼續':'暫停';$('pause').disabled=locked||['correct-feedback','wrong-feedback'].includes(s?.phase);
+ updateRemediation(v,{required,roundId:s?.id});
+ $('start').hidden=!!s;$('start').disabled=locked;$('start').textContent='開始五關';$('again').disabled=locked||required&&!v.unlock;$('pause').hidden=!s||s.phase==='settled';$('pause').textContent=s?.phase==='paused'?'繼續':'暫停';$('pause').disabled=locked||['correct-feedback','wrong-feedback'].includes(s?.phase);
  $('ready').hidden=s?.phase!=='thinking';$('next').hidden=s?.phase!=='stage-complete';$('settle').hidden=s?.phase!=='awaiting-settlement';for(const id of ['ready','next','settle'])$(id).disabled=locked;
  $('ending').hidden=s?.phase!=='settled';document.querySelector('.question-board').hidden=s?.phase==='settled';
  $('progress').textContent=s?`第 ${q.stage} 關 · ${STAGES[q.stage-1]} · ${s.index+1}／15 題`:'五關十五題 · 首次答對 12 題達標';

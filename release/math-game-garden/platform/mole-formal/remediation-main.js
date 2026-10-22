@@ -9,7 +9,7 @@ root.innerHTML=liveTemplate();root.querySelector('.records-tools').remove();root
 $('practice-title').textContent='根式化簡指定補救';root.querySelector('.demo-tag').textContent='指定補救';root.querySelector('#completion-view > p').textContent='這是綁定原挑戰的補救紀錄；首次結果永久保留。';
 const keyboard=mountMathKeyboard(root,root.querySelectorAll('input[data-field]'),$('symbol-keypad'));
 const current=()=>view.learning.attempts.find(a=>a.attemptId===selected)||view.learning.attempts.at(-1),question=()=>current()?.attempt.questions[current().index];
-const dirty=()=>!!local&&JSON.stringify(local)!==JSON.stringify(current()?.drafts[current().index]);
+const dirty=()=>!!current()&&!!local&&JSON.stringify(local)!==JSON.stringify(current().drafts[current().index]);
 function adopt(){const a=current();local=a?structuredClone(a.drafts[a.index]):blank();}
 function render(){const a=current(),locked=busy||view.readOnly;
  $('remediation-status').textContent=busy?'交易確認中，尚未確認保存':view.readOnly?'停止寫入：'+view.status.code:dirty()?'目前修改尚未保存。':`已確認保存 · 挑戰 revision ${view.revision} · 補救 revision ${view.learningRevision}`;
