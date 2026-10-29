@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "workPackage": "WP16",
   "siteBase": "/math-game-garden/",
-  "buildId": "fd132f7d4e175bab65988f3fd026d0b20715b56fc6ed6e8c71998db58909dd16",
+  "buildId": "79e9fa24402c070b8e490152630566901046335545ff38789625b3358717bdb7",
   "files": [
     {
       "path": ".nojekyll",
@@ -78,8 +78,8 @@
     },
     {
       "path": "platform/bubble-formal/main.js",
-      "bytes": 15694,
-      "sha256": "ec2ae8a64e2f3c3ad0293c0d59af82e18c72f00ad2ee4697460aa56683544400",
+      "bytes": 15911,
+      "sha256": "7fb75750685b1d3eea06fa6cd2dfb5e8af59035805012bfa8f7b20aee0859f52",
       "source": "workspaces/WP16/site/platform/bubble-formal/main.js"
     },
     {
@@ -108,8 +108,8 @@
     },
     {
       "path": "platform/bubble-formal/store.js",
-      "bytes": 5453,
-      "sha256": "be18b9ea15dc20f92046579175f637868024ab86986188f59c835ec650fdb52c",
+      "bytes": 5812,
+      "sha256": "6c5b0b2ffb8e7003a5453177bbd465819f347ab1edd0ed5f7c9ba4fd105e01c4",
       "source": "workspaces/WP16/site/platform/bubble-formal/store.js"
     },
     {
@@ -444,8 +444,8 @@
     },
     {
       "path": "platform/game-garden/main.js",
-      "bytes": 5182,
-      "sha256": "a8b29495893cbd36e8a14fcb8e76a73e5e9d9f6389e68aaf4e719b9091393488",
+      "bytes": 5198,
+      "sha256": "2671b934c753c268ec2103d3bdbf7e050825651036edca270bcc48a0786021c7",
       "source": "workspaces/WP16/site/platform/game-garden/main.js"
     },
     {
@@ -457,7 +457,7 @@
     {
       "path": "platform/game-garden/resume-ui.js",
       "bytes": 4649,
-      "sha256": "4916c693fc7156c88471f51f5b5058b804e182683c5902506ff32985b80c9d67",
+      "sha256": "7b31b1be23b8cb9c9c08a983ad312e7603ddda44d4491775a6d9d0c0afa5d22b",
       "source": "workspaces/WP16/site/platform/game-garden/resume-ui.js"
     },
     {
@@ -600,8 +600,8 @@
     },
     {
       "path": "platform/marble-formal/main.js",
-      "bytes": 22446,
-      "sha256": "167a509ab521ea1f7157ee09a98f12aea43a88e7c60b68999585cc154c3bbe58",
+      "bytes": 22630,
+      "sha256": "89b5f6b19321c6e57db894101cce96f4a9cdf09ef97c1a5b475a931af355d1f6",
       "source": "workspaces/WP16/site/platform/marble-formal/main.js"
     },
     {
@@ -624,8 +624,8 @@
     },
     {
       "path": "platform/marble-formal/store.js",
-      "bytes": 6235,
-      "sha256": "1d1eeb601cb39f88e4d77dd7714c2e21261bcf5e9fd3c987d1240000ca08386e",
+      "bytes": 6594,
+      "sha256": "26e967fa76e13aac625afd808129d69c4030ff17b33835723b07c8fc4e87c2a6",
       "source": "workspaces/WP16/site/platform/marble-formal/store.js"
     },
     {
@@ -1140,8 +1140,8 @@
     },
     {
       "path": "platform/src/learning/cross-unit-admission.mjs",
-      "bytes": 6043,
-      "sha256": "9e2a9f6e793b0ed27c64d05ad0a82267da9f03ffc349475f27776698866a3872",
+      "bytes": 6071,
+      "sha256": "1631f3ef9449af94f2cc218d813f084b60fc2d8823f4662fda42515b3c4770a0",
       "source": "workspaces/WP16/site/platform/src/learning/cross-unit-admission.mjs"
     },
     {
@@ -1153,7 +1153,7 @@
     {
       "path": "platform/src/learning/resume-learning.mjs",
       "bytes": 4935,
-      "sha256": "7e8b68d500d3c5dce4145ba9411b8ecf5d4880c453e0f66b49b9178886c01fcd",
+      "sha256": "f5514f532dd6c0f36fda192d259529e1d6c72a94e804cc88ecb141b4c9a95bd1",
       "source": "workspaces/WP16/site/platform/src/learning/resume-learning.mjs"
     },
     {

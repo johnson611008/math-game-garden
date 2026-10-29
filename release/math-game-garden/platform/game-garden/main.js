@@ -23,10 +23,10 @@ $('motion').onclick=()=>{reduced=!reduced;motion();};motion();media.addEventList
 // Navigation mirrors the same local authority used by both formal stores.
 const admission=browserAdmission();let admissionRequest=0;
 function showAdmission(target,result){const card=$('game-list').children[target-1],g=games[target-1],old=card.querySelector('.entry'),entry=document.createElement(result.allowed?'a':'span');entry.className='entry';card.classList.toggle('open',result.allowed);card.classList.toggle('locked',!result.allowed);card.classList.add('admission-card');card.dataset.admission=result.code;
- if(result.allowed){entry.href=g.targetPath;entry.textContent='開始／繼續遊戲 →';entry.addEventListener('click',async e=>{e.preventDefault();const current=await admission.check(target);showAdmission(target,current);const destination=card.querySelector('a.entry');if(current.allowed&&destination)location.assign(destination.href);});}
+ if(result.allowed){entry.href=g.targetPath||g.href;entry.textContent='開始／繼續遊戲 →';entry.addEventListener('click',async e=>{e.preventDefault();const current=await admission.check(target);showAdmission(target,current);const destination=card.querySelector('a.entry');if(current.allowed&&destination)location.assign(destination.href);});}
  else{entry.setAttribute('aria-disabled','true');entry.append(document.createTextNode(result.code==='prerequisite-checking'?'確認前置紀錄中':'尚未解鎖'));const small=document.createElement('small');small.textContent=result.errors.length?'前置讀取異常，請重新確認':result.missing.length?'尚缺：第'+result.missing.map(s=>s.unit).join('、')+'單元正式通關':'請稍候';entry.append(small);entry.setAttribute('aria-label',g.name+'，'+small.textContent+'；'+result.errors.map(e=>e.unit+'／'+e.code).join('；'));}
  old.replaceWith(entry);applyHomeNavigation();
 }
-async function refreshAdmission(){const request=++admissionRequest;const result=await admission.both();if(request!==admissionRequest)return;for(const target of[4,5])showAdmission(target,result[target]);document.documentElement.dataset.admissionReady='true';}
-for(const target of[4,5])showAdmission(target,{allowed:false,code:'prerequisite-checking',errors:[],missing:[]});
+async function refreshAdmission(){const request=++admissionRequest;const result=await admission.both();if(request!==admissionRequest)return;for(const target of[2,3,4,5])showAdmission(target,result[target]);document.documentElement.dataset.admissionReady='true';}
+for(const target of[2,3,4,5])showAdmission(target,{allowed:false,code:'prerequisite-checking',errors:[],missing:[]});
 addEventListener('focus',()=>void refreshAdmission());addEventListener('pageshow',()=>void refreshAdmission());document.addEventListener('visibilitychange',()=>{if(!document.hidden)void refreshAdmission();});void refreshAdmission();

@@ -1,3 +1,4 @@
+import {mountAdmissionNotice} from '../src/ui/admission-notice.mjs';
 import {FormalWorld} from './world.js';
 import {Renderer} from '../bubble-demo/render.js';
 import {aim,cell,W,H,R} from '../bubble-demo/engine.js';
@@ -9,6 +10,7 @@ import {editWithSymbol} from '../src/ui/math-input.js';
 import {mountMathKeyboard} from '../src/ui/math-keyboard-focus.js';
 import {mountRemediationEntry} from '../src/ui/remediation-entry.js';
 const $=id=>document.getElementById(id),canvas=$('game'),store=browserStore(),images={};
+const admissionNotice=mountAdmissionNotice({reload:()=>document.getElementById('reload').click(),isBusy:()=>busy});
 const updateRemediation=mountRemediationEntry({anchor:$('result-title'),href:'../unit-three/remediation.html',linkId:'remediation-link',existingLink:$('remediation-link')});
 let view=store.view(),game=new FormalWorld(1),renderer,loaded=false,busy=true,drag=null,direction=aim(300,300),shown=null,reduced=matchMedia('(prefers-reduced-motion:reduce)').matches,muted=true,manualHold=false,confirmedElapsed=0,stopped=false;
 export {game,store};
@@ -28,7 +30,7 @@ async function begin(){if(busy||stopped||!loaded)return;const r=view.state;if(!r
 function records(){const box=$('records');box.replaceChildren();if(!view.state)return;for(const s of Object.values(view.state.slots)){const p=document.createElement('p');p.textContent=`${s.id}：${s.first?(s.first.correct?'首次正確':'首次未正確'):'尚未作答'}；補題 ${Math.max(0,s.attempts.length-1)}；${s.outcome}`;box.append(p);}}
 function showResults({celebrate=false}={}){const r=view.state;if(!r)return;const g=grade(r);$('result-title').textContent=r.phase==='settled'?'五關正式成果':r.phase==='awaiting-settlement'?'五關完成，等待確認結算':'工作站成果';const box=$('result-copy');box.replaceChildren();for(const text of [`首次正確 ${g.firstCorrect}/10 · ${g.status==='incomplete'?'數學未完成':g.status==='passed'?'數學達標':'數學未達標'}`,`補題 ${Object.values(r.slots).reduce((n,s)=>n+s.attempts.slice(1).length,0)} 次；充能成功 ${Object.values(r.slots).filter(s=>s.outcome==='success').length} 次`,...r.stages.map((s,i)=>`${i+1}. ${s.name}：${s.completed?'完成':s.unlocked?'進行中':'未開放'} · 操作嘗試 ${s.attempts.length} 次`),...Object.values(r.slots).map(s=>`${s.id}：${s.first?(s.first.correct?'首次正確':'首次錯誤'):'未答'}；補題：${s.attempts.slice(1).map(a=>a.correct?'正確':'錯誤').join('、')||'無'}`)]){const p=document.createElement('p');p.textContent=text;box.append(p);}
  $('confirm-result').hidden=r.phase==='settled'||(r.phase==='active'&&game.phase!=='won');$('confirm-result').textContent=r.phase==='awaiting-settlement'?'確認完成挑戰':'確認本關成果，前往下一關';$('confirm-result').disabled=busy||stopped;$('remediation-link').hidden=!(r.phase==='settled'&&g.status==='not-met');if(!$('result-dialog').open)$('result-dialog').showModal();const expected={roundId:r.roundId,revision:view.revision};$('victory-notice').textContent='';if(celebrate)victory.play(expected);else victory.refresh(expected);}
-function render(){if(!loaded)return;const r=view.state,g=r?grade(r):null,can=!busy&&!stopped,playing=r?.phase==='active'&&game.phase==='play',recovering=game.phase==='recovering';document.body.dataset.phase=game.phase;
+function render(){admissionNotice(view.admission);if(!loaded)return;const r=view.state,g=r?grade(r):null,can=!busy&&!stopped,playing=r?.phase==='active'&&game.phase==='play',recovering=game.phase==='recovering';document.body.dataset.phase=game.phase;
  updateRemediation(view,{required:r?.phase==='settled'&&g.status==='not-met',roundId:r?.roundId});
  $('save-status').textContent=busy?'交易確認中，尚未保存':view.readOnly?'唯讀／停止寫入：'+view.status.code:`已確認保存 revision ${view.revision}；只恢復最後確認快照`;
  $('progress-first').textContent=`首次 ${g?.firstCorrect??0}/10 · 已答 ${g?.count??0}`;$('progress-extra').textContent=g?.impossible?'本回合已無法達標':'補題不回補首次成績';$('progress-tasks').textContent=r?`第 ${r.stageIndex+1}/5 關`:'五關冒險';

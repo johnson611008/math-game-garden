@@ -8,7 +8,7 @@ export const SOURCES=Object.freeze([
  {unit:4,title:'第四單元：根式四則運算',db:'radical-garden.crystal-cart.transactions.v1',key:'crystal-cart-ledger-v1.default',module:'../../crystal-cart-formal/store.mjs',learning:'../../unit-four/learning.mjs'},
 ].map(Object.freeze));
 const need=(v,c)=>{if(!v)throw Error(c);};
-export function evaluateAdmission(target,facts){need([4,5].includes(target),'unsupported-admission-target');const required=SOURCES.slice(0,target-1),missing=[],errors=[],evidence=[];
+export function evaluateAdmission(target,facts){need([2,3,4,5].includes(target),'unsupported-admission-target');const required=SOURCES.slice(0,target-1),missing=[],errors=[],evidence=[];
  for(const s of required){const f=facts.find(f=>f.unit===s.unit);if(!f||f.error){missing.push({unit:s.unit,title:s.title});if(f?.error)errors.push({unit:s.unit,code:f.error});}else if(!f.passed)missing.push({unit:s.unit,title:s.title});else evidence.push({unit:s.unit,roundId:f.roundId,settledAt:f.settledAt});}
  return {policyVersion:POLICY,target,allowed:missing.length===0&&errors.length===0,code:errors.length?'prerequisite-read-failed':missing.length?'prerequisite-required':'prerequisites-confirmed',missing,errors,evidence};
 }
@@ -32,6 +32,6 @@ export async function validateSource(s,envelope){if(envelope===null)return {unit
  return {unit:s.unit,passed:!!passed,...(passed?{roundId:passed.roundId||passed.id,settledAt:passed.settledAt||passed.settlement?.atMs||passed.settlement?.at}: {})};
 }
 export function createAdmissionReader({readUnit,legacyValue=()=>null}={}){const cache=new Map();async function fact(s){try{const {record,keys=[]}=await readUnit(s);need(keys.every(k=>k===s.key),'namespace-ownership-review-required');const legacy=legacyValue(s);need(s.unit===1?(record?record.legacyRaw===legacy:legacy===null):!record||record.legacyRaw===null,'legacy-source-review-required');const fingerprint=JSON.stringify(record),cached=cache.get(s.unit);if(cached?.fingerprint===fingerprint)return cached.fact;const result=await validateSource(s,record);cache.set(s.unit,{fingerprint,fact:result});return result;}catch(e){return {unit:s.unit,passed:false,error:e.message||'prerequisite-read-failed'};}}
- return {async check(target){return evaluateAdmission(target,await Promise.all(SOURCES.slice(0,target-1).map(fact)));},async both(){const facts=await Promise.all(SOURCES.map(fact));return {4:evaluateAdmission(4,facts),5:evaluateAdmission(5,facts)};}};
+ return {async check(target){return evaluateAdmission(target,await Promise.all(SOURCES.slice(0,target-1).map(fact)));},async both(){const facts=await Promise.all(SOURCES.map(fact));return Object.fromEntries([2,3,4,5].map(target=>[target,evaluateAdmission(target,facts)]));}};
 }
 export function browserAdmission(){return createAdmissionReader({readUnit:s=>readExisting(globalThis.indexedDB,s),legacyValue:s=>{if(s.unit!==1)return null;const storage=globalThis.localStorage;for(let i=0;i<(storage?.length||0);i++){const k=storage.key(i);if(k?.startsWith('mole15-ledger-v1.')&&k!==s.key)throw Error('namespace-ownership-review-required');}return storage?.getItem(s.key)??null;}});}

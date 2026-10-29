@@ -3,7 +3,7 @@ const section=document.createElement('section');section.id='resume-learning';sec
 // Navigation only: no start, grant or transaction command is issued here.
 export function applyHomeNavigation(){if(!lastResult)return;const routes=['mole-formal','marble-formal','bubble-formal','crystal-cart-formal','rescue-battle-formal'];for(let unit=1;unit<=5;unit++){
  const card=document.getElementById('game-list')?.children[unit-1];if(!card)continue;
- if(unit>=4&&card.dataset.admission!=='prerequisites-confirmed')continue;
+ if(unit>=2&&card.dataset.admission!=='prerequisites-confirmed')continue;
  const row=lastResult.rows.find(r=>r.unit===unit&&r.kind!=='practice'),error=lastResult.errors.find(e=>e.unit===unit&&!String(e.code||'').startsWith('自主練習：'));
  const old=card.querySelector('.entry');if(!old)continue;
  if(error||row?.blocked){const entry=document.createElement('span');entry.className='entry';entry.setAttribute('aria-disabled','true');entry.textContent=error?'紀錄讀取異常・請重新確認':'尚缺前置正式通關';entry.dataset.learningState='blocked';old.replaceWith(entry);continue;}
