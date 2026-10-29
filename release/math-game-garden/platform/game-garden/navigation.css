@@ -1,2 +1,12 @@
 /* The second existing wooden frame is narrower. Fit its newly opened label only. */
 @media(min-width:1101px){.game:nth-child(2) .entry{font-size:1.35cqw}}
+/* WP13-B: approved WP13-A scene proportions; existing frames/layout stay intact. */
+.updated-card h3{height:14%}
+.updated-card .card-note{white-space:normal;display:flex;align-items:center;justify-content:center;top:18%;height:12%;font-size:clamp(10px,.95cqw,14px);line-height:1.3;padding:2px 4px}
+.updated-card .scene{top:31%;bottom:18%;background:#4a4c44}
+.updated-card:nth-child(5) .scene{background:#4b3d62}
+.updated-card .scene img{object-fit:contain}
+@media(max-width:700px){.updated-card .card-note{font-size:10px}}
+.admission-card .entry{white-space:normal;line-height:1.25;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.admission-card .entry small{display:block;font-size:clamp(9px,.72cqw,11px);line-height:1.25;text-shadow:none;margin-top:2px;padding:0 2px}
+@media(max-width:700px){.admission-card .entry small{font-size:9px}}

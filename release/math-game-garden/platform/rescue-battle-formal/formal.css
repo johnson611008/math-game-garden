@@ -1,0 +1,5 @@
+/* Presentation-only additions to the accepted battle layout. */
+.prototype-tag{display:inline-block;max-width:260px;overflow-wrap:anywhere}
+#reload-saved{display:block;margin:12px auto}
+.status{overflow-wrap:anywhere}
+@media(max-width:600px){.prototype-tag{max-width:130px;font-size:10px;padding:5px}.app-header{gap:7px}}

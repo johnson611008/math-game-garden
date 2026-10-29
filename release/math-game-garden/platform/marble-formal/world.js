@@ -1,3 +1,4 @@
+import{noteCollision,inspectTrap,holdOverlap}from './anti-trap.js';
 import {EnergyWorkshop} from '../marble-demo/b/physics.js';
 import {PaddleWorkshop,W,H,R,DT} from '../marble-demo/a2/physics.js';
 import {stages,stageLayout} from './stages.js';
@@ -18,3 +19,7 @@ export class StageWorld extends PaddleWorkshop{
 }
 // Reuse the verified B/R1 physics behaviours; formal scoring is exclusively transactional.
 for(const name of ['hit','destroy','step','update','setTarget','setDirection','pause','resumeBall'])StageWorld.prototype[name]=EnergyWorkshop.prototype[name];
+
+const originalHit=StageWorld.prototype.hit,originalStep=StageWorld.prototype.step;
+StageWorld.prototype.hit=function(b){noteCollision(this,b);return originalHit.call(this,b)};
+StageWorld.prototype.step=function(){if(holdOverlap(this))return;originalStep.call(this);inspectTrap(this)};

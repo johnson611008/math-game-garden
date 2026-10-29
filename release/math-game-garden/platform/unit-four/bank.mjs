@@ -1,0 +1,16 @@
+import{parse}from'../src/input/parser.js';import{evaluateAst}from'../src/math/operations.js';import{formatValue}from'../src/math/format.js';import{serialize,equivalent}from'../src/math/radical-value.js';import{inspectFinalSum,judge}from'../alchemy-direct/model.mjs';import{rng}from'../bubble-demo/engine.js';import{BANK as FORMAL,notation}from'../crystal-cart-formal/questions.mjs';
+export const BANK_VERSION='unit-four-remediation-mixed-100-v1';
+const value=s=>evaluateAst(parse(s));
+export const BANK=[];
+for(let n=6;n<=25;n++)for(const[group,expression,concepts]of[
+ ['order',`sqrt(${2+n%4})*sqrt(${2+n%4})+${n}`,['MULTIPLY_BEFORE_ADD']],
+ ['simplify',`${n}sqrt(2)+sqrt(2)*sqrt(8)-3`,['SIMPLIFY_ROOT','UNLIKE_TERMS','ORDER_AND_SIGN']],
+ ['brackets',`(sqrt(3)+${n}sqrt(3))*sqrt(3)-2`,['PARENTHESES','DISTRIBUTION']],
+ ['rationalize',`${n}/sqrt(2)+sqrt(18)`,['RATIONALIZE_DENOMINATOR','COMMON_DENOMINATOR','SIMPLIFY_ROOT']],
+ ['combined',`(${n}/sqrt(3)-sqrt(3))*2+1`,['RATIONALIZE_DENOMINATOR','PARENTHESES','ORDER_AND_SIGN']]
+])BANK.push({id:`u4-rem-${group}-${n}`,group,expression,text:notation(expression).replaceAll('*',' × ').replaceAll('/',' ÷ ').replaceAll('+',' ＋ ').replaceAll('-',' − '),answer:formatValue(value(expression)),concepts});
+export function validateBank(){const ids=new Set(),expressions=new Set();return BANK.map(q=>{if(ids.has(q.id)||expressions.has(q.expression)||FORMAL.some(f=>f.expression===q.expression))throw Error('duplicate-remediation-question');ids.add(q.id);expressions.add(q.expression);if(!equivalent(value(q.expression),value(q.answer))||!inspectFinalSum(parse(q.answer)).satisfied)throw Error('invalid-remediation-answer');return{id:q.id,expression:q.expression,answer:q.answer,exact:serialize(value(q.answer)),concepts:q.concepts};});}
+validateBank();for(const q of BANK){Object.freeze(q.concepts);Object.freeze(q);}Object.freeze(BANK);
+export function plan(seed,source,previous=[]){if(!Number.isInteger(seed)||seed<0||seed>4294967295)throw Error('invalid-remediation-seed');const errors=new Set(Object.values(source.slots).filter(s=>s.first?.kind!=='correct').flatMap(s=>source.plan.find(q=>q.id===s.questionId)?.concepts||[])),last=previous.at(-1)?.questions.map(q=>q.id)||[],used=new Set(previous.flatMap(a=>a.questions.map(q=>q.id)));let pool=BANK.filter(q=>!used.has(q.id));if(pool.length<10)pool=BANK.filter(q=>!last.includes(q.id));const random=rng(seed);const scored=pool.map(q=>({q,priority:q.concepts.filter(c=>errors.has(c)).length,tie:random()})).sort((a,b)=>b.priority-a.priority||a.tie-b.tie);const chosen=[],groups=new Map();for(const x of scored){if(chosen.length===10)break;if((groups.get(x.q.group)||0)>=4)continue;chosen.push(x.q);groups.set(x.q.group,(groups.get(x.q.group)||0)+1);}for(const x of scored){if(chosen.length===10)break;if(!chosen.includes(x.q))chosen.push(x.q);}const qs=chosen.map(q=>structuredClone(q));if(qs.length!==10||new Set(qs.map(q=>q.id)).size!==10)throw Error('insufficient-remediation-bank');return qs;}
+export const judgeAnswer=(q,input)=>judge(q,input);
+export const hintText=q=>q.concepts.includes('RATIONALIZE_DENOMINATOR')?'先將分母的單項根式有理化，再通分；括號內先算，最後整理同類項。':q.concepts.includes('PARENTHESES')?'先完成括號內的運算，再分配括號外的因數；留意減號。':'先乘除、後加減；根式提出平方因數後，只能合併同類項。';

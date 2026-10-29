@@ -1,0 +1,28 @@
+/* WP12-A2: scene-only placement. Actor widths/x positions and attack rules unchanged. */
+.scene{background-position:50% 50%;background-size:cover}
+.hostage{left:69%;width:23%;top:0}
+#rescue-glow{left:67%;top:-2%;width:27%}
+.intro-cast figure{position:relative;z-index:2}
+.intro-cast figure:last-child{grid-column:3}
+.intro-hero{transform:translateY(8.203125%)}
+.intro-boss{transform:translateY(.9765625%) scaleX(-1)}
+.intro-hostage{position:absolute;left:auto;right:9%;top:23%;width:26%;z-index:1}
+.dungeon-architecture{display:none} /* The new image already contains real castle arches. */
+.defeat-scene{background-position:50% 50%;background-size:cover}
+/* Percentage PNG alpha padding is measured from original unmodified images.
+   cqw measures the existing .fighters width; neither actor's x/width changes. */
+@supports(width:1cqw){
+ .fighters{container-type:inline-size}
+ .hero{bottom:calc(12% - 3.28125cqw)}
+ .boss{bottom:calc(12% - .25390625cqw)}
+}
+@media(max-width:800px){
+ .arena{height:230px;min-height:230px}
+ .hostage{left:68%;width:20%;top:0}
+ #rescue-glow{left:66%;top:-2%;width:24%}
+ .intro-hostage{top:23%;right:10%;width:24%}
+ @supports(width:1cqw){
+  .hero{bottom:calc(12% - 2.4609375cqw)}
+  .boss{bottom:calc(12% - .21484375cqw)}
+ }
+}

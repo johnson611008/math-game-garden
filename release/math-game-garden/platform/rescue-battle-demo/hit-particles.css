@@ -1,0 +1,4 @@
+.hit-blood{position:absolute;inset:0;width:100%;height:100%;z-index:9;overflow:hidden;pointer-events:none;contain:strict}
+.hit-blood[hidden]{display:none!important}
+.hit-blood g{transform-origin:0 0}
+.hit-blood [data-particle] path{stroke:#ffe2d3;stroke-width:.26;paint-order:stroke fill}

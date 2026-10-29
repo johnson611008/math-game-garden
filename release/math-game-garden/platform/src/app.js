@@ -28,12 +28,14 @@ export function mountPlatform(root, env = window, makeSession = createPracticeSe
   function remember(state) { registry.set(state.attempt.id, state); flush(); }
   function attach(next) { unsubscribe?.(); session = next; unsubscribe = session.subscribe(remember); remember(session.getState()); }
   function ensureSession() {
-    if (session && session.getState().attempt.status !== 'abandoned') return;
+    if (session && session.getState().attempt.status !== 'abandoned') return true;
+    const requestedId=new URL(env.location.href).searchParams.get('resumeAttempt'), requested=requestedId?registry.get(requestedId):null;
+    if(requestedId&&(!requested||!['in-progress','paused'].includes(requested.attempt.status))){message='指定的未完成練習無法安全恢復，未建立新回合。請從紀錄清單選擇。';return false;}
     const states = [...registry.values()].filter(s => s.attempt.status !== 'abandoned');
     const active = states.filter(s => ['in-progress', 'paused'].includes(s.attempt.status));
     const pointed = store.getLatest();
-    const saved = (pointed && pointed.attempt.status !== 'abandoned' && registry.get(pointed.attempt.id)) || (active.length ? active : states).sort((a, b) => Date.parse(b.attempt.startedAt) - Date.parse(a.attempt.startedAt))[0];
-    attach(saved ? makeSession({ savedRecord: encodePracticeRecord(saved) }) : makeSession());
+    const saved = requested || (pointed && pointed.attempt.status !== 'abandoned' && registry.get(pointed.attempt.id)) || (active.length ? active : states).sort((a, b) => Date.parse(b.attempt.startedAt) - Date.parse(a.attempt.startedAt))[0];
+    attach(saved ? makeSession({ savedRecord: encodePracticeRecord(saved) }) : makeSession()); return true;
   }
   function managed(id) {
     if (session?.getState().attempt.id === id) return session;
@@ -55,7 +57,7 @@ export function mountPlatform(root, env = window, makeSession = createPracticeSe
     } else if (panel === 'confirm') root.innerHTML = recordsToolbar() + abandonMarkup(pendingSession.getState());
     else if (panel === 'recover') root.innerHTML = recordsToolbar() + '<section class="records-page"><h1 id="records-title" tabindex="-1">先保留原始資料，再啟用新儲存</h1><p>系統會先把無法讀取的原始內容另存到獨立復原鍵並驗證，成功後才建立可用儲存。建議先下載備份；原始內容不會被直接丟棄。</p><button type="button" data-record-action="confirm-recover">確認備份並啟用</button><button type="button" data-record-action="history">取消</button></section>';
     else if (route === 'practice') {
-      ensureSession();
+      if(!ensureSession()){root.innerHTML=recordsToolbar()+historyMarkup([...registry.values()],isSaved);updateNotice();return;}
       if (session.getState().attempt.pendingAbandonRequestId) { pendingSession = session; panel = 'confirm'; render(); return; }
       ui = mountLivePractice(root, session, { onHome: () => env.location.assign(new URL('game-garden/',base).href), onReview: id => { selected = id; panel = 'review'; render(); }, onRestart: startNew });
     } else { session?.pause('home'); renderHome(root, units); root.innerHTML += recordsToolbar(); }

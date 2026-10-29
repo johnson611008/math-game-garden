@@ -1,3 +1,4 @@
+import{POLICY as FINAL_POLICY,finalQuestions,adaptFinal}from './final-answer.js';
 // Independent versioned envelope; never imports ordinary WP03 results as grants.
 import {generateQuestions} from '../src/questions/generator.js';
 import {createAttempt,applyAttemptEvent,practiceResolvedCount} from '../src/learning/attempt.js';
@@ -21,7 +22,7 @@ export function reduceLearning(current,event,ledger){
   failedSource(ledger,event.sourceRoundId);need(ledger.rounds.at(-1)?.id===event.sourceRoundId,'source-not-current');
   need(!a.attempts.some(x=>x.status!=='completed'),'resume-existing-remediation');
   need(!a.attempts.some(x=>x.attemptId===event.attemptId||x.remediationId===event.remediationId),'duplicate-remediation-attempt');need(!availableGrant(a,event.sourceRoundId),'unlock-already-issued');
-  const questions=generateQuestions({unitId:'simplification',mode:'practice',count:10,seed:event.seed});
+  need(event.questionPolicy===undefined||event.questionPolicy===FINAL_POLICY,'unsupported-question-policy');const questions=event.questionPolicy===FINAL_POLICY?finalQuestions(event.seed):generateQuestions({unitId:'simplification',mode:'practice',count:10,seed:event.seed});
   // Reuse practice pedagogy for corrections and explicit solutions. Only this
   // outer, source-bound, replay-verified envelope can issue a qualification.
   const attempt=createAttempt({id:event.attemptId,mode:'practice',questions,startedAt:event.at});
@@ -39,7 +40,7 @@ export function reduceLearning(current,event,ledger){
    if(s.firstCorrect>=8){need(!a.grants.some(g=>g.attemptId===t.attemptId)&&!availableGrant(a,t.sourceRoundId),'unlock-already-issued');t.unlockId='mole-unlock:'+t.attemptId;a.grants.push({unlockId:t.unlockId,sourceRoundId:t.sourceRoundId,remediationId:t.remediationId,attemptId:t.attemptId,policyVersion:POLICY,issuedAt:event.at,usedByRoundId:null,usedAt:null});}
   }else{
    need(['submit','hint','view-solution','practice-step','pause','resume'].includes(event.type),'unknown-remediation-event');const payload={...event};delete payload.attemptId;
-   if(event.type==='submit'){const q=t.attempt.questions[t.index];need(q.id===event.questionId,'not-current-question');const d=t.drafts[t.index];payload.response=q.station==='B'?{isSimplest:d.judgment,...(d.judgment===false?{correctedAnswer:d.correction}:{})}:{answer:d.answer};need(event.response===undefined,'response-must-use-confirmed-draft');}
+   if(event.type==='submit'){const q=t.attempt.questions[t.index];need(q.id===event.questionId,'not-current-question');const d=t.drafts[t.index];payload.response=q.station==='B'?{isSimplest:d.judgment,...(d.judgment===false?{correctedAnswer:d.correction}:{})}:{answer:d.answer};need(event.response===undefined,'response-must-use-confirmed-draft');if(event.finalOnly===true)payload.response=adaptFinal(q,d.answer);else need(event.finalOnly===undefined,'invalid-final-mode');}
    if(event.type==='hint')need([1,2].includes(event.level),'hint-level-not-supported');if(event.type==='pause')payload.reason='manual';
    if(event.type==='practice-step'){const d=t.drafts[t.index];payload.response={numeratorMultiplier:d.numeratorMultiplier,denominatorMultiplier:d.denominatorMultiplier,transformedNumerator:d.transformedNumerator,transformedDenominator:d.transformedDenominator};}
    t.attempt=applyAttemptEvent(t.attempt,payload);

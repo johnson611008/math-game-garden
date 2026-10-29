@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#151b34"><title>拯救人質大作戰｜正式十題Boss格鬥</title><link rel="icon" href="../rescue-battle-demo/assets/crystal.png"><link rel="stylesheet" href="../rescue-battle-demo/style.css"><link rel="stylesheet" href="../rescue-battle-demo/castle-scene.css"><link rel="stylesheet" href="../rescue-battle-demo/hit-particles.css"><link rel="stylesheet" href="formal.css"></head>
+<body data-phase="intro">
+<header class="app-header"><div class="brand"><img src="../rescue-battle-demo/assets/crystal.png" width="30" height="40" alt=""><div><strong>根式遊戲大觀園</strong><small>第五關 · A3正式挑戰</small></div></div><span class="prototype-tag" id="save-status" role="status">讀取保存中</span><label class="reduce"><input id="reduced" type="checkbox">降低動畫</label></header>
+<main>
+ <section id="intro" aria-labelledby="intro-title"><div class="intro-layout">
+  <article class="intro-copy"><p id="chapter" class="chapter"></p><h1 id="intro-title"></h1><div id="story" class="story"></div><section class="rules"><h2>進入決戰前</h2><ul id="rules-list"></ul></section></article>
+  <aside class="scene intro-scene" aria-label="勇者、被囚角色與邪惡地鼠"><div class="scene-caption"><span>根式乘法公式 × 最終決戰</span><strong>用智慧，解除水晶封印</strong></div>
+   <div class="intro-cast"><figure><img class="intro-hero" src="../rescue-battle-demo/assets/characters/hero_mole.png" alt="完整站姿勇者地鼠，持藍色水晶劍"><figcaption>地鼠勇者</figcaption></figure><div class="intro-hostage"><img class="inside-girl" src="../rescue-battle-demo/assets/characters/beautiful_mole.png" alt="美麗地鼠位於牢籠內"><img class="cage" src="../rescue-battle-demo/assets/characters/rescue_cage.png" alt="前方水晶牢籠"></div><figure><img class="intro-boss" src="../rescue-battle-demo/assets/evil_mole_boss.png" alt="黑紅斗篷邪惡地鼠Boss"><figcaption>邪惡地鼠</figcaption></figure></div>
+   <p id="intro-art-note" class="scene-note"></p>
+  </aside>
+ </div><p class="scope-note" id="intro-scope"></p><div id="start-dock"><p>不設作答倒數，先想好再出手。</p><button id="start" type="button" disabled>拯救人質！</button></div></section>
+ <section id="battle" hidden aria-labelledby="battle-title">
+  <div class="battle-heading"><div><p class="chapter">第五關｜最終決戰</p><h1 id="battle-title" tabindex="-1">拯救人質大作戰</h1></div><div class="battle-progress"><strong id="question-index">第1／10題</strong><span id="first-progress">首次正確 0／10</span></div></div>
+  <div class="battle-grid">
+   <section class="scene arena" aria-label="數學格鬥場景">
+    <div class="health-row"><div class="health hero-health"><div><strong>地鼠勇者</strong><span id="hero-hp">10／10</span></div><meter id="hero-meter" min="0" max="10" value="10" aria-label="勇者生命">10／10</meter></div><div class="health enemy-health"><div><strong>邪惡地鼠</strong><span id="boss-hp">10／10</span></div><meter id="boss-meter" min="0" max="10" value="10" aria-label="Boss生命">10／10</meter></div></div>
+    <div class="fighters">
+     <div id="hero-actor" class="fighter hero"><img src="../rescue-battle-demo/assets/characters/hero_mole.png" alt="持藍色水晶劍的勇者地鼠"></div>
+     <div id="hostage" class="hostage"><img class="inside-girl" src="../rescue-battle-demo/assets/characters/beautiful_mole.png" alt="待救援的美麗地鼠"><img id="battle-cage" class="cage" src="../rescue-battle-demo/assets/characters/rescue_cage.png" alt="尚未解除的牢籠"></div>
+     <div id="boss-actor" class="fighter boss"><img src="../rescue-battle-demo/assets/evil_mole_boss.png" alt="黑紅斗篷邪惡地鼠Boss"></div>
+     <div id="rescued-actor" class="rescued-girl" hidden><img src="../rescue-battle-demo/assets/characters/beautiful_mole.png" alt="已獲救，站在勇者身旁的美麗地鼠"></div>
+     <div id="charge-glow" class="charge-glow" hidden aria-hidden="true"></div><div id="rush-trail" class="rush-trail" hidden aria-hidden="true"></div>
+     <div id="sword-flash" class="slash blue" hidden aria-hidden="true"><svg viewBox="0 0 240 180"><path d="M25 157 Q52 14 221 20 Q98 52 25 157Z" fill="#59bdff88"/><path d="M25 157 Q68 40 221 20" fill="none" stroke="#eaffff" stroke-width="8"/><path d="M43 166 Q92 64 225 38" fill="none" stroke="#64cfff" stroke-width="3"/><path d="M133 12L142 43 175 52 143 61 133 93 124 60 94 52 124 42Z" fill="#d8faff"/></svg></div>
+     <div id="magic-flash" class="slash red" hidden aria-hidden="true"><svg viewBox="0 0 240 180"><path d="M20 28 Q192 13 220 155 Q146 63 20 28Z" fill="#ec4fda88"/><path d="M20 28 Q179 39 220 155" fill="none" stroke="#ffe0f5" stroke-width="8"/><path d="M19 48 Q130 52 201 163" fill="none" stroke="#fa598f" stroke-width="4"/><path d="M115 20L128 57 167 71 129 83 115 125 103 83 65 71 103 58Z" fill="#ffceed"/></svg></div><div id="rescue-glow" hidden aria-hidden="true"></div>
+    </div>
+    <p id="action-caption" role="status" aria-live="polite">準備迎戰</p><small class="arena-art-note">水晶城堡決戰 · 單一分層人質牢籠</small>
+   </section>
+   <section id="math-panel" class="math-panel" aria-label="數學作答區">
+    <div class="question-heading"><span id="concept"></span><span id="answer-kind">首次作答</span></div>
+    <h2 id="question" aria-label="目前題目"></h2><p class="instruction">請輸入最簡答案；分母若有根號，先完成有理化。</p>
+    <form id="answer-form" autocomplete="off"><label for="answer">你的答案</label><input id="answer" type="text" inputmode="none" autocapitalize="off" spellcheck="false" autocomplete="off" maxlength="256" placeholder="例如 8＋2√15" aria-describedby="input-help feedback"><small id="input-help">用√、＋、−、×、÷、括號或／輸入；可用實體鍵盤。</small><div id="symbols" class="symbols" aria-label="自製數學鍵盤"></div><div class="answer-actions"><button id="submit" type="submit">確認答案 · 出招</button><button id="hint" type="button">觀念提示</button></div></form>
+    <p id="feedback" class="feedback" role="status" aria-live="polite"></p><button id="next" class="primary" hidden type="button">下一題</button>
+   </section>
+   <section id="result" class="result" hidden aria-labelledby="result-title"><h2 id="result-title" tabindex="-1"></h2><p id="result-score"></p><p id="result-note"></p><button id="remediation" type="button" disabled hidden>補救功能建置中</button><button id="restart" type="button">正式挑戰已達標</button><details><summary>查看十題首次與訂正紀錄</summary><ol id="records"></ol></details></section>
+  </div>
+ </section>
+ <section id="defeat-ending" hidden aria-labelledby="defeat-title">
+  <div class="defeat-scene">
+   <div class="dungeon-architecture" aria-hidden="true"><span></span><span></span><span></span></div>
+   <div class="defeat-hero"><p>先修練，再迎戰。</p><img id="defeated-hero" src="../rescue-battle-demo/assets/characters/hero_mole_defeated.png" alt="勇者趴倒在地，藍色水晶劍掉在身旁，披風與腳掌完整可見"></div>
+   <article class="defeat-parchment"><p class="ending-eyebrow">第五關 · 最終決戰</p><h1 id="defeat-title" tabindex="-1">救援失敗</h1><p class="ending-subtitle">這次的冒險還沒有結束</p>
+    <dl class="ending-stats"><div><dt>首次正確</dt><dd id="defeat-correct"></dd></div><div><dt>勇者剩餘血量</dt><dd id="defeat-hp"></dd></div><div><dt>救援結果</dt><dd>失敗</dd></div></dl>
+    <p id="defeat-reason"></p><p class="remedy-copy">這次還沒能救出心儀的對象！先前往補救練功區，重新修練根式乘法公式，再回來挑戰邪惡地鼠！</p>
+    <button id="defeat-remediation" type="button" disabled>前往補救練功區<span>正在確認補救狀態</span></button><small>指定補救十題首次至少8題正確才達標；每份合法成果可取得一次重挑資格。</small>
+    <details><summary>查看本次首次與訂正紀錄</summary><ol id="defeat-records"></ol></details>
+   </article>
+   <div class="defeat-villains"><div class="ending-hostage"><img class="inside-girl" src="../rescue-battle-demo/assets/characters/beautiful_mole.png" alt="仍被囚禁的美麗地鼠"><img class="cage" src="../rescue-battle-demo/assets/characters/rescue_cage.png" alt="魔法封印未解除的牢籠"><span>人質仍被囚禁</span></div><img id="defeat-boss" src="../rescue-battle-demo/assets/evil_mole_boss.png" alt="黑紅斗篷Boss保持勝利姿態"><p>封印尚未解除</p></div>
+   <small class="defeat-art-note">水晶城堡決戰 · 人質封印尚未解除</small>
+  </div>
+ </section>
+ <p id="status" class="status" role="status" aria-live="polite">正在檢查題庫與素材。</p><p id="scope-note" class="scope-note"></p>
+</main><noscript>需要JavaScript才能作答；未完成安全保存時無法開始正式挑戰。</noscript><button id="reload-saved" type="button" hidden>重新讀取已保存紀錄</button><script type="module" src="main.mjs"></script>
+</body></html>

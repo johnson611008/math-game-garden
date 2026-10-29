@@ -1,1503 +1,1508 @@
 {
   "schemaVersion": 1,
+  "workPackage": "WP16",
   "siteBase": "/math-game-garden/",
-  "plannedURL": "https://johnson611008.github.io/math-game-garden/",
-  "buildId": "0d7b41c1b369c1a2f9131921cba0f4b15c11e2525f15baf85ac555462992b8e9",
+  "buildId": "fd132f7d4e175bab65988f3fd026d0b20715b56fc6ed6e8c71998db58909dd16",
   "files": [
     {
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "source": "generated",
-      "transformed": true
+      "source": "workspaces/WP16/site/.nojekyll"
     },
     {
       "path": "index.html",
-      "bytes": 3757,
-      "sha256": "4a345f0fe62c756b564e740694c29f913665e33756483d2d393cb673ea8f8598",
-      "source": "generated-root-garden",
-      "transformed": true
+      "bytes": 3913,
+      "sha256": "8447ddbb5b20080737860f9bfb11bdd2b4520697d19f796741005450360ab473",
+      "source": "workspaces/WP16/site/index.html"
+    },
+    {
+      "path": "platform/alchemy-direct/model.mjs",
+      "bytes": 4454,
+      "sha256": "f421a077308fe283213ad68908e6395716bd9774a5d310c8e47c85c9cac8de8c",
+      "source": "workspaces/WP16/site/platform/alchemy-direct/model.mjs"
     },
     {
       "path": "platform/bubble-demo/aim-guide.js",
       "bytes": 2486,
       "sha256": "f33c4c95943e8aac42914c639fca8331619bc5e35dfe9575c751f74513c05b02",
-      "source": "platform/bubble-demo/aim-guide.js",
-      "sourceSHA256": "f33c4c95943e8aac42914c639fca8331619bc5e35dfe9575c751f74513c05b02",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/aim-guide.js"
     },
     {
       "path": "platform/bubble-demo/assets/forest.png",
       "bytes": 2776134,
       "sha256": "fec4e289e7879d4b780493ceca294e18d34d1795f78315b9594d4dfc0f5f9b8e",
-      "source": "platform/bubble-demo/assets/forest.png",
-      "sourceSHA256": "fec4e289e7879d4b780493ceca294e18d34d1795f78315b9594d4dfc0f5f9b8e",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/assets/forest.png"
     },
     {
       "path": "platform/bubble-demo/b/style.css",
       "bytes": 11020,
       "sha256": "2c5ca760064357411addcc652b3064b2aca34cc5c21e9c34f334a2a7ad373ffe",
-      "source": "platform/bubble-demo/b/style.css",
-      "sourceSHA256": "2c5ca760064357411addcc652b3064b2aca34cc5c21e9c34f334a2a7ad373ffe",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/b/style.css"
     },
     {
       "path": "platform/bubble-demo/descent.js",
       "bytes": 740,
       "sha256": "dfe1da5f05e4636b0f8ee74f74670dffbae0dc4a153d37ad62b2e639a3448956",
-      "source": "platform/bubble-demo/descent.js",
-      "sourceSHA256": "dfe1da5f05e4636b0f8ee74f74670dffbae0dc4a153d37ad62b2e639a3448956",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/descent.js"
     },
     {
       "path": "platform/bubble-demo/engine.js",
       "bytes": 6462,
       "sha256": "fecb42e121b3d12c2034de5b7fa4469a3e268a16e09e2a4b57da816d45e7186c",
-      "source": "platform/bubble-demo/engine.js",
-      "sourceSHA256": "fecb42e121b3d12c2034de5b7fa4469a3e268a16e09e2a4b57da816d45e7186c",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/engine.js"
     },
     {
       "path": "platform/bubble-demo/operator.js",
       "bytes": 1704,
       "sha256": "e93415bfbf47330f42817ce3fb513302013d1df7929c1665c36d97178bea3814",
-      "source": "platform/bubble-demo/operator.js",
-      "sourceSHA256": "e93415bfbf47330f42817ce3fb513302013d1df7929c1665c36d97178bea3814",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/operator.js"
     },
     {
       "path": "platform/bubble-demo/render.js",
       "bytes": 4174,
       "sha256": "d309976cf121fb4751ccc6354062ede406527a38e8f06e196a01fee186bec508",
-      "source": "platform/bubble-demo/render.js",
-      "sourceSHA256": "d309976cf121fb4751ccc6354062ede406527a38e8f06e196a01fee186bec508",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/render.js"
     },
     {
       "path": "platform/bubble-demo/style.css",
       "bytes": 4853,
       "sha256": "443214047a2865e7c64f07633d1b2814fae16ae204cc78e0ea2e52c1444fc677",
-      "source": "platform/bubble-demo/style.css",
-      "sourceSHA256": "443214047a2865e7c64f07633d1b2814fae16ae204cc78e0ea2e52c1444fc677",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-demo/style.css"
     },
     {
       "path": "platform/bubble-formal/index.html",
-      "bytes": 5735,
-      "sha256": "eabaf5734e0267929e16d01b53612669ede9b861c008a0b51646e43137781165",
-      "source": "platform/bubble-formal/index.html",
-      "sourceSHA256": "b12a762f157aa56b6139ee9ac6e11862028e80d0a022ddd024f3d9c94a898152",
-      "transformed": true
+      "bytes": 5327,
+      "sha256": "b12a762f157aa56b6139ee9ac6e11862028e80d0a022ddd024f3d9c94a898152",
+      "source": "workspaces/WP16/site/platform/bubble-formal/index.html"
     },
     {
       "path": "platform/bubble-formal/main.js",
       "bytes": 15694,
       "sha256": "ec2ae8a64e2f3c3ad0293c0d59af82e18c72f00ad2ee4697460aa56683544400",
-      "source": "platform/bubble-formal/main.js",
-      "sourceSHA256": "ec2ae8a64e2f3c3ad0293c0d59af82e18c72f00ad2ee4697460aa56683544400",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/main.js"
     },
     {
       "path": "platform/bubble-formal/questions.js",
       "bytes": 3772,
       "sha256": "ea971b838a42f84308f8ebe7a16dc126b0c54dbe9ecc7242f997627c429af382",
-      "source": "platform/bubble-formal/questions.js",
-      "sourceSHA256": "ea971b838a42f84308f8ebe7a16dc126b0c54dbe9ecc7242f997627c429af382",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/questions.js"
     },
     {
       "path": "platform/bubble-formal/session.js",
       "bytes": 1829,
       "sha256": "81db84618e039b8b5f64c28d0beff576ae0cdff2d360f8e9b722149c85017b54",
-      "source": "platform/bubble-formal/session.js",
-      "sourceSHA256": "81db84618e039b8b5f64c28d0beff576ae0cdff2d360f8e9b722149c85017b54",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/session.js"
     },
     {
       "path": "platform/bubble-formal/stages.js",
       "bytes": 350,
       "sha256": "8a88f8ee5c5bdb06affca5b128b12933c4f71222b2caede7187a5fd74cd504d2",
-      "source": "platform/bubble-formal/stages.js",
-      "sourceSHA256": "8a88f8ee5c5bdb06affca5b128b12933c4f71222b2caede7187a5fd74cd504d2",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/stages.js"
     },
     {
       "path": "platform/bubble-formal/state.js",
       "bytes": 4695,
       "sha256": "7f81856a58cafe4b66046b6ab0713d34a7d01cfe07091e59bf672da69df38fcb",
-      "source": "platform/bubble-formal/state.js",
-      "sourceSHA256": "7f81856a58cafe4b66046b6ab0713d34a7d01cfe07091e59bf672da69df38fcb",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/state.js"
     },
     {
       "path": "platform/bubble-formal/store.js",
       "bytes": 5453,
       "sha256": "be18b9ea15dc20f92046579175f637868024ab86986188f59c835ec650fdb52c",
-      "source": "platform/bubble-formal/store.js",
-      "sourceSHA256": "be18b9ea15dc20f92046579175f637868024ab86986188f59c835ec650fdb52c",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/store.js"
     },
     {
       "path": "platform/bubble-formal/style.css",
       "bytes": 2246,
       "sha256": "d8ecd756b6b9703933ec8ffc5f82b2542363174cbaed9e4339f94fd7262f0ed7",
-      "source": "platform/bubble-formal/style.css",
-      "sourceSHA256": "d8ecd756b6b9703933ec8ffc5f82b2542363174cbaed9e4339f94fd7262f0ed7",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/style.css"
     },
     {
       "path": "platform/bubble-formal/victory-gate.js",
       "bytes": 793,
       "sha256": "b24f51f661a17f2b7abb04e1db4b91548a0022b5a67b7e865e8971a71898e040",
-      "source": "platform/bubble-formal/victory-gate.js",
-      "sourceSHA256": "b24f51f661a17f2b7abb04e1db4b91548a0022b5a67b7e865e8971a71898e040",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/victory-gate.js"
     },
     {
       "path": "platform/bubble-formal/victory-presentation.js",
       "bytes": 4066,
       "sha256": "2129e55d3a09226de1bab2b444c8b98b8c6b1ad35192eeffe37853b786509c83",
-      "source": "platform/bubble-formal/victory-presentation.js",
-      "sourceSHA256": "2129e55d3a09226de1bab2b444c8b98b8c6b1ad35192eeffe37853b786509c83",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/victory-presentation.js"
     },
     {
       "path": "platform/bubble-formal/world.js",
       "bytes": 4951,
       "sha256": "c9c06ab5da53be0aacf8603a62702168b0fc3c97ed3016f1f0bd2eb0bc53001d",
-      "source": "platform/bubble-formal/world.js",
-      "sourceSHA256": "c9c06ab5da53be0aacf8603a62702168b0fc3c97ed3016f1f0bd2eb0bc53001d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-formal/world.js"
     },
     {
       "path": "platform/bubble-victory-demo/assets/celebration-atlas.png",
       "bytes": 2599283,
       "sha256": "a5345f6442a170ee8b43c9487438016a58b61a50b74cf7ce02bc04aaa5350533",
-      "source": "platform/bubble-victory-demo/assets/celebration-atlas.png",
-      "sourceSHA256": "a5345f6442a170ee8b43c9487438016a58b61a50b74cf7ce02bc04aaa5350533",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-victory-demo/assets/celebration-atlas.png"
     },
     {
       "path": "platform/bubble-victory-demo/assets/frames.json",
       "bytes": 8306,
       "sha256": "0094b502c48614892ce5b58140f3ccde665dbe1f16db5eb55c521584f7244cb4",
-      "source": "platform/bubble-victory-demo/assets/frames.json",
-      "sourceSHA256": "0094b502c48614892ce5b58140f3ccde665dbe1f16db5eb55c521584f7244cb4",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-victory-demo/assets/frames.json"
     },
     {
       "path": "platform/bubble-victory-demo/embed.js",
       "bytes": 897,
       "sha256": "682fdd2ea2c89cbbc400c1e34852fe9ff1b06b2f89f15bd7006c7f20f57d736a",
-      "source": "platform/bubble-victory-demo/embed.js",
-      "sourceSHA256": "682fdd2ea2c89cbbc400c1e34852fe9ff1b06b2f89f15bd7006c7f20f57d736a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-victory-demo/embed.js"
     },
     {
       "path": "platform/bubble-victory-demo/index.html",
-      "bytes": 2153,
-      "sha256": "2fc1daae0ab8b7e6439bf7ed6b96c6ef684b45f79ab702eae1d6cd0c6941c6ca",
-      "source": "platform/bubble-victory-demo/index.html",
-      "sourceSHA256": "722f5ea47c50b5ffde56425f396a421c0320383ccfc20750448d806ed638b236",
-      "transformed": true
+      "bytes": 1745,
+      "sha256": "722f5ea47c50b5ffde56425f396a421c0320383ccfc20750448d806ed638b236",
+      "source": "workspaces/WP16/site/platform/bubble-victory-demo/index.html"
     },
     {
       "path": "platform/bubble-victory-demo/main.js",
       "bytes": 10496,
       "sha256": "203dd37c5476f566d8d3e5befa52b83c3dea3afe5effe0517b36f71dc141e6a4",
-      "source": "platform/bubble-victory-demo/main.js",
-      "sourceSHA256": "203dd37c5476f566d8d3e5befa52b83c3dea3afe5effe0517b36f71dc141e6a4",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-victory-demo/main.js"
     },
     {
       "path": "platform/bubble-victory-demo/style.css",
       "bytes": 4260,
       "sha256": "7c34f4a5ec4a0a36218c924f641932338a06399f45b5f2902b80eefa20c55884",
-      "source": "platform/bubble-victory-demo/style.css",
-      "sourceSHA256": "7c34f4a5ec4a0a36218c924f641932338a06399f45b5f2902b80eefa20c55884",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-victory-demo/style.css"
     },
     {
       "path": "platform/bubble-victory-demo/timeline.js",
       "bytes": 2092,
       "sha256": "a593f6fa03ce60d8e88fb87705e2e6e5da7a085fba2fd79352e6862262e4ce61",
-      "source": "platform/bubble-victory-demo/timeline.js",
-      "sourceSHA256": "a593f6fa03ce60d8e88fb87705e2e6e5da7a085fba2fd79352e6862262e4ce61",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/bubble-victory-demo/timeline.js"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/crystal_blue_candidate.png",
+      "bytes": 21809,
+      "sha256": "32d4839ba979178d9f77be566663b60065264385fe8a419b7333f795c50533c1",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/crystal_blue_candidate.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/crystal_green_candidate.png",
+      "bytes": 21794,
+      "sha256": "95ca9755f96de4f8a22acdc8219174166a74237868bcd733d30c2c421db2e380",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/crystal_green_candidate.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/crystal_purple_candidate.png",
+      "bytes": 21165,
+      "sha256": "c00061f29a97aa174fcced0456cc7bb4d288d2332356858f48bb00882f2ce03c",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/crystal_purple_candidate.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/crystal_red_candidate.png",
+      "bytes": 19860,
+      "sha256": "90f4eb8c6d9a6a2c50857a9ae44fc05e163ee716e6364360bb6b6bbbc666a611",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/crystal_red_candidate.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/mine.png",
+      "bytes": 3023107,
+      "sha256": "652ddfae32f0330e2fefaa02f8695b3302b6c75762b2f9ff49ae73628b7570ff",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/mine.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/rider/mole_cart_happy.png",
+      "bytes": 685275,
+      "sha256": "6c00093e367e1c4b6025a0d2aa52472982c7ef02ed31173f31fce32bef3c10eb",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/rider/mole_cart_happy.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/rider/mole_cart_normal.png",
+      "bytes": 623164,
+      "sha256": "97c0686f5db103953e286ce4c69b1193116fb168db8780080ccbe46bf348e4c9",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/rider/mole_cart_normal.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/assets/rider/mole_cart_surprised.png",
+      "bytes": 656282,
+      "sha256": "2d7bf356590eba695f62c79a68e490a003d20217ae5d1ac3e2e2ad1f87a36863",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/assets/rider/mole_cart_surprised.png"
+    },
+    {
+      "path": "platform/crystal-cart-demo/model.mjs",
+      "bytes": 7658,
+      "sha256": "84db739b9094a94bc2f1871051dc499bee8d9b3e77b1fcabb1b35473a6f92da3",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/model.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-demo/rider.mjs",
+      "bytes": 1402,
+      "sha256": "7e3b0c277812b3a002e17ea06f31bf2474a8c8c6a4b8788b67489a60db289dd7",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/rider.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-demo/style.css",
+      "bytes": 7720,
+      "sha256": "5661b1bb1c0764c2591e530d1f5e10bf4131cafbca6cc3fb0e85368a87f0bcd6",
+      "source": "workspaces/WP16/site/platform/crystal-cart-demo/style.css"
+    },
+    {
+      "path": "platform/crystal-cart-formal/correction-ui.mjs",
+      "bytes": 2115,
+      "sha256": "d18073713c248c6a695d159d3dc79e19d4551480110800555169a2c9fa7e1929",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/correction-ui.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-formal/feedback-world.mjs",
+      "bytes": 3236,
+      "sha256": "69b2f95ca3d811e7c6f8ad2191903e4741f66c30b43a10dd5a758e5d8f05a4c6",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/feedback-world.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-formal/index.html",
+      "bytes": 2312,
+      "sha256": "539495ae2d3c0977b036e7741387c024964e10a95863864289aff5a12ebcd969",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/index.html"
+    },
+    {
+      "path": "platform/crystal-cart-formal/legacy-state-v1.mjs",
+      "bytes": 5495,
+      "sha256": "f0c8c83f6a4de6345417ef0b7f97604d5e4a380acef0f9e1fefb13aee2137d55",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/legacy-state-v1.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-formal/main.mjs",
+      "bytes": 15992,
+      "sha256": "e1e50f713ff8a78e893466338647a93b44e88543ccfda1b3892e8526980579c5",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/main.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-formal/questions.mjs",
+      "bytes": 9807,
+      "sha256": "786d24bfab558a8983b7a26347031e4a2c0ae68ba4bada505954d1af79b9751e",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/questions.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-formal/state.mjs",
+      "bytes": 6076,
+      "sha256": "6c0c3c5b6837a1b1b9631efa079aaa76fb2a827807360dba50b174353c6a0228",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/state.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-formal/store.mjs",
+      "bytes": 11285,
+      "sha256": "1aef98780e3c96cedcece2093182eea629999567c638945a75f9defab7a441da",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/store.mjs"
+    },
+    {
+      "path": "platform/crystal-cart-formal/style.css",
+      "bytes": 2546,
+      "sha256": "9b68d14fd760249846bffb4d4b7442e0d05f8ea740ae6d08e06fcb4bc8b4da74",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/style.css"
+    },
+    {
+      "path": "platform/crystal-cart-formal/world.mjs",
+      "bytes": 2509,
+      "sha256": "449f566c6cf1f4c088250c3645c3af7c59ed977549df765aa9553653fc1c36e9",
+      "source": "workspaces/WP16/site/platform/crystal-cart-formal/world.mjs"
+    },
+    {
+      "path": "platform/game-garden/assets/cards/card-4-scene.png",
+      "bytes": 2223614,
+      "sha256": "136424fb82517c2b58f4ef0a260611163699e79b8544ea6143b1ad147b239d8f",
+      "source": "workspaces/WP16/site/platform/game-garden/assets/cards/card-4-scene.png"
+    },
+    {
+      "path": "platform/game-garden/assets/cards/card-5-scene.png",
+      "bytes": 2717595,
+      "sha256": "dd5b9479a13702043411760011151e6cba98787b88431a8680138f60db3d3a80",
+      "source": "workspaces/WP16/site/platform/game-garden/assets/cards/card-5-scene.png"
     },
     {
       "path": "platform/game-garden/assets/garden.png",
       "bytes": 2577938,
       "sha256": "7abc0a0ec5eed8826ebf1eed87ce732bbee3b755cff721ba54756ebb6501fc42",
-      "source": "platform/game-garden/assets/garden.png",
-      "sourceSHA256": "7abc0a0ec5eed8826ebf1eed87ce732bbee3b755cff721ba54756ebb6501fc42",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/garden.png"
     },
     {
       "path": "platform/game-garden/assets/reference/book.png",
       "bytes": 12322,
       "sha256": "1077082b5d1955bdb3aebe3aceeb5929a115797f919d969f6bf2aa8b168aeafa",
-      "source": "platform/game-garden/assets/reference/book.png",
-      "sourceSHA256": "1077082b5d1955bdb3aebe3aceeb5929a115797f919d969f6bf2aa8b168aeafa",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/book.png"
     },
     {
       "path": "platform/game-garden/assets/reference/challenge-source.png",
       "bytes": 78203,
       "sha256": "72b2cfa30a410af717275cffa90b497951cc1c2b21de281c6bbb645ded5f6872",
-      "source": "platform/game-garden/assets/reference/challenge-source.png",
-      "sourceSHA256": "72b2cfa30a410af717275cffa90b497951cc1c2b21de281c6bbb645ded5f6872",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/challenge-source.png"
     },
     {
       "path": "platform/game-garden/assets/reference/footer-blank.png",
       "bytes": 1271783,
       "sha256": "f0cd1c1102c0218bd7f8d44e32b91413a1471c37c31d55137c51b3814213fff9",
-      "source": "platform/game-garden/assets/reference/footer-blank.png",
-      "sourceSHA256": "f0cd1c1102c0218bd7f8d44e32b91413a1471c37c31d55137c51b3814213fff9",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/footer-blank.png"
     },
     {
       "path": "platform/game-garden/assets/reference/frame-0.png",
       "bytes": 250313,
       "sha256": "27aaaf3bca83fb38f6046091b5c68cf932f0392d0a28c4a0420d225d6e1dc3ed",
-      "source": "platform/game-garden/assets/reference/frame-0.png",
-      "sourceSHA256": "27aaaf3bca83fb38f6046091b5c68cf932f0392d0a28c4a0420d225d6e1dc3ed",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/frame-0.png"
     },
     {
       "path": "platform/game-garden/assets/reference/frame-1.png",
       "bytes": 182034,
       "sha256": "2b0476ffef0bb6a987e75143378a91d88a5d055d63882a8168694b622f040ce2",
-      "source": "platform/game-garden/assets/reference/frame-1.png",
-      "sourceSHA256": "2b0476ffef0bb6a987e75143378a91d88a5d055d63882a8168694b622f040ce2",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/frame-1.png"
     },
     {
       "path": "platform/game-garden/assets/reference/frame-2.png",
       "bytes": 182092,
       "sha256": "05ae8e2fdc249df069d4b10b7832dc1c67694bfa4a6d781d79e1289b9d8390c2",
-      "source": "platform/game-garden/assets/reference/frame-2.png",
-      "sourceSHA256": "05ae8e2fdc249df069d4b10b7832dc1c67694bfa4a6d781d79e1289b9d8390c2",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/frame-2.png"
     },
     {
       "path": "platform/game-garden/assets/reference/frame-3.png",
       "bytes": 173574,
       "sha256": "c9a4a43de5beab285007c1ad0975ed42b84082192f128bb2a899d787dcb66fb0",
-      "source": "platform/game-garden/assets/reference/frame-3.png",
-      "sourceSHA256": "c9a4a43de5beab285007c1ad0975ed42b84082192f128bb2a899d787dcb66fb0",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/frame-3.png"
     },
     {
       "path": "platform/game-garden/assets/reference/frame-4.png",
       "bytes": 187961,
       "sha256": "1f2cb61c81bcd9c2d5d72cbf964e6e2ecfdac824b74932aa37b84d4f33c7d0b1",
-      "source": "platform/game-garden/assets/reference/frame-4.png",
-      "sourceSHA256": "1f2cb61c81bcd9c2d5d72cbf964e6e2ecfdac824b74932aa37b84d4f33c7d0b1",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/frame-4.png"
     },
     {
       "path": "platform/game-garden/assets/reference/practice-source.png",
       "bytes": 75400,
       "sha256": "775b86efb23143fe0cd40897051d73ca122f4125f3981410ef619d47a9854e1b",
-      "source": "platform/game-garden/assets/reference/practice-source.png",
-      "sourceSHA256": "775b86efb23143fe0cd40897051d73ca122f4125f3981410ef619d47a9854e1b",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/practice-source.png"
     },
     {
       "path": "platform/game-garden/assets/reference/scene-0.png",
       "bytes": 108916,
       "sha256": "d052e198e2ab8417f67840b9819bf355898b8523b3d9a254662738e2ea9b9a1c",
-      "source": "platform/game-garden/assets/reference/scene-0.png",
-      "sourceSHA256": "d052e198e2ab8417f67840b9819bf355898b8523b3d9a254662738e2ea9b9a1c",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/scene-0.png"
     },
     {
       "path": "platform/game-garden/assets/reference/scene-1-unlocked.png",
       "bytes": 1670956,
       "sha256": "0cc7feeef155efd5f596ffb539ccc555e3796cb2115abd7259ba7a0b2ca0042e",
-      "source": "platform/game-garden/assets/reference/scene-1-unlocked.png",
-      "sourceSHA256": "0cc7feeef155efd5f596ffb539ccc555e3796cb2115abd7259ba7a0b2ca0042e",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/scene-1-unlocked.png"
     },
     {
       "path": "platform/game-garden/assets/reference/scene-2-unlocked.png",
       "bytes": 1764625,
       "sha256": "be40ed1ead0c71e57bc654386fd33390aac2ed0e5e34dbc0ca7b82ba74dc481e",
-      "source": "platform/game-garden/assets/reference/scene-2-unlocked.png",
-      "sourceSHA256": "be40ed1ead0c71e57bc654386fd33390aac2ed0e5e34dbc0ca7b82ba74dc481e",
-      "transformed": false
-    },
-    {
-      "path": "platform/game-garden/assets/reference/scene-2.png",
-      "bytes": 75377,
-      "sha256": "b800ad9c9ff68cc8b96d83ec446c649e3e751a4656d6c9c8091cc943cb236fb0",
-      "source": "platform/game-garden/assets/reference/scene-2.png",
-      "sourceSHA256": "b800ad9c9ff68cc8b96d83ec446c649e3e751a4656d6c9c8091cc943cb236fb0",
-      "transformed": false
-    },
-    {
-      "path": "platform/game-garden/assets/reference/scene-3.png",
-      "bytes": 68019,
-      "sha256": "bddf02b8ec181dfd2b552bd63005222be6ab7cfa44cacad353e7b4d0d94c9f0f",
-      "source": "platform/game-garden/assets/reference/scene-3.png",
-      "sourceSHA256": "bddf02b8ec181dfd2b552bd63005222be6ab7cfa44cacad353e7b4d0d94c9f0f",
-      "transformed": false
-    },
-    {
-      "path": "platform/game-garden/assets/reference/scene-4.png",
-      "bytes": 78492,
-      "sha256": "667bfc70b8bbe8d823d4e2ef35a87fbdec8a67976cfdb873a15baef0b35fa806",
-      "source": "platform/game-garden/assets/reference/scene-4.png",
-      "sourceSHA256": "667bfc70b8bbe8d823d4e2ef35a87fbdec8a67976cfdb873a15baef0b35fa806",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/scene-2-unlocked.png"
     },
     {
       "path": "platform/game-garden/assets/reference/sign-blank.png",
       "bytes": 1606968,
       "sha256": "cc32e3fb149ff4137059bc249aad15d0229e96f9e138a512f3a83cc7841b6a4a",
-      "source": "platform/game-garden/assets/reference/sign-blank.png",
-      "sourceSHA256": "cc32e3fb149ff4137059bc249aad15d0229e96f9e138a512f3a83cc7841b6a4a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/sign-blank.png"
     },
     {
       "path": "platform/game-garden/assets/reference/trophy.png",
       "bytes": 11708,
       "sha256": "85af464c4fbd53f56767bddf9d6778991ef51f7cbfd8c5614b1364292aa4ca65",
-      "source": "platform/game-garden/assets/reference/trophy.png",
-      "sourceSHA256": "85af464c4fbd53f56767bddf9d6778991ef51f7cbfd8c5614b1364292aa4ca65",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/trophy.png"
     },
     {
       "path": "platform/game-garden/assets/reference/welcome-left.png",
       "bytes": 1653986,
       "sha256": "1b4bb8d2461b6f74b865e4965c917cab410dc9861aae082d2470a9e1d96711c7",
-      "source": "platform/game-garden/assets/reference/welcome-left.png",
-      "sourceSHA256": "1b4bb8d2461b6f74b865e4965c917cab410dc9861aae082d2470a9e1d96711c7",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/welcome-left.png"
     },
     {
       "path": "platform/game-garden/assets/reference/welcome-right.png",
       "bytes": 1589237,
       "sha256": "4183d81312f11e2550237d42909641c7c101b404bef1d8b3856f42858525e086",
-      "source": "platform/game-garden/assets/reference/welcome-right.png",
-      "sourceSHA256": "4183d81312f11e2550237d42909641c7c101b404bef1d8b3856f42858525e086",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/reference/welcome-right.png"
     },
     {
       "path": "platform/game-garden/assets/sign.png",
       "bytes": 1650376,
       "sha256": "5886b4ba06f01129eb211f33427b0213d2f5a240d1f1be91ce0e25944a5448df",
-      "source": "platform/game-garden/assets/sign.png",
-      "sourceSHA256": "5886b4ba06f01129eb211f33427b0213d2f5a240d1f1be91ce0e25944a5448df",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/assets/sign.png"
     },
     {
       "path": "platform/game-garden/config.js",
-      "bytes": 1286,
-      "sha256": "4cbb129f595d98bba0df3f1568a2936067413d26a32f04d6ea79153612318cb4",
-      "source": "platform/game-garden/config.js",
-      "sourceSHA256": "4cbb129f595d98bba0df3f1568a2936067413d26a32f04d6ea79153612318cb4",
-      "transformed": false
+      "bytes": 1856,
+      "sha256": "ec426f47626dacbc674fd03633fe72645866207d31d8b200ada9eec7e56f6fa3",
+      "source": "workspaces/WP16/site/platform/game-garden/config.js"
     },
     {
       "path": "platform/game-garden/fidelity.css",
       "bytes": 11185,
       "sha256": "9aa6fb3f79bc518c68a9e38e3edcd15891753b902b61ca9b1445828a2f8938b0",
-      "source": "platform/game-garden/fidelity.css",
-      "sourceSHA256": "9aa6fb3f79bc518c68a9e38e3edcd15891753b902b61ca9b1445828a2f8938b0",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/fidelity.css"
     },
     {
       "path": "platform/game-garden/index.html",
-      "bytes": 3720,
-      "sha256": "f678ce6e2dda502d5628a93602f5d71744a0336f328a4bb05a5bf5ed47fcd5e0",
-      "source": "platform/game-garden/index.html",
-      "sourceSHA256": "bbe2a65f44938ab84566b24620026c22444d3a6eefda77b6bdfd99bf37d49875",
-      "transformed": true
+      "bytes": 3876,
+      "sha256": "dad031929c46452265d5edc80aaecdf8d70181c790a3305e9468bdc044818348",
+      "source": "workspaces/WP16/site/platform/game-garden/index.html"
     },
     {
       "path": "platform/game-garden/main.js",
-      "bytes": 2763,
-      "sha256": "aa032833490e526ed14364b60d4bfc0486d3bf338c6bf09e356c252e368542c2",
-      "source": "platform/game-garden/main.js",
-      "sourceSHA256": "aa032833490e526ed14364b60d4bfc0486d3bf338c6bf09e356c252e368542c2",
-      "transformed": false
+      "bytes": 5182,
+      "sha256": "a8b29495893cbd36e8a14fcb8e76a73e5e9d9f6389e68aaf4e719b9091393488",
+      "source": "workspaces/WP16/site/platform/game-garden/main.js"
     },
     {
       "path": "platform/game-garden/navigation.css",
-      "bytes": 156,
-      "sha256": "7de6c38f95dff09aa209bdeb5524cb1bfb19afa4701805268e979746d864e043",
-      "source": "platform/game-garden/navigation.css",
-      "sourceSHA256": "7de6c38f95dff09aa209bdeb5524cb1bfb19afa4701805268e979746d864e043",
-      "transformed": false
+      "bytes": 1026,
+      "sha256": "788b945348171bd9da8536b7be09474feefaa1a0b72cf7026b0c8a2263cbe0bb",
+      "source": "workspaces/WP16/site/platform/game-garden/navigation.css"
+    },
+    {
+      "path": "platform/game-garden/resume-ui.js",
+      "bytes": 4649,
+      "sha256": "4916c693fc7156c88471f51f5b5058b804e182683c5902506ff32985b80c9d67",
+      "source": "workspaces/WP16/site/platform/game-garden/resume-ui.js"
+    },
+    {
+      "path": "platform/game-garden/resume.css",
+      "bytes": 1559,
+      "sha256": "ab80d346f5080b58ee38fbd960f60fda971fea1f61b0d2430ffbf758e2475397",
+      "source": "workspaces/WP16/site/platform/game-garden/resume.css"
     },
     {
       "path": "platform/game-garden/style.css",
       "bytes": 9437,
       "sha256": "2bc75710dd47b9569eaea8b1e9a27063b77fb3722633e66b5ef65e8a9ac43a9a",
-      "source": "platform/game-garden/style.css",
-      "sourceSHA256": "2bc75710dd47b9569eaea8b1e9a27063b77fb3722633e66b5ef65e8a9ac43a9a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/game-garden/style.css"
     },
     {
       "path": "platform/index.html",
-      "bytes": 3748,
-      "sha256": "02a653f4c00935cd197cc03df8367c355171d573768a7b36f485dfd52217a9a7",
-      "source": "generated-platform-garden",
-      "transformed": true
+      "bytes": 3512,
+      "sha256": "8a0655fdec056ca28393fb895fb0005859f84960d02eb98f05ec1b41ddfab117",
+      "source": "workspaces/WP16/site/platform/index.html"
     },
     {
       "path": "platform/marble-demo/a2/audio.js",
       "bytes": 1200,
       "sha256": "123a5d52f2752911793d6ba89bf8932bb5cc7424f6861fee062b3602a6aea6f9",
-      "source": "platform/marble-demo/a2/audio.js",
-      "sourceSHA256": "123a5d52f2752911793d6ba89bf8932bb5cc7424f6861fee062b3602a6aea6f9",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/a2/audio.js"
     },
     {
       "path": "platform/marble-demo/a2/physics.js",
       "bytes": 5697,
       "sha256": "f5d5bbb91dd8dfdacd9e436bd0df388562f4d0ae7e389566f27fbbbb71716f1b",
-      "source": "platform/marble-demo/a2/physics.js",
-      "sourceSHA256": "f5d5bbb91dd8dfdacd9e436bd0df388562f4d0ae7e389566f27fbbbb71716f1b",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/a2/physics.js"
     },
     {
       "path": "platform/marble-demo/a2/style.css",
       "bytes": 2129,
       "sha256": "c5447d309b4600c076cd4911cf08a526b668716667974400b6498887296502e7",
-      "source": "platform/marble-demo/a2/style.css",
-      "sourceSHA256": "c5447d309b4600c076cd4911cf08a526b668716667974400b6498887296502e7",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/a2/style.css"
     },
     {
       "path": "platform/marble-demo/assets/ball.png",
       "bytes": 90732,
       "sha256": "3fcc2c6150fbaa4ca87a2b456cf8bb19bc9543cc487221ee871f6a14bf1220de",
-      "source": "platform/marble-demo/assets/ball.png",
-      "sourceSHA256": "3fcc2c6150fbaa4ca87a2b456cf8bb19bc9543cc487221ee871f6a14bf1220de",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/ball.png"
     },
     {
       "path": "platform/marble-demo/assets/chain.png",
       "bytes": 194235,
       "sha256": "7c73323c16d7f4ab425757e1adedb7c70c752ce54c89f38845d149d5a652b2a8",
-      "source": "platform/marble-demo/assets/chain.png",
-      "sourceSHA256": "7c73323c16d7f4ab425757e1adedb7c70c752ce54c89f38845d149d5a652b2a8",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/chain.png"
     },
     {
       "path": "platform/marble-demo/assets/crate.png",
       "bytes": 196225,
       "sha256": "0b40883aafa00146b079eae3b7fdab0bed454e464b03f9c3c7ec652a7472d108",
-      "source": "platform/marble-demo/assets/crate.png",
-      "sourceSHA256": "0b40883aafa00146b079eae3b7fdab0bed454e464b03f9c3c7ec652a7472d108",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/crate.png"
     },
     {
       "path": "platform/marble-demo/assets/ice.png",
       "bytes": 190623,
       "sha256": "b89aca63a622b7e5e61e13e5329ee5a24dc9f4f4fcf5a996d6ee0cab72a8c754",
-      "source": "platform/marble-demo/assets/ice.png",
-      "sourceSHA256": "b89aca63a622b7e5e61e13e5329ee5a24dc9f4f4fcf5a996d6ee0cab72a8c754",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/ice.png"
     },
     {
       "path": "platform/marble-demo/assets/launcher.png",
       "bytes": 215135,
       "sha256": "4187180ed252904e72a77b668f598b62abbe356d4e11b7cd1e6d7198d4c6d3b0",
-      "source": "platform/marble-demo/assets/launcher.png",
-      "sourceSHA256": "4187180ed252904e72a77b668f598b62abbe356d4e11b7cd1e6d7198d4c6d3b0",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/launcher.png"
     },
     {
       "path": "platform/marble-demo/assets/panel-source.png",
       "bytes": 116829,
       "sha256": "bf7b3519dc2966e66af6f2192324e03cb6d64f6b279d1ea2e4399ff0ae900250",
-      "source": "platform/marble-demo/assets/panel-source.png",
-      "sourceSHA256": "bf7b3519dc2966e66af6f2192324e03cb6d64f6b279d1ea2e4399ff0ae900250",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/panel-source.png"
     },
     {
       "path": "platform/marble-demo/assets/stone.png",
       "bytes": 194738,
       "sha256": "f2ffe7c1178834feef585e147aa6cefc3bf217f3ba1a03ecc44533fd429b0294",
-      "source": "platform/marble-demo/assets/stone.png",
-      "sourceSHA256": "f2ffe7c1178834feef585e147aa6cefc3bf217f3ba1a03ecc44533fd429b0294",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/stone.png"
     },
     {
       "path": "platform/marble-demo/assets/workshop.png",
       "bytes": 2337394,
       "sha256": "19bad829724520e2c1a518fb53b66634bc1a3fddc2f06971a26765699e4dd6e8",
-      "source": "platform/marble-demo/assets/workshop.png",
-      "sourceSHA256": "19bad829724520e2c1a518fb53b66634bc1a3fddc2f06971a26765699e4dd6e8",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/assets/workshop.png"
     },
     {
       "path": "platform/marble-demo/b/math-session.js",
       "bytes": 2408,
       "sha256": "3c96f20e49b1c5e45005398fef5d0f91553b11f36ab039e8abd410b8f52959f7",
-      "source": "platform/marble-demo/b/math-session.js",
-      "sourceSHA256": "3c96f20e49b1c5e45005398fef5d0f91553b11f36ab039e8abd410b8f52959f7",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/b/math-session.js"
     },
     {
       "path": "platform/marble-demo/b/physics.js",
       "bytes": 4588,
       "sha256": "06d0eba0d31cfa97788e5cbee1a6724b112de43e8699525706c28b66e507dde2",
-      "source": "platform/marble-demo/b/physics.js",
-      "sourceSHA256": "06d0eba0d31cfa97788e5cbee1a6724b112de43e8699525706c28b66e507dde2",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/b/physics.js"
     },
     {
       "path": "platform/marble-demo/b/questions.js",
       "bytes": 3631,
       "sha256": "77a74a3953a74905d831c24caa477d28d88c559b2a853d5f9173e6a3a5aba047",
-      "source": "platform/marble-demo/b/questions.js",
-      "sourceSHA256": "77a74a3953a74905d831c24caa477d28d88c559b2a853d5f9173e6a3a5aba047",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/b/questions.js"
     },
     {
       "path": "platform/marble-demo/b/style.css",
       "bytes": 1153,
       "sha256": "195f1509e6e14c478e605f5e594f94bab5df07d89b09fed7a9ecc706912e1f02",
-      "source": "platform/marble-demo/b/style.css",
-      "sourceSHA256": "195f1509e6e14c478e605f5e594f94bab5df07d89b09fed7a9ecc706912e1f02",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/b/style.css"
     },
     {
       "path": "platform/marble-demo/physics.js",
       "bytes": 5316,
       "sha256": "41a79a8a15b682c81f5acc3115e372fa4254d189cca13882f4a58a08e9d9efca",
-      "source": "platform/marble-demo/physics.js",
-      "sourceSHA256": "41a79a8a15b682c81f5acc3115e372fa4254d189cca13882f4a58a08e9d9efca",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/physics.js"
     },
     {
       "path": "platform/marble-demo/style.css",
       "bytes": 5590,
       "sha256": "0a0cda9fc62644fb2415d272552b55fd31eeffe55348532d2b9d67e0d8799390",
-      "source": "platform/marble-demo/style.css",
-      "sourceSHA256": "0a0cda9fc62644fb2415d272552b55fd31eeffe55348532d2b9d67e0d8799390",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-demo/style.css"
+    },
+    {
+      "path": "platform/marble-formal/anti-trap.js",
+      "bytes": 2970,
+      "sha256": "0faf99bfbe1a29c38dadc93742098aaa8de286ef9c1fc026bc012c1e0490e02f",
+      "source": "workspaces/WP16/site/platform/marble-formal/anti-trap.js"
     },
     {
       "path": "platform/marble-formal/garden-return.css",
       "bytes": 432,
       "sha256": "595b78bd1f80d8a24f7ca1525b6b4339a1540dd5a0680a3677e1988a2117be21",
-      "source": "platform/marble-formal/garden-return.css",
-      "sourceSHA256": "595b78bd1f80d8a24f7ca1525b6b4339a1540dd5a0680a3677e1988a2117be21",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-formal/garden-return.css"
     },
     {
       "path": "platform/marble-formal/index.html",
-      "bytes": 4729,
-      "sha256": "4166f199b6be91f9af9771a292f1a472ce1761bf4ad02a468707c109f41502bf",
-      "source": "platform/marble-formal/index.html",
-      "sourceSHA256": "1213c001c2a7aa624f27f6b40e63d098731acf3eeec1c638359b69d213cbf3bd",
-      "transformed": true
+      "bytes": 4321,
+      "sha256": "c26b2fda99c4e04540e6fa89f712be4ef56275127cbf9a911424b71af01d6d05",
+      "source": "workspaces/WP16/site/platform/marble-formal/index.html"
     },
     {
       "path": "platform/marble-formal/main.js",
-      "bytes": 22261,
-      "sha256": "f9d5c8e5901901f7ebf1ef6ef84074a59d8e8e97f7a066366ce973b2ee7ed486",
-      "source": "platform/marble-formal/main.js",
-      "sourceSHA256": "f9d5c8e5901901f7ebf1ef6ef84074a59d8e8e97f7a066366ce973b2ee7ed486",
-      "transformed": false
+      "bytes": 22446,
+      "sha256": "167a509ab521ea1f7157ee09a98f12aea43a88e7c60b68999585cc154c3bbe58",
+      "source": "workspaces/WP16/site/platform/marble-formal/main.js"
+    },
+    {
+      "path": "platform/marble-formal/questions-v2.js",
+      "bytes": 2728,
+      "sha256": "60aa83382d5b28653a723f6c531f514b6ab584627c7f8e0a5cc7f119f6a7d96d",
+      "source": "workspaces/WP16/site/platform/marble-formal/questions-v2.js"
     },
     {
       "path": "platform/marble-formal/stages.js",
-      "bytes": 2726,
-      "sha256": "d605451038682e8e25935369f24b7f8519b12ccb297dc48d2aca9094d1d60b3f",
-      "source": "platform/marble-formal/stages.js",
-      "sourceSHA256": "d605451038682e8e25935369f24b7f8519b12ccb297dc48d2aca9094d1d60b3f",
-      "transformed": false
+      "bytes": 2940,
+      "sha256": "f7ac6b2b29b7c17edf7cd921a8ee57c6d0aba3bc207c29e7c379da75470135be",
+      "source": "workspaces/WP16/site/platform/marble-formal/stages.js"
     },
     {
       "path": "platform/marble-formal/state.js",
-      "bytes": 8741,
-      "sha256": "df7511e7f22de53257a44e9fe818966317a02679c778945c336db4ac4eb53827",
-      "source": "platform/marble-formal/state.js",
-      "sourceSHA256": "df7511e7f22de53257a44e9fe818966317a02679c778945c336db4ac4eb53827",
-      "transformed": false
+      "bytes": 9027,
+      "sha256": "800a86d63771e9fb44755da87475b7fe3de0a8d91bdccc8a342363ebb4a11bae",
+      "source": "workspaces/WP16/site/platform/marble-formal/state.js"
     },
     {
       "path": "platform/marble-formal/store.js",
       "bytes": 6235,
       "sha256": "1d1eeb601cb39f88e4d77dd7714c2e21261bcf5e9fd3c987d1240000ca08386e",
-      "source": "platform/marble-formal/store.js",
-      "sourceSHA256": "1d1eeb601cb39f88e4d77dd7714c2e21261bcf5e9fd3c987d1240000ca08386e",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-formal/store.js"
     },
     {
       "path": "platform/marble-formal/style.css",
       "bytes": 1644,
       "sha256": "924945664b4df55d23d95d549dfd417980b771ab0d29a64fb8eebb922a9f1a0d",
-      "source": "platform/marble-formal/style.css",
-      "sourceSHA256": "924945664b4df55d23d95d549dfd417980b771ab0d29a64fb8eebb922a9f1a0d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-formal/style.css"
     },
     {
       "path": "platform/marble-formal/tablet.css",
       "bytes": 3137,
       "sha256": "8728a6d555eff46798ae44281eb7d9fea867ef091024f08f15b5bcaa9d4cab7d",
-      "source": "platform/marble-formal/tablet.css",
-      "sourceSHA256": "8728a6d555eff46798ae44281eb7d9fea867ef091024f08f15b5bcaa9d4cab7d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-formal/tablet.css"
     },
     {
       "path": "platform/marble-formal/viewport.js",
       "bytes": 2859,
       "sha256": "bbbd2f9081c09f9e3808548c13c390c34083eb3f266a9776ce9065d09906bb49",
-      "source": "platform/marble-formal/viewport.js",
-      "sourceSHA256": "bbbd2f9081c09f9e3808548c13c390c34083eb3f266a9776ce9065d09906bb49",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/marble-formal/viewport.js"
     },
     {
       "path": "platform/marble-formal/world.js",
-      "bytes": 2016,
-      "sha256": "97c446d5825e35ba2dc049fa7547ac4bb464a64041970eb34d5d0c53cd2f6b6e",
-      "source": "platform/marble-formal/world.js",
-      "sourceSHA256": "97c446d5825e35ba2dc049fa7547ac4bb464a64041970eb34d5d0c53cd2f6b6e",
-      "transformed": false
+      "bytes": 2370,
+      "sha256": "19b309258fe517231b4a3acecb7a48c159759b8fef626198e55978b61173fbff",
+      "source": "workspaces/WP16/site/platform/marble-formal/world.js"
     },
     {
       "path": "platform/mole-challenge/actors.js",
       "bytes": 803,
       "sha256": "7748d95316ebc7e8bed92987e04d975fdcf78e4a3b82086f084283ee805a7504",
-      "source": "platform/mole-challenge/actors.js",
-      "sourceSHA256": "7748d95316ebc7e8bed92987e04d975fdcf78e4a3b82086f084283ee805a7504",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-challenge/actors.js"
     },
     {
       "path": "platform/mole-challenge/style.css",
       "bytes": 4067,
       "sha256": "0c91f4a1e6c2610df59c1778424e25b5deea0a1bc2c07fed0a112205bdf964a6",
-      "source": "platform/mole-challenge/style.css",
-      "sourceSHA256": "0c91f4a1e6c2610df59c1778424e25b5deea0a1bc2c07fed0a112205bdf964a6",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-challenge/style.css"
     },
     {
       "path": "platform/mole-demo/animation.js",
       "bytes": 1845,
       "sha256": "a4a65e2863d0d0d3c134ad211f4918a3629595b63c35ee2f3c04ca64d0d02990",
-      "source": "platform/mole-demo/animation.js",
-      "sourceSHA256": "a4a65e2863d0d0d3c134ad211f4918a3629595b63c35ee2f3c04ca64d0d02990",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/animation.js"
     },
     {
       "path": "platform/mole-demo/assets/dizzy.png",
       "bytes": 9604,
       "sha256": "1f1fff7862648e7cdca4eedf3bdd8e15f07a1d14240fc453c387c5223319c7c9",
-      "source": "platform/mole-demo/assets/dizzy.png",
-      "sourceSHA256": "1f1fff7862648e7cdca4eedf3bdd8e15f07a1d14240fc453c387c5223319c7c9",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/dizzy.png"
     },
     {
       "path": "platform/mole-demo/assets/dust.png",
       "bytes": 8689,
       "sha256": "51a5fed8e7d4079e62be1d546e8eabf8055d455e2fdb3b176cf258be0049f942",
-      "source": "platform/mole-demo/assets/dust.png",
-      "sourceSHA256": "51a5fed8e7d4079e62be1d546e8eabf8055d455e2fdb3b176cf258be0049f942",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/dust.png"
     },
     {
       "path": "platform/mole-demo/assets/exit.png",
       "bytes": 28844,
       "sha256": "a7dbd328fa8ec60e18371a2907f4423bb1fe557a86b14cfb1eb22a09a60d6ea5",
-      "source": "platform/mole-demo/assets/exit.png",
-      "sourceSHA256": "a7dbd328fa8ec60e18371a2907f4423bb1fe557a86b14cfb1eb22a09a60d6ea5",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/exit.png"
     },
     {
       "path": "platform/mole-demo/assets/hammer.png",
       "bytes": 36507,
       "sha256": "f726d45f908bb1543b359c9db4d88b0ba3ee7b1e03a0067ca572f3c2747cae7d",
-      "source": "platform/mole-demo/assets/hammer.png",
-      "sourceSHA256": "f726d45f908bb1543b359c9db4d88b0ba3ee7b1e03a0067ca572f3c2747cae7d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/hammer.png"
     },
     {
       "path": "platform/mole-demo/assets/hit.png",
       "bytes": 40280,
       "sha256": "ba713a408b8dabd937f830ce5eaf0004d1543c5a3ddd2ea61ca5b474740f2b8b",
-      "source": "platform/mole-demo/assets/hit.png",
-      "sourceSHA256": "ba713a408b8dabd937f830ce5eaf0004d1543c5a3ddd2ea61ca5b474740f2b8b",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/hit.png"
     },
     {
       "path": "platform/mole-demo/assets/hole-front.png",
       "bytes": 17936,
       "sha256": "73b9e87874851879833decfb7aef0b5f2bc50c6b91c8e51fdadd00f08e38d72f",
-      "source": "platform/mole-demo/assets/hole-front.png",
-      "sourceSHA256": "73b9e87874851879833decfb7aef0b5f2bc50c6b91c8e51fdadd00f08e38d72f",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/hole-front.png"
     },
     {
       "path": "platform/mole-demo/assets/hole.png",
       "bytes": 47570,
       "sha256": "350e0bcecaca47d8025c6754bea18cdfb5062aecd2c5dbea99d2088348a52a59",
-      "source": "platform/mole-demo/assets/hole.png",
-      "sourceSHA256": "350e0bcecaca47d8025c6754bea18cdfb5062aecd2c5dbea99d2088348a52a59",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/hole.png"
     },
     {
       "path": "platform/mole-demo/assets/idle.png",
       "bytes": 44349,
       "sha256": "29cd4dc2c8d5386d2f745f268310e6dd20455d9c12c95849e0cb29b3ffee3ba2",
-      "source": "platform/mole-demo/assets/idle.png",
-      "sourceSHA256": "29cd4dc2c8d5386d2f745f268310e6dd20455d9c12c95849e0cb29b3ffee3ba2",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/idle.png"
     },
     {
       "path": "platform/mole-demo/assets/left.png",
       "bytes": 45777,
       "sha256": "574319f7937e56f1f6bd0297fcc3a5bfc3174b40f8c6264c16944efce7ea5cdf",
-      "source": "platform/mole-demo/assets/left.png",
-      "sourceSHA256": "574319f7937e56f1f6bd0297fcc3a5bfc3174b40f8c6264c16944efce7ea5cdf",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/left.png"
     },
     {
       "path": "platform/mole-demo/assets/peek.png",
       "bytes": 45721,
       "sha256": "fba2d32a47e537add5dda6a9b4a15a1053d02071e3f93fe7d14e721408f94dc6",
-      "source": "platform/mole-demo/assets/peek.png",
-      "sourceSHA256": "fba2d32a47e537add5dda6a9b4a15a1053d02071e3f93fe7d14e721408f94dc6",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/peek.png"
     },
     {
       "path": "platform/mole-demo/assets/right.png",
       "bytes": 44545,
       "sha256": "4a7630845ace5045458e6c79e60d73253438b820b828502aff4838f4ba4d0d67",
-      "source": "platform/mole-demo/assets/right.png",
-      "sourceSHA256": "4a7630845ace5045458e6c79e60d73253438b820b828502aff4838f4ba4d0d67",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/right.png"
     },
     {
       "path": "platform/mole-demo/assets/smile.png",
       "bytes": 43671,
       "sha256": "77da25dbe855bad9930c1ea0fb4a8919b4562bb0760a9acd251aa67fd59bce53",
-      "source": "platform/mole-demo/assets/smile.png",
-      "sourceSHA256": "77da25dbe855bad9930c1ea0fb4a8919b4562bb0760a9acd251aa67fd59bce53",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/smile.png"
     },
     {
       "path": "platform/mole-demo/assets/stars.png",
       "bytes": 7184,
       "sha256": "ff84d48936e408d5d8d009d6155554b78c0c59580a63707426b89052b5d1fa36",
-      "source": "platform/mole-demo/assets/stars.png",
-      "sourceSHA256": "ff84d48936e408d5d8d009d6155554b78c0c59580a63707426b89052b5d1fa36",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/stars.png"
     },
     {
       "path": "platform/mole-demo/assets/surprise.png",
       "bytes": 45846,
       "sha256": "8f2c0aefe8411fa93015d49d6f03226b0613c5b735396f9d84d8b7231bb25d71",
-      "source": "platform/mole-demo/assets/surprise.png",
-      "sourceSHA256": "8f2c0aefe8411fa93015d49d6f03226b0613c5b735396f9d84d8b7231bb25d71",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/assets/surprise.png"
     },
     {
       "path": "platform/mole-demo/style.css",
       "bytes": 2565,
       "sha256": "a898ef8d449ff548b59b658f2c97ea0daab132278c3d183d93c60c989318a675",
-      "source": "platform/mole-demo/style.css",
-      "sourceSHA256": "a898ef8d449ff548b59b658f2c97ea0daab132278c3d183d93c60c989318a675",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-demo/style.css"
     },
     {
       "path": "platform/mole-formal/assets/armor-hit.png",
       "bytes": 44157,
       "sha256": "0a7f7f77e9b8defaa6704c83775cdcdbde9b808cf552ebabde4f3d84db265e8c",
-      "source": "platform/mole-formal/assets/armor-hit.png",
-      "sourceSHA256": "0a7f7f77e9b8defaa6704c83775cdcdbde9b808cf552ebabde4f3d84db265e8c",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/armor-hit.png"
     },
     {
       "path": "platform/mole-formal/assets/armor-idle.png",
       "bytes": 43623,
       "sha256": "b923da9eddca520b597ed98b79b55992487617c86108e5938aa91e2577a79a04",
-      "source": "platform/mole-formal/assets/armor-idle.png",
-      "sourceSHA256": "b923da9eddca520b597ed98b79b55992487617c86108e5938aa91e2577a79a04",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/armor-idle.png"
     },
     {
       "path": "platform/mole-formal/assets/king-hit.png",
       "bytes": 48595,
       "sha256": "1a6e48a8bf240c3e5ed4aae21e71ef78b20b7770c7a234a0595779897bfa2ecf",
-      "source": "platform/mole-formal/assets/king-hit.png",
-      "sourceSHA256": "1a6e48a8bf240c3e5ed4aae21e71ef78b20b7770c7a234a0595779897bfa2ecf",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/king-hit.png"
     },
     {
       "path": "platform/mole-formal/assets/king-idle.png",
       "bytes": 52255,
       "sha256": "8286fa28589e15714032692be041dfc6123f4257e36c615879608fad28543975",
-      "source": "platform/mole-formal/assets/king-idle.png",
-      "sourceSHA256": "8286fa28589e15714032692be041dfc6123f4257e36c615879608fad28543975",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/king-idle.png"
     },
     {
       "path": "platform/mole-formal/assets/magic-hit.png",
       "bytes": 39712,
       "sha256": "022fa6c82105db46040fd8f7c50ad1366379e2cc4a3c1306173626176035ef81",
-      "source": "platform/mole-formal/assets/magic-hit.png",
-      "sourceSHA256": "022fa6c82105db46040fd8f7c50ad1366379e2cc4a3c1306173626176035ef81",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/magic-hit.png"
     },
     {
       "path": "platform/mole-formal/assets/magic-idle.png",
       "bytes": 37344,
       "sha256": "3b05f9a65cc5092980a62515094a32a60dff2d1f3b8eed39cde17bea8e70973a",
-      "source": "platform/mole-formal/assets/magic-idle.png",
-      "sourceSHA256": "3b05f9a65cc5092980a62515094a32a60dff2d1f3b8eed39cde17bea8e70973a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/magic-idle.png"
     },
     {
       "path": "platform/mole-formal/assets/magic-smile.png",
       "bytes": 40546,
       "sha256": "5e684c190d37f166f2de18335cb3da4263320d168a407e9eee83c461b101efac",
-      "source": "platform/mole-formal/assets/magic-smile.png",
-      "sourceSHA256": "5e684c190d37f166f2de18335cb3da4263320d168a407e9eee83c461b101efac",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/magic-smile.png"
     },
     {
       "path": "platform/mole-formal/assets/trick-hide.png",
       "bytes": 44431,
       "sha256": "73385d2f26977b525739339f997411b509e65dfe5e83aa76a26e56162682d552",
-      "source": "platform/mole-formal/assets/trick-hide.png",
-      "sourceSHA256": "73385d2f26977b525739339f997411b509e65dfe5e83aa76a26e56162682d552",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/trick-hide.png"
     },
     {
       "path": "platform/mole-formal/assets/trick-hit.png",
       "bytes": 46720,
       "sha256": "2020e7c63090feab73e0f6e697958d735e1a34c2587ea1a7dbd541541e07c218",
-      "source": "platform/mole-formal/assets/trick-hit.png",
-      "sourceSHA256": "2020e7c63090feab73e0f6e697958d735e1a34c2587ea1a7dbd541541e07c218",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/trick-hit.png"
     },
     {
       "path": "platform/mole-formal/assets/trick-idle.png",
       "bytes": 46467,
       "sha256": "a1c71a445757bcba4d429519e9e9d8dc307be3c70fa6b30a0ed63314dea5b183",
-      "source": "platform/mole-formal/assets/trick-idle.png",
-      "sourceSHA256": "a1c71a445757bcba4d429519e9e9d8dc307be3c70fa6b30a0ed63314dea5b183",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/trick-idle.png"
     },
     {
       "path": "platform/mole-formal/assets/trick-smile.png",
       "bytes": 46213,
       "sha256": "121aa4319dcd5642f59ab254cff44f71f8c71212335849063d12cbefa3783888",
-      "source": "platform/mole-formal/assets/trick-smile.png",
-      "sourceSHA256": "121aa4319dcd5642f59ab254cff44f71f8c71212335849063d12cbefa3783888",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/assets/trick-smile.png"
+    },
+    {
+      "path": "platform/mole-formal/final-answer.js",
+      "bytes": 2136,
+      "sha256": "ab0e5a23e88bacc3e88ba496fab2155b98b7e9815126ac12480afda25e61e58e",
+      "source": "workspaces/WP16/site/platform/mole-formal/final-answer.js"
     },
     {
       "path": "platform/mole-formal/garden.js",
       "bytes": 10188,
       "sha256": "fddb896ebe89591683024f81b1e2b843519bb30bd448ad2212f891616fdc25cd",
-      "source": "platform/mole-formal/garden.js",
-      "sourceSHA256": "fddb896ebe89591683024f81b1e2b843519bb30bd448ad2212f891616fdc25cd",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/garden.js"
     },
     {
       "path": "platform/mole-formal/index.html",
-      "bytes": 2310,
-      "sha256": "15b5d1a44162cb395c2321ac0771ec1fa5dd717105267455eb4da84939bc7bba",
-      "source": "platform/mole-formal/index.html",
-      "sourceSHA256": "abd1bd24d3b5361f566c223f924309ed93956d976baf9d20fe8ee1adcba91d1f",
-      "transformed": true
+      "bytes": 1908,
+      "sha256": "abd1bd24d3b5361f566c223f924309ed93956d976baf9d20fe8ee1adcba91d1f",
+      "source": "workspaces/WP16/site/platform/mole-formal/index.html"
     },
     {
       "path": "platform/mole-formal/main.js",
       "bytes": 8802,
       "sha256": "dd37422490222e295b0d32a82396d5635c333858ee9396f8c4ba3fe06255c1a9",
-      "source": "platform/mole-formal/main.js",
-      "sourceSHA256": "dd37422490222e295b0d32a82396d5635c333858ee9396f8c4ba3fe06255c1a9",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/main.js"
     },
     {
       "path": "platform/mole-formal/questions.js",
       "bytes": 3001,
       "sha256": "40b18563a2af5625d9940879eb46bfe2c5062e49471b4fb8a42507589e0a35a6",
-      "source": "platform/mole-formal/questions.js",
-      "sourceSHA256": "40b18563a2af5625d9940879eb46bfe2c5062e49471b4fb8a42507589e0a35a6",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/questions.js"
     },
     {
       "path": "platform/mole-formal/remediation-main.js",
-      "bytes": 8325,
-      "sha256": "4a35d7f98f005c1697b42d62806a3a6a558d7baeaceb6f1d45e1a8896f6d204a",
-      "source": "platform/mole-formal/remediation-main.js",
-      "sourceSHA256": "4a35d7f98f005c1697b42d62806a3a6a558d7baeaceb6f1d45e1a8896f6d204a",
-      "transformed": false
+      "bytes": 9227,
+      "sha256": "d4ceb95058eb5a5c04a6f7e4d3965c99558cd7b6409aa2854fd609591202590c",
+      "source": "workspaces/WP16/site/platform/mole-formal/remediation-main.js"
     },
     {
       "path": "platform/mole-formal/remediation.html",
-      "bytes": 1648,
-      "sha256": "6d7c106dfc6740b41b7deb2b4d4498aff6fb3d3f828d9757f64770d17b16cdb8",
-      "source": "platform/mole-formal/remediation.html",
-      "sourceSHA256": "200ed19e9cdcad508a6cd9e2bcdf1c05d1d245387b201020785b94ccf85909f6",
-      "transformed": true
+      "bytes": 1240,
+      "sha256": "200ed19e9cdcad508a6cd9e2bcdf1c05d1d245387b201020785b94ccf85909f6",
+      "source": "workspaces/WP16/site/platform/mole-formal/remediation.html"
     },
     {
       "path": "platform/mole-formal/remediation.js",
-      "bytes": 7730,
-      "sha256": "6c37ab4b6aecd6f73f00240fc3d0d308c1cf34e5b4a829de28f8bbb0eb99eade",
-      "source": "platform/mole-formal/remediation.js",
-      "sourceSHA256": "6c37ab4b6aecd6f73f00240fc3d0d308c1cf34e5b4a829de28f8bbb0eb99eade",
-      "transformed": false
+      "bytes": 8107,
+      "sha256": "1beec06ef6d9316bddce705ba8cfcdfe3c6f9cdfbc2ea88c5e1f0265db4dddd5",
+      "source": "workspaces/WP16/site/platform/mole-formal/remediation.js"
     },
     {
       "path": "platform/mole-formal/state.js",
       "bytes": 3297,
       "sha256": "57005bd8a82bc1f241c66ef2a1e7ed2cfb954a0429c967a5e628547279af0da6",
-      "source": "platform/mole-formal/state.js",
-      "sourceSHA256": "57005bd8a82bc1f241c66ef2a1e7ed2cfb954a0429c967a5e628547279af0da6",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/state.js"
     },
     {
       "path": "platform/mole-formal/store.js",
       "bytes": 5692,
       "sha256": "c0e74843ba7b63c0fa72e3826fa2a15c3fc31ed898773737aaf033171acf1170",
-      "source": "platform/mole-formal/store.js",
-      "sourceSHA256": "c0e74843ba7b63c0fa72e3826fa2a15c3fc31ed898773737aaf033171acf1170",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/store.js"
     },
     {
       "path": "platform/mole-formal/style.css",
       "bytes": 2330,
       "sha256": "be18e5de48d263c0f87b70fdd2ec3cc1e87a5be151bce72b8cf47e353dba2b77",
-      "source": "platform/mole-formal/style.css",
-      "sourceSHA256": "be18e5de48d263c0f87b70fdd2ec3cc1e87a5be151bce72b8cf47e353dba2b77",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/mole-formal/style.css"
     },
     {
       "path": "platform/practice/index.html",
-      "bytes": 1416,
-      "sha256": "3f7699c7bf33f2d17ac5b36a05794d4023c571b3f3b6309f5edc4546ff751c56",
-      "source": "platform/practice/index.html",
-      "sourceSHA256": "73bcf82a337c5babbb5fb9630dc9a577e55337fdd8949588fd43087644113067",
-      "transformed": true
+      "bytes": 984,
+      "sha256": "73bcf82a337c5babbb5fb9630dc9a577e55337fdd8949588fd43087644113067",
+      "source": "workspaces/WP16/site/platform/practice/index.html"
+    },
+    {
+      "path": "platform/rescue-battle-demo/assets/characters/beautiful_mole.png",
+      "bytes": 370491,
+      "sha256": "9ffe4fcba266f05102f41eb8665c7e6de0213b486ca3278ce3c848b85a422225",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/assets/characters/beautiful_mole.png"
+    },
+    {
+      "path": "platform/rescue-battle-demo/assets/characters/hero_mole.png",
+      "bytes": 499323,
+      "sha256": "36db16a39a7687c9e41e98f452a24c7e875b74e3a51eba76f6b158cad2d73416",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/assets/characters/hero_mole.png"
+    },
+    {
+      "path": "platform/rescue-battle-demo/assets/characters/hero_mole_defeated.png",
+      "bytes": 1491331,
+      "sha256": "f0c510cc1adccda4e4c79cf6e4bb3de1770d7145ba3e6ce343500abcf2d1b83c",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/assets/characters/hero_mole_defeated.png"
+    },
+    {
+      "path": "platform/rescue-battle-demo/assets/characters/rescue_cage.png",
+      "bytes": 340601,
+      "sha256": "0c0f89baddaf8ae710ac9fc7ad723e92c7c895fa7457cc37187336752bf55c7a",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/assets/characters/rescue_cage.png"
+    },
+    {
+      "path": "platform/rescue-battle-demo/assets/crystal-castle-battle-clean.png",
+      "bytes": 2809763,
+      "sha256": "a5ec8db4c15c3167cfa1d0b3b435fd8df6498b46b3de0ea8cb3b6c0665d46ff4",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/assets/crystal-castle-battle-clean.png"
+    },
+    {
+      "path": "platform/rescue-battle-demo/assets/crystal.png",
+      "bytes": 21809,
+      "sha256": "32d4839ba979178d9f77be566663b60065264385fe8a419b7333f795c50533c1",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/assets/crystal.png"
+    },
+    {
+      "path": "platform/rescue-battle-demo/assets/evil_mole_boss.png",
+      "bytes": 2499532,
+      "sha256": "fa4f5e791c013f321898f22997a4e40f3f5e7756e2b925d497672e80b7d0c6dd",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/assets/evil_mole_boss.png"
+    },
+    {
+      "path": "platform/rescue-battle-demo/battle.mjs",
+      "bytes": 4348,
+      "sha256": "81014061f8a0226517537bc559a0c8f89d8e0aaa089d18028cefa89bb98cd728",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/battle.mjs"
+    },
+    {
+      "path": "platform/rescue-battle-demo/castle-scene.css",
+      "bytes": 1256,
+      "sha256": "d19b0a3e010bb7d417a2f41023942e752077ee5b6629dafb9a87c77acabdc9b0",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/castle-scene.css"
+    },
+    {
+      "path": "platform/rescue-battle-demo/combat-presentation.mjs",
+      "bytes": 1946,
+      "sha256": "b9c5b503c4543bac5bc97655d580707e14449eb8651e30e84352085460646ff0",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/combat-presentation.mjs"
+    },
+    {
+      "path": "platform/rescue-battle-demo/hit-particles.css",
+      "bytes": 289,
+      "sha256": "37d68abe409f2ad6b0581b25a050430fbecae624f01f34f15bfba22ba7b5ae2a",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/hit-particles.css"
+    },
+    {
+      "path": "platform/rescue-battle-demo/hit-particles.mjs",
+      "bytes": 5957,
+      "sha256": "924c06951b06b5063f0294131450db2f81c81c3150d106019f6bd0ff927fb57e",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/hit-particles.mjs"
+    },
+    {
+      "path": "platform/rescue-battle-demo/model.mjs",
+      "bytes": 1437,
+      "sha256": "237bc92ce5be7623bc542a43a3d6a56356585c88d182bb23dcd191f1d497b144",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/model.mjs"
+    },
+    {
+      "path": "platform/rescue-battle-demo/questions.mjs",
+      "bytes": 4328,
+      "sha256": "bf207433634785c6b980ac3afe9819bdd259a54071e21acf0c52355b29f3d52a",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/questions.mjs"
+    },
+    {
+      "path": "platform/rescue-battle-demo/style.css",
+      "bytes": 23162,
+      "sha256": "255d06f0951793605b5b2aa1b7bbbd2271cd1fabc395ff31a36206846e7fd616",
+      "source": "workspaces/WP16/site/platform/rescue-battle-demo/style.css"
+    },
+    {
+      "path": "platform/rescue-battle-formal/formal.css",
+      "bytes": 323,
+      "sha256": "b794870060a6bfca79cae5ecd735e03ee4c3bf6769e8be85c0be75b5c3f2e707",
+      "source": "workspaces/WP16/site/platform/rescue-battle-formal/formal.css"
+    },
+    {
+      "path": "platform/rescue-battle-formal/index.html",
+      "bytes": 9362,
+      "sha256": "3ca2517d01d236bc186fe789c97ee02e1bdf0718e1dc221db44a3606393e0320",
+      "source": "workspaces/WP16/site/platform/rescue-battle-formal/index.html"
+    },
+    {
+      "path": "platform/rescue-battle-formal/main.mjs",
+      "bytes": 20345,
+      "sha256": "f0b3ab2d3188da5efcb832f09dd77d0275f864a970768cc4ce909f82de1fab60",
+      "source": "workspaces/WP16/site/platform/rescue-battle-formal/main.mjs"
+    },
+    {
+      "path": "platform/rescue-battle-formal/state.mjs",
+      "bytes": 3740,
+      "sha256": "64a891ccebe324b71ffe59f64abe4403f1bcb9992e8da4e3e6703ca8f256d96f",
+      "source": "workspaces/WP16/site/platform/rescue-battle-formal/state.mjs"
+    },
+    {
+      "path": "platform/rescue-battle-formal/store.mjs",
+      "bytes": 10876,
+      "sha256": "2e962cf67240bfe8110fbb2bff5725b8e708aebcf76ff230c04d6d2b8f32ee78",
+      "source": "workspaces/WP16/site/platform/rescue-battle-formal/store.mjs"
     },
     {
       "path": "platform/src/app.js",
-      "bytes": 10536,
-      "sha256": "531225faf6c8b40fcba5cb8e723516d26424a4ae17568716c8feb38571eeb174",
-      "source": "platform/src/app.js",
-      "sourceSHA256": "ba19414b6912d956316fe0b20414e647a5361c6fb7aafd3737afbaac1ed4f884",
-      "transformed": true
+      "bytes": 11026,
+      "sha256": "b811fdd94ae58133c8aefd0c428e8b50d4dee9f731111ee286abe35504a5d519",
+      "source": "workspaces/WP16/site/platform/src/app.js"
     },
     {
       "path": "platform/src/assessment/challenge-composite.js",
       "bytes": 7896,
       "sha256": "a5c15d41429893ec318920fcc911f5efcdc5e5e09492228b83cf433958084ab8",
-      "source": "platform/src/assessment/challenge-composite.js",
-      "sourceSHA256": "a5c15d41429893ec318920fcc911f5efcdc5e5e09492228b83cf433958084ab8",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/assessment/challenge-composite.js"
     },
     {
       "path": "platform/src/assessment/diagnostic-rules.js",
       "bytes": 2302,
       "sha256": "6f24642b7a4a5a6912861b21f8749682a891183edd33b29e3ce2427057dea65d",
-      "source": "platform/src/assessment/diagnostic-rules.js",
-      "sourceSHA256": "6f24642b7a4a5a6912861b21f8749682a891183edd33b29e3ce2427057dea65d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/assessment/diagnostic-rules.js"
     },
     {
       "path": "platform/src/assessment/evaluator.js",
       "bytes": 4298,
       "sha256": "e65ea545fc662fa38dc339b9784fe37b1a62858174998f5f79ed82561b38ac60",
-      "source": "platform/src/assessment/evaluator.js",
-      "sourceSHA256": "e65ea545fc662fa38dc339b9784fe37b1a62858174998f5f79ed82561b38ac60",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/assessment/evaluator.js"
     },
     {
       "path": "platform/src/assessment/hint-planner.js",
       "bytes": 1644,
       "sha256": "cd59f1c2c6b456ddde04baadb081a184e0682a8267ebb2d09d4c0059cbe79356",
-      "source": "platform/src/assessment/hint-planner.js",
-      "sourceSHA256": "cd59f1c2c6b456ddde04baadb081a184e0682a8267ebb2d09d4c0059cbe79356",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/assessment/hint-planner.js"
     },
     {
       "path": "platform/src/assessment/steps.js",
       "bytes": 3328,
       "sha256": "35db67146c962479a042c9a0dc95f73e45ed529ce19c054c298d6d96cd2ee3d0",
-      "source": "platform/src/assessment/steps.js",
-      "sourceSHA256": "35db67146c962479a042c9a0dc95f73e45ed529ce19c054c298d6d96cd2ee3d0",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/assessment/steps.js"
     },
     {
       "path": "platform/src/config/policies.js",
       "bytes": 650,
       "sha256": "3ced5990222f728287971218431c5c1aff1358c24d2ac875f4f2ea54a2995a82",
-      "source": "platform/src/config/policies.js",
-      "sourceSHA256": "3ced5990222f728287971218431c5c1aff1358c24d2ac875f4f2ea54a2995a82",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/config/policies.js"
     },
     {
       "path": "platform/src/config/units.js",
       "bytes": 1668,
       "sha256": "ce8328029509079540894b8cd8a797a55e737d2b6a1e176ccac5109e47552ac8",
-      "source": "platform/src/config/units.js",
-      "sourceSHA256": "e62761719e8de265a97424529b911b81ca6787890b12f667a06534037b7bab62",
-      "transformed": true
+      "source": "workspaces/WP16/site/platform/src/config/units.js"
     },
     {
       "path": "platform/src/contracts/challenge.js",
       "bytes": 9397,
       "sha256": "2af08d03f5424d5c36fe4b115a0d81072a28640e483abe2576112d1ced1a4938",
-      "source": "platform/src/contracts/challenge.js",
-      "sourceSHA256": "2af08d03f5424d5c36fe4b115a0d81072a28640e483abe2576112d1ced1a4938",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/contracts/challenge.js"
     },
     {
       "path": "platform/src/contracts/learning.js",
       "bytes": 4373,
       "sha256": "81e463c372fa4b3e9c75f2985c0b441f7b258652b240fb6d233032043bbe8ff8",
-      "source": "platform/src/contracts/learning.js",
-      "sourceSHA256": "81e463c372fa4b3e9c75f2985c0b441f7b258652b240fb6d233032043bbe8ff8",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/contracts/learning.js"
     },
     {
       "path": "platform/src/contracts/math.js",
       "bytes": 1038,
       "sha256": "d2cdef3b31ef7d93eac3e5841d8d91dc6b95f5673c80511bce74aecc1c153186",
-      "source": "platform/src/contracts/math.js",
-      "sourceSHA256": "d2cdef3b31ef7d93eac3e5841d8d91dc6b95f5673c80511bce74aecc1c153186",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/contracts/math.js"
     },
     {
       "path": "platform/src/contracts/questions.js",
       "bytes": 2589,
       "sha256": "28cde7ee8f7d72340e5965a716678034ac4faeffe7c007111c53d2e433d9e09d",
-      "source": "platform/src/contracts/questions.js",
-      "sourceSHA256": "28cde7ee8f7d72340e5965a716678034ac4faeffe7c007111c53d2e433d9e09d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/contracts/questions.js"
     },
     {
       "path": "platform/src/factory/records/codec.js",
       "bytes": 3886,
       "sha256": "baca5a8e54f8b3556c6a1e4aed51b1eee1df3365ff50e7e394c3f4e8514126e9",
-      "source": "platform/src/factory/records/codec.js",
-      "sourceSHA256": "baca5a8e54f8b3556c6a1e4aed51b1eee1df3365ff50e7e394c3f4e8514126e9",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/factory/records/codec.js"
     },
     {
       "path": "platform/src/factory/records/indexeddb.js",
       "bytes": 5038,
       "sha256": "79a4d2a92e4193fe2f4c3d01cca79c59bf084559f4d4a98ede45f1d79d8b84ab",
-      "source": "platform/src/factory/records/indexeddb.js",
-      "sourceSHA256": "79a4d2a92e4193fe2f4c3d01cca79c59bf084559f4d4a98ede45f1d79d8b84ab",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/factory/records/indexeddb.js"
     },
     {
       "path": "platform/src/factory/records/store.js",
       "bytes": 11233,
       "sha256": "1a4f6cda6472256000c065c72bcab9923cb45c28df73d176b3f1caec66369451",
-      "source": "platform/src/factory/records/store.js",
-      "sourceSHA256": "1a4f6cda6472256000c065c72bcab9923cb45c28df73d176b3f1caec66369451",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/factory/records/store.js"
     },
     {
       "path": "platform/src/input/parser.js",
       "bytes": 3456,
       "sha256": "69f329d0bdf03817df812ea043ce68097d88d3bd62f647bc5e8f6cb32c1d311a",
-      "source": "platform/src/input/parser.js",
-      "sourceSHA256": "69f329d0bdf03817df812ea043ce68097d88d3bd62f647bc5e8f6cb32c1d311a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/input/parser.js"
+    },
+    {
+      "path": "platform/src/learning/admission-clock.mjs",
+      "bytes": 2635,
+      "sha256": "822a59041fbb9ed622b3cf53e6bb8f534bf813da61e883a6bbb8100c3e1b0051",
+      "source": "workspaces/WP16/site/platform/src/learning/admission-clock.mjs"
     },
     {
       "path": "platform/src/learning/attempt-snapshot.js",
       "bytes": 996,
       "sha256": "0ce0db3d065dad34fb295a2ecccc0e84a8c57726494318db0a34f3b2e31c6db6",
-      "source": "platform/src/learning/attempt-snapshot.js",
-      "sourceSHA256": "0ce0db3d065dad34fb295a2ecccc0e84a8c57726494318db0a34f3b2e31c6db6",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/learning/attempt-snapshot.js"
     },
     {
       "path": "platform/src/learning/attempt.js",
       "bytes": 11316,
       "sha256": "2d2b08758856566da48d9fa58e62d8f9c1ba181545bbc73be027fa3f1c90589e",
-      "source": "platform/src/learning/attempt.js",
-      "sourceSHA256": "2d2b08758856566da48d9fa58e62d8f9c1ba181545bbc73be027fa3f1c90589e",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/learning/attempt.js"
     },
     {
       "path": "platform/src/learning/challenge-events.js",
       "bytes": 11504,
       "sha256": "b371e4aef0d444a486ab1e2a961fa1a374fc3b03e1c3aaa95360335b96420a50",
-      "source": "platform/src/learning/challenge-events.js",
-      "sourceSHA256": "b371e4aef0d444a486ab1e2a961fa1a374fc3b03e1c3aaa95360335b96420a50",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/learning/challenge-events.js"
+    },
+    {
+      "path": "platform/src/learning/cross-unit-admission.mjs",
+      "bytes": 6043,
+      "sha256": "9e2a9f6e793b0ed27c64d05ad0a82267da9f03ffc349475f27776698866a3872",
+      "source": "workspaces/WP16/site/platform/src/learning/cross-unit-admission.mjs"
+    },
+    {
+      "path": "platform/src/learning/practice-resume.mjs",
+      "bytes": 2140,
+      "sha256": "cdfea00696630fbbdc075367d3f1a1fd9c308d714f1beb1b1f74b4fbfa721e85",
+      "source": "workspaces/WP16/site/platform/src/learning/practice-resume.mjs"
+    },
+    {
+      "path": "platform/src/learning/resume-learning.mjs",
+      "bytes": 4935,
+      "sha256": "7e8b68d500d3c5dce4145ba9411b8ecf5d4880c453e0f66b49b9178886c01fcd",
+      "source": "workspaces/WP16/site/platform/src/learning/resume-learning.mjs"
     },
     {
       "path": "platform/src/main.js",
       "bytes": 557,
       "sha256": "46abc6b3e753d336f86b8a9a9f1965a1dc5422aed344ae7036b93d9f8f6fdb7c",
-      "source": "platform/src/main.js",
-      "sourceSHA256": "46abc6b3e753d336f86b8a9a9f1965a1dc5422aed344ae7036b93d9f8f6fdb7c",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/main.js"
     },
     {
       "path": "platform/src/math/errors.js",
       "bytes": 371,
       "sha256": "403b046a078e27277073a030ec0dc9d315a127ad5da9b06b97b1947d05493d7a",
-      "source": "platform/src/math/errors.js",
-      "sourceSHA256": "403b046a078e27277073a030ec0dc9d315a127ad5da9b06b97b1947d05493d7a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/math/errors.js"
     },
     {
       "path": "platform/src/math/form-checker.js",
       "bytes": 2662,
       "sha256": "62f22d9ddf3c92ddbba820d2417e68ccb4f55daaafffd7162cf4744baeeb0c4a",
-      "source": "platform/src/math/form-checker.js",
-      "sourceSHA256": "62f22d9ddf3c92ddbba820d2417e68ccb4f55daaafffd7162cf4744baeeb0c4a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/math/form-checker.js"
     },
     {
       "path": "platform/src/math/format.js",
       "bytes": 395,
       "sha256": "c6d19a43007e010fd2d0123a6c01821be5d70088f987d517b8ee289e3896328d",
-      "source": "platform/src/math/format.js",
-      "sourceSHA256": "c6d19a43007e010fd2d0123a6c01821be5d70088f987d517b8ee289e3896328d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/math/format.js"
     },
     {
       "path": "platform/src/math/integer-factorization.js",
       "bytes": 796,
       "sha256": "749504d88ece67c663f06ce00046f20e4ca8259987ace849130452b2f0d0cadc",
-      "source": "platform/src/math/integer-factorization.js",
-      "sourceSHA256": "749504d88ece67c663f06ce00046f20e4ca8259987ace849130452b2f0d0cadc",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/math/integer-factorization.js"
     },
     {
       "path": "platform/src/math/operations.js",
       "bytes": 1102,
       "sha256": "9a72f8e8d072751d6f9cdd96b297e9d3f58df527fa34f315d5b4e67788c3fcb9",
-      "source": "platform/src/math/operations.js",
-      "sourceSHA256": "9a72f8e8d072751d6f9cdd96b297e9d3f58df527fa34f315d5b4e67788c3fcb9",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/math/operations.js"
     },
     {
       "path": "platform/src/math/radical-value.js",
       "bytes": 3423,
       "sha256": "ceeaf635d42be3422c2dd6f3f90f26839a4d483557ee5a87ebb1fccacfa0f6b7",
-      "source": "platform/src/math/radical-value.js",
-      "sourceSHA256": "ceeaf635d42be3422c2dd6f3f90f26839a4d483557ee5a87ebb1fccacfa0f6b7",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/math/radical-value.js"
     },
     {
       "path": "platform/src/math/rational.js",
       "bytes": 877,
       "sha256": "accb73e4fe5e67b23e4254c2ae14b0625aa97d6f22588c8d0fb0412269f6945d",
-      "source": "platform/src/math/rational.js",
-      "sourceSHA256": "accb73e4fe5e67b23e4254c2ae14b0625aa97d6f22588c8d0fb0412269f6945d",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/math/rational.js"
     },
     {
       "path": "platform/src/practice-live/controller.js",
       "bytes": 4513,
       "sha256": "2d8d83fa68a6f558b82c47c2e790367ec6586d5dc11586f25dc447d6e7b2be3a",
-      "source": "platform/src/practice-live/controller.js",
-      "sourceSHA256": "2d8d83fa68a6f558b82c47c2e790367ec6586d5dc11586f25dc447d6e7b2be3a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/practice-live/controller.js"
     },
     {
       "path": "platform/src/practice-live/session.js",
-      "bytes": 6879,
-      "sha256": "ba504d35c91f9a763696c1d7f5a89b376216f3c1983960ff6248196a4e1645b4",
-      "source": "platform/src/practice-live/session.js",
-      "sourceSHA256": "ba504d35c91f9a763696c1d7f5a89b376216f3c1983960ff6248196a4e1645b4",
-      "transformed": false
+      "bytes": 8181,
+      "sha256": "1d1a7fa1228bed0b452e109afb550a658d10e9875c00b9b1ac1a19c127ce31be",
+      "source": "workspaces/WP16/site/platform/src/practice-live/session.js"
     },
     {
       "path": "platform/src/practice-live/view.js",
-      "bytes": 14061,
-      "sha256": "4b0fb8ec15a513b852c1fd04bc2e24d49d804923177db424ab0f3a0da974caf2",
-      "source": "platform/src/practice-live/view.js",
-      "sourceSHA256": "4b0fb8ec15a513b852c1fd04bc2e24d49d804923177db424ab0f3a0da974caf2",
-      "transformed": false
+      "bytes": 14275,
+      "sha256": "64251d6e61a3b94a6cbe5932802cded3f0a6a6e402c04cd00e0a40ecf74bbb4f",
+      "source": "workspaces/WP16/site/platform/src/practice-live/view.js"
     },
     {
       "path": "platform/src/practice-records/codec.js",
       "bytes": 2924,
       "sha256": "f575ade8d624b55b046a2c5399caf49390521eb46fc62dc71f6e63f0323d118f",
-      "source": "platform/src/practice-records/codec.js",
-      "sourceSHA256": "f575ade8d624b55b046a2c5399caf49390521eb46fc62dc71f6e63f0323d118f",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/practice-records/codec.js"
     },
     {
       "path": "platform/src/practice-records/report.js",
       "bytes": 2423,
       "sha256": "2f05ce1d8671100fcc8e03bf8b0db25d865b6d4d0416ea4ff5979a840f9aa608",
-      "source": "platform/src/practice-records/report.js",
-      "sourceSHA256": "2f05ce1d8671100fcc8e03bf8b0db25d865b6d4d0416ea4ff5979a840f9aa608",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/practice-records/report.js"
     },
     {
       "path": "platform/src/practice-records/store.js",
       "bytes": 8425,
       "sha256": "ae149d7932272482f24f4f156f438e6773eef4ce8409329667de7a4ba73eee3a",
-      "source": "platform/src/practice-records/store.js",
-      "sourceSHA256": "ae149d7932272482f24f4f156f438e6773eef4ce8409329667de7a4ba73eee3a",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/practice-records/store.js"
     },
     {
       "path": "platform/src/practice-records/view.js",
       "bytes": 7373,
       "sha256": "12182d2f816638f24cc18c2c4a4f96153e35c939fe8b5fd6e4cc52cc21436d01",
-      "source": "platform/src/practice-records/view.js",
-      "sourceSHA256": "12182d2f816638f24cc18c2c4a4f96153e35c939fe8b5fd6e4cc52cc21436d01",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/practice-records/view.js"
     },
     {
       "path": "platform/src/questions/fingerprint.js",
       "bytes": 147,
       "sha256": "7f14d13f3d9135e1fafaddd7f6fe197b60e95025c9a11ad100e970f3498481ff",
-      "source": "platform/src/questions/fingerprint.js",
-      "sourceSHA256": "7f14d13f3d9135e1fafaddd7f6fe197b60e95025c9a11ad100e970f3498481ff",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/fingerprint.js"
     },
     {
       "path": "platform/src/questions/generator.js",
       "bytes": 4650,
       "sha256": "d4fdd12079e254915acc7e4b78f464210cb02ab2b2986c94b13644ab858b1a9c",
-      "source": "platform/src/questions/generator.js",
-      "sourceSHA256": "d4fdd12079e254915acc7e4b78f464210cb02ab2b2986c94b13644ab858b1a9c",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/generator.js"
     },
     {
       "path": "platform/src/questions/power-presentation.js",
       "bytes": 1109,
       "sha256": "8f29a54ae8ca7adb516192920eca348e3333cfc35907bbe035d25c0fca2b3131",
-      "source": "platform/src/questions/power-presentation.js",
-      "sourceSHA256": "8f29a54ae8ca7adb516192920eca348e3333cfc35907bbe035d25c0fca2b3131",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/power-presentation.js"
     },
     {
       "path": "platform/src/questions/seeded-random.js",
       "bytes": 688,
       "sha256": "551c45be06784b8b8473caab0989dd147872235f039cbfe368157b124add80c5",
-      "source": "platform/src/questions/seeded-random.js",
-      "sourceSHA256": "551c45be06784b8b8473caab0989dd147872235f039cbfe368157b124add80c5",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/seeded-random.js"
     },
     {
       "path": "platform/src/questions/unit-one/blueprints.js",
       "bytes": 499,
       "sha256": "ce95b2b6f4e34a01a6793715de7027f5b45cc7a96c754d6381d582f3509c4e99",
-      "source": "platform/src/questions/unit-one/blueprints.js",
-      "sourceSHA256": "ce95b2b6f4e34a01a6793715de7027f5b45cc7a96c754d6381d582f3509c4e99",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/unit-one/blueprints.js"
     },
     {
       "path": "platform/src/questions/unit-one/station-a.js",
       "bytes": 3714,
       "sha256": "db2df4ae5d08c6b01e252dd1e5d28bad361ec39f11115261044970918e78382f",
-      "source": "platform/src/questions/unit-one/station-a.js",
-      "sourceSHA256": "db2df4ae5d08c6b01e252dd1e5d28bad361ec39f11115261044970918e78382f",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/unit-one/station-a.js"
     },
     {
       "path": "platform/src/questions/unit-one/station-b.js",
       "bytes": 3337,
       "sha256": "e58c10bf9ec243512fb68670322826b3da597ad485483af23ed57e67fa88e884",
-      "source": "platform/src/questions/unit-one/station-b.js",
-      "sourceSHA256": "e58c10bf9ec243512fb68670322826b3da597ad485483af23ed57e67fa88e884",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/unit-one/station-b.js"
     },
     {
       "path": "platform/src/questions/unit-one/station-c.js",
       "bytes": 2017,
       "sha256": "956fbe2c7c3ceb11b52025965d475baafe1f6ce5d8946273aaac1e7f5f17ab6c",
-      "source": "platform/src/questions/unit-one/station-c.js",
-      "sourceSHA256": "956fbe2c7c3ceb11b52025965d475baafe1f6ce5d8946273aaac1e7f5f17ab6c",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/questions/unit-one/station-c.js"
     },
     {
       "path": "platform/src/rpg-factory/direct-contract.js",
       "bytes": 2485,
       "sha256": "39b260ff2542cb9ed72abb39bb97659112bf196ff1fdf48034ce453bec35dd49",
-      "source": "platform/src/rpg-factory/direct-contract.js",
-      "sourceSHA256": "39b260ff2542cb9ed72abb39bb97659112bf196ff1fdf48034ce453bec35dd49",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/rpg-factory/direct-contract.js"
     },
     {
       "path": "platform/src/state/initial-state.js",
       "bytes": 335,
       "sha256": "ce761d516e0242f1b3705b2c794a02faef5ce3d0990d05fe0a297c8bfbc0af70",
-      "source": "platform/src/state/initial-state.js",
-      "sourceSHA256": "ce761d516e0242f1b3705b2c794a02faef5ce3d0990d05fe0a297c8bfbc0af70",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/state/initial-state.js"
+    },
+    {
+      "path": "platform/src/ui/admission-notice.mjs",
+      "bytes": 2061,
+      "sha256": "16666ceffedfa8d0d17b6300ba9618d0c73f2fc770ce009745587e9419b8ca05",
+      "source": "workspaces/WP16/site/platform/src/ui/admission-notice.mjs"
     },
     {
       "path": "platform/src/ui/home.js",
       "bytes": 3781,
       "sha256": "94150e64e6bba33b89f09a14d628ecb1aad70a9a484e31b3fd3cf1fa85293dd0",
-      "source": "platform/src/ui/home.js",
-      "sourceSHA256": "8073af1567ea8c1f89562099e9b21e1f4d45fbcd75fb98005a491d27355c1830",
-      "transformed": true
+      "source": "workspaces/WP16/site/platform/src/ui/home.js"
     },
     {
       "path": "platform/src/ui/math-input.js",
       "bytes": 1084,
       "sha256": "cc02a12b80d2e85a9f12b610e0b6d45ac1b6b16a0c0ab984466ff8c698b7bbd0",
-      "source": "platform/src/ui/math-input.js",
-      "sourceSHA256": "cc02a12b80d2e85a9f12b610e0b6d45ac1b6b16a0c0ab984466ff8c698b7bbd0",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/ui/math-input.js"
     },
     {
       "path": "platform/src/ui/math-keyboard-focus.js",
       "bytes": 1934,
       "sha256": "b2c47edf3e2f9aacffa35acb4653ea5cf3c5ae247520bbc5e5c6376df544ec88",
-      "source": "platform/src/ui/math-keyboard-focus.js",
-      "sourceSHA256": "b2c47edf3e2f9aacffa35acb4653ea5cf3c5ae247520bbc5e5c6376df544ec88",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/ui/math-keyboard-focus.js"
     },
     {
       "path": "platform/src/ui/practice-format.js",
       "bytes": 1889,
       "sha256": "754f5ccb6b872cdb301af8ea8829a7707ee585849d8ace50b00e006faaa76c17",
-      "source": "platform/src/ui/practice-format.js",
-      "sourceSHA256": "754f5ccb6b872cdb301af8ea8829a7707ee585849d8ace50b00e006faaa76c17",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/ui/practice-format.js"
     },
     {
       "path": "platform/src/ui/remediation-entry.js",
       "bytes": 3295,
       "sha256": "6bb0b2c419b09ce1cf889e499ca37ff4f6d8c396f62574311a66394b33ab3281",
-      "source": "platform/src/ui/remediation-entry.js",
-      "sourceSHA256": "6bb0b2c419b09ce1cf889e499ca37ff4f6d8c396f62574311a66394b33ab3281",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/src/ui/remediation-entry.js"
     },
     {
       "path": "platform/styles/math-keyboard.css",
       "bytes": 474,
       "sha256": "042780ba88d5ebc3a90e9b040e3e0ecd46e12a9bdb372a396c695b9bc96c996b",
-      "source": "platform/styles/math-keyboard.css",
-      "sourceSHA256": "042780ba88d5ebc3a90e9b040e3e0ecd46e12a9bdb372a396c695b9bc96c996b",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/styles/math-keyboard.css"
     },
     {
       "path": "platform/styles/platform.css",
       "bytes": 5972,
       "sha256": "b710885e377cd9a8ac99b0470bd1b62bedfcf80927c6a88501653c1652907ed8",
-      "source": "platform/styles/platform.css",
-      "sourceSHA256": "b710885e377cd9a8ac99b0470bd1b62bedfcf80927c6a88501653c1652907ed8",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/styles/platform.css"
     },
     {
       "path": "platform/styles/practice.css",
       "bytes": 10118,
       "sha256": "2a4c04967611ede19a6336ee184373c04d6fcce7544b1bfc0721f4129f6c63c3",
-      "source": "platform/styles/practice.css",
-      "sourceSHA256": "2a4c04967611ede19a6336ee184373c04d6fcce7544b1bfc0721f4129f6c63c3",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/styles/practice.css"
+    },
+    {
+      "path": "platform/unit-five/bank.mjs",
+      "bytes": 5766,
+      "sha256": "f50b1a04753663c173559cef02b0d5d294a806317b02d19832a5b80e29c54db2",
+      "source": "workspaces/WP16/site/platform/unit-five/bank.mjs"
+    },
+    {
+      "path": "platform/unit-five/learning.mjs",
+      "bytes": 5663,
+      "sha256": "cf89231f29e0a3741a94d801b77307e3379cb7b36b556aaa4047f91dcd281568",
+      "source": "workspaces/WP16/site/platform/unit-five/learning.mjs"
+    },
+    {
+      "path": "platform/unit-five/main.mjs",
+      "bytes": 8702,
+      "sha256": "5ce5b4462c2cb2c01cdd9e1c9341d71852106a9ee7c004535b140e7b87aa50bd",
+      "source": "workspaces/WP16/site/platform/unit-five/main.mjs"
+    },
+    {
+      "path": "platform/unit-five/qualification.mjs",
+      "bytes": 4419,
+      "sha256": "5d11ffa90fe6837141281025e607cea998e453330083dff545db13899e2c2d0b",
+      "source": "workspaces/WP16/site/platform/unit-five/qualification.mjs"
+    },
+    {
+      "path": "platform/unit-five/remediation.html",
+      "bytes": 2924,
+      "sha256": "bc403eefaf0643f0a8b49012094186b4d73d669f23b819ff213fdc1823b55c36",
+      "source": "workspaces/WP16/site/platform/unit-five/remediation.html"
+    },
+    {
+      "path": "platform/unit-five/style.css",
+      "bytes": 5746,
+      "sha256": "3b4d63e80eeca2eacef7c42c35e888b8fc92432777937315c9991df7a5dfaf78",
+      "source": "workspaces/WP16/site/platform/unit-five/style.css"
+    },
+    {
+      "path": "platform/unit-four/bank.mjs",
+      "bytes": 3428,
+      "sha256": "30c4ef8b3e80a5e491cb7b43c69e75290a12437aae8ad8d6c3a158606f7ac96c",
+      "source": "workspaces/WP16/site/platform/unit-four/bank.mjs"
+    },
+    {
+      "path": "platform/unit-four/learning.mjs",
+      "bytes": 4974,
+      "sha256": "efc43717d3b3e2189326f1233d168804e549fe91cd91003f7c5d8bcb506382d2",
+      "source": "workspaces/WP16/site/platform/unit-four/learning.mjs"
+    },
+    {
+      "path": "platform/unit-four/main.mjs",
+      "bytes": 6642,
+      "sha256": "065b3d1ed6c3980cca4c7852cd6b60a4b4f4fdf9da40d13d6b7f9323b5223335",
+      "source": "workspaces/WP16/site/platform/unit-four/main.mjs"
+    },
+    {
+      "path": "platform/unit-four/qualification.mjs",
+      "bytes": 3937,
+      "sha256": "ba8d332a6cdce6046afeb6fc668c30c0cd47cd74b990432f21b53e8bc580780e",
+      "source": "workspaces/WP16/site/platform/unit-four/qualification.mjs"
+    },
+    {
+      "path": "platform/unit-four/remediation.html",
+      "bytes": 1935,
+      "sha256": "663fb2c386a2987cdadc3a63280d1da04faf37f3beaed451b01d8539452e3e3e",
+      "source": "workspaces/WP16/site/platform/unit-four/remediation.html"
+    },
+    {
+      "path": "platform/unit-four/style.css",
+      "bytes": 2312,
+      "sha256": "8974fc4320dffea40c0b452f7345ecadf72f9c19c299aa01e3084436e5b6b70d",
+      "source": "workspaces/WP16/site/platform/unit-four/style.css"
     },
     {
       "path": "platform/unit-three/index.html",
-      "bytes": 2694,
-      "sha256": "555e6727459430b977d23919c3dd465c65f992946d50e4247b3fe63dffc6e29b",
-      "source": "platform/unit-three/index.html",
-      "sourceSHA256": "4850addd9a02bfb8f04570514bb730b09555e30d330884604077d9dc367f177b",
-      "transformed": true
+      "bytes": 2286,
+      "sha256": "4850addd9a02bfb8f04570514bb730b09555e30d330884604077d9dc367f177b",
+      "source": "workspaces/WP16/site/platform/unit-three/index.html"
     },
     {
       "path": "platform/unit-three/learning.js",
       "bytes": 7712,
       "sha256": "8cd0d513c29cdeffcb5de58b8b303375d4ca03bfbdf1e3df6f6ab95fc49a1f06",
-      "source": "platform/unit-three/learning.js",
-      "sourceSHA256": "8cd0d513c29cdeffcb5de58b8b303375d4ca03bfbdf1e3df6f6ab95fc49a1f06",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-three/learning.js"
     },
     {
       "path": "platform/unit-three/main.js",
       "bytes": 9527,
       "sha256": "5859fbb6f931fbcf50b2a0f8d6f19733020568bea71ec2ac087eafdfdcfd66e2",
-      "source": "platform/unit-three/main.js",
-      "sourceSHA256": "5859fbb6f931fbcf50b2a0f8d6f19733020568bea71ec2ac087eafdfdcfd66e2",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-three/main.js"
     },
     {
       "path": "platform/unit-three/remediation.html",
-      "bytes": 2652,
-      "sha256": "c8951ab7aaaf12e380ca0a320c9ba4dc8d59ef82d326b57191c5332c8f22220a",
-      "source": "platform/unit-three/remediation.html",
-      "sourceSHA256": "ce5fcfe0a00efb8a4182cc7c9a7c5532ad5d317db8b9748df984fb63571e309e",
-      "transformed": true
+      "bytes": 2244,
+      "sha256": "ce5fcfe0a00efb8a4182cc7c9a7c5532ad5d317db8b9748df984fb63571e309e",
+      "source": "workspaces/WP16/site/platform/unit-three/remediation.html"
     },
     {
       "path": "platform/unit-three/style.css",
       "bytes": 1717,
       "sha256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
-      "source": "platform/unit-three/style.css",
-      "sourceSHA256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-three/style.css"
     },
     {
       "path": "platform/unit-two/factory-links.js",
       "bytes": 623,
       "sha256": "06c7ab4cd9e78fa5c260f320d3066b8c1bb97f580ed497b87ce0b8de0c961450",
-      "source": "platform/unit-two/factory-links.js",
-      "sourceSHA256": "06c7ab4cd9e78fa5c260f320d3066b8c1bb97f580ed497b87ce0b8de0c961450",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-two/factory-links.js"
     },
     {
       "path": "platform/unit-two/index.html",
-      "bytes": 2687,
-      "sha256": "2a0256dd43abeebb5eb87b47aaecd9276df8f04dc2df005886532090e06db675",
-      "source": "platform/unit-two/index.html",
-      "sourceSHA256": "1443921fc15a90aeaf5a315eb51ef218042956d1ac8922362785a4235517f242",
-      "transformed": true
+      "bytes": 2279,
+      "sha256": "224c9d6eb426d3e5a435dd1deae6cac251e0cbde9537bdf82313fede7d41e778",
+      "source": "workspaces/WP16/site/platform/unit-two/index.html"
     },
     {
       "path": "platform/unit-two/learning.js",
       "bytes": 8106,
       "sha256": "d1e216716f5bd1e99ea7710d059491f4568c84af7fa5373b5ef61ce6f9030d29",
-      "source": "platform/unit-two/learning.js",
-      "sourceSHA256": "d1e216716f5bd1e99ea7710d059491f4568c84af7fa5373b5ef61ce6f9030d29",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-two/learning.js"
     },
     {
       "path": "platform/unit-two/main.js",
       "bytes": 8568,
       "sha256": "d70dc0919906896857e950668142aa170513bdeab518a274bf3332476f4d3300",
-      "source": "platform/unit-two/main.js",
-      "sourceSHA256": "d70dc0919906896857e950668142aa170513bdeab518a274bf3332476f4d3300",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-two/main.js"
     },
     {
       "path": "platform/unit-two/namespace-audit.js",
       "bytes": 1258,
       "sha256": "5e966d5b0b80c2efa99e99f38260ff846387d2a302c57f9bdb98e13b2ab1e585",
-      "source": "platform/unit-two/namespace-audit.js",
-      "sourceSHA256": "5e966d5b0b80c2efa99e99f38260ff846387d2a302c57f9bdb98e13b2ab1e585",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-two/namespace-audit.js"
     },
     {
       "path": "platform/unit-two/remediation.html",
-      "bytes": 2645,
-      "sha256": "5c6d3c491947cb0649071033d07c955a25d95f521d85824423bc76f5de0c24c0",
-      "source": "platform/unit-two/remediation.html",
-      "sourceSHA256": "f5a1bee3141aae29e43bba79756b67621e8a7b667b64ef7e27ff577afb062956",
-      "transformed": true
+      "bytes": 2237,
+      "sha256": "e5e60e10c14b55646fa53760936b432179078f53bbd267473de0e80cf9ef8086",
+      "source": "workspaces/WP16/site/platform/unit-two/remediation.html"
     },
     {
       "path": "platform/unit-two/style.css",
       "bytes": 1717,
       "sha256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
-      "source": "platform/unit-two/style.css",
-      "sourceSHA256": "fc5663ce884b391c89988d78fa00ec8cd7d39567ad6ec380dd352be344011369",
-      "transformed": false
+      "source": "workspaces/WP16/site/platform/unit-two/style.css"
     }
-  ],
-  "manifestFile": "deployment-manifest.json",
-  "excluded": "development evidence, student exports, backups, browser profiles, test scripts and secrets"
+  ]
 }

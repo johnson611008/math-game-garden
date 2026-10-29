@@ -1,0 +1,13 @@
+// Additive control metadata. Formal raw, original deadlines and scores are never
+// rewritten to suspend a pre-existing cart round awaiting prerequisites.
+export const EXTRA='unit-four-admission-clock-v1';
+const need=(v,c)=>{if(!v)throw Error(c);},same=(a,b)=>JSON.stringify(a)===JSON.stringify(b),time=x=>Number.isSafeInteger(x)&&x>=0;
+export const emptyClock=()=>({version:1,revision:0,events:[],holds:[]});
+function reduce(c,e,doc){need(c.events.length<10000,'admission-clock-capacity');need(e&&time(e.wallMs)&&typeof e.roundId==='string'&&typeof e.id==='string'&&e.id===e.type+':'+e.roundId+':'+(c.revision+1),'invalid-admission-clock-event');need(!c.events.length||e.wallMs>=c.events.at(-1).wallMs,'admission-clock-rollback');const expected={id:e.id,type:e.type,roundId:e.roundId,wallMs:e.wallMs,...(e.type==='hold'?{anchorMs:e.anchorMs}:{})};need(same(e,expected),'invalid-admission-clock-fields');const n=structuredClone(c),r=doc.rounds.find(r=>r.roundId===e.roundId);need(r,'unknown-admission-clock-round');let h=n.holds.find(h=>h.roundId===e.roundId);
+ if(e.type==='hold'){need(time(e.anchorMs)&&e.anchorMs<=e.wallMs&&(!h||!h.paused)&&(r.startedAtMs===e.anchorMs||r.events.some(x=>x.atMs===e.anchorMs)),'invalid-admission-clock-hold');if(!h){h={roundId:e.roundId,paused:true,anchorMs:e.anchorMs,offsetMs:0};n.holds.push(h);}else{h.paused=true;h.anchorMs=e.anchorMs;}}
+ else if(e.type==='release'){need(h?.paused&&e.wallMs>=h.anchorMs,'invalid-admission-clock-release');h.paused=false;h.offsetMs=e.wallMs-h.anchorMs;}
+ else throw Error('unknown-admission-clock-event');n.revision++;n.events.push(structuredClone(e));return n;
+}
+export function decodeClock(raw,doc){if(raw===null)return emptyClock();const c=JSON.parse(raw);need(c?.version===1&&Array.isArray(c.events)&&c.events.length<=10000,'unsupported-admission-clock');let replay=emptyClock();for(const e of c.events)replay=reduce(replay,e,doc);need(same(replay,c),'admission-clock-snapshot-mismatch');return replay;}
+export function synchronizeClock(c,doc,allowed,wallMs){const r=doc.rounds.at(-1);if(r?.phase!=='active'||!r.clock)return c;const h=c.holds.find(h=>h.roundId===r.roundId),type=!allowed&&!h?.paused?'hold':allowed&&h?.paused?'release':null;if(!type)return c;const e={id:type+':'+r.roundId+':'+(c.revision+1),type,roundId:r.roundId,wallMs,...(type==='hold'?{anchorMs:r.clock.lastObservedAtMs}:{})};return reduce(c,e,doc);}
+export function effectiveTime(c,doc,wallMs){const r=doc.rounds.at(-1),h=c.holds.find(h=>h.roundId===r?.roundId);return r?.phase==='active'&&r.clock&&h?(h.paused?h.anchorMs:Math.max(r.clock.lastObservedAtMs,wallMs-h.offsetMs)):wallMs;}

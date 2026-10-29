@@ -3,6 +3,19 @@ import { createAttempt, applyAttemptEvent, practiceResolvedCount } from '../lear
 import { planHint } from '../assessment/hint-planner.js';
 import { diagnose } from '../assessment/diagnostic-rules.js';
 import { decodePracticeRecord } from '../practice-records/codec.js';
+import {parse} from '../input/parser.js';
+import {evaluateAst} from '../math/operations.js';
+import {serialize} from '../math/radical-value.js';
+import {evaluateExpression} from '../assessment/evaluator.js';
+import {largestSquareFactor} from '../math/integer-factorization.js';
+
+export function directSimplification(q) {
+  if(q.taskType!=='largest-square-factor')return q;
+  const next=structuredClone(q);next.taskType='simplify';
+  next.answerSpec={expectedValue:serialize(evaluateAst(parse(q.source))),requiredForm:'simplest-monomial'};
+  next.instruction='請將下列根式化為最簡根式。';delete next.decompositionSpec;
+  next.solutionSteps=[];return next;
+}
 
 const blank = () => ({ answer: '', judgment: null, correction: '', numeratorMultiplier: '', denominatorMultiplier: '', transformedNumerator: '', transformedDenominator: '', dirty: false });
 const clone = value => structuredClone(value);
@@ -15,7 +28,7 @@ export function freshSeed(random = globalThis.crypto) {
 }
 export function createPracticeSession({ seed = freshSeed(), now = () => new Date().toISOString(), savedRecord = null } = {}) {
   const restored = savedRecord ? decodePracticeRecord(savedRecord) : null;
-  const questions = restored?.attempt.questions || generateQuestions({ unitId: 'simplification', mode: 'practice', count: 10, seed });
+  const questions = restored?.attempt.questions || generateQuestions({ unitId: 'simplification', mode: 'practice', count: 10, seed }).map(directSimplification);
   let attempt = restored?.attempt || createAttempt({ id: `practice:${seed}`, mode: 'practice', questions, startedAt: now() });
   let index = restored?.index || 0, showResults = restored?.showResults || false, serial = 0, version = 0;
   const drafts = restored?.drafts || questions.map(blank), listeners = new Set();
@@ -45,7 +58,13 @@ export function createPracticeSession({ seed = freshSeed(), now = () => new Date
     submit() {
       if (attempt.status !== 'in-progress') return null;
       const d = drafts[index], q = question();
-      const response = q.station === 'B' ? { isSimplest: d.judgment, ...(d.judgment === false ? { correctedAnswer: d.correction } : {}) } : { answer: d.answer };
+      let response = q.station === 'B' ? { isSimplest: d.judgment, ...(d.judgment === false ? { correctedAnswer: d.correction } : {}) } : { answer: d.answer };
+      // Legacy questions and past results remain immutable. Only adapt this new submission.
+      if(q.taskType==='largest-square-factor'){
+        const checked=evaluateExpression(serialize(evaluateAst(parse(q.source))),d.answer,'simplest-monomial');
+        if(!checked.consumesFirst)return clone(checked);
+        response={answer:checked.accepted?String(largestSquareFactor(BigInt(q.decompositionSpec.radicand))):'0'};
+      }
       emit('submit', { questionId: q.id, response }); drafts[index].dirty = false;
       const result = record().submissions.at(-1).result;
       if (result.consumesFirst && !result.accepted && !record().hints?.some(h => h.level === 1)) emit('hint', { questionId: q.id, level: 1, source: 'feedback', conceptId: concept() });
@@ -57,6 +76,7 @@ export function createPracticeSession({ seed = freshSeed(), now = () => new Date
       if (level < 2) emit('hint', { questionId: question().id, level: level + 1, source: 'student', conceptId: concept() });
     },
     hintText() {
+      if(question().station==='A')return (record()?.hints||[]).filter(h=>h.level<3).map(h=>({...h,text:'找出根號內的平方因數，提出後確認不能再化簡。'}));
       return (record()?.hints || []).filter(h => h.level < 3).map(h => ({ ...h, text: h.text || planHint(question(), h.conceptId || concept(), h.level).text }));
     },
     solution() {
