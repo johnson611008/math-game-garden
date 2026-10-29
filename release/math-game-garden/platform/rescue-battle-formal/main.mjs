@@ -7,6 +7,7 @@ import {editWithSymbol} from '../src/ui/math-input.js';
 import {mountMathKeyboard} from '../src/ui/math-keyboard-focus.js';
 import {STAGES,planAttack,endingView} from '../rescue-battle-demo/combat-presentation.mjs';
 import {mountHitParticles} from '../rescue-battle-demo/hit-particles.mjs';
+import {mountGrandFinale} from './grand-finale.mjs';
 const $=id=>document.getElementById(id);
 const store=browserStore();let busy=false,loaded=false,assetsReady=false;
 const admissionUI=mountAdmissionNotice({reload:()=>$('reload-saved').click(),isBusy:()=>busy});
@@ -26,6 +27,9 @@ for(const symbol of keys){const b=document.createElement('button');b.type='butto
 const keyboard=mountMathKeyboard(document,[$('answer')],$('symbols'));
 $('submit').after($('next')); // Reuse the action slot; completing a question does not add a new control row.
 const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');$('reduced').checked=motionPreference.matches;
+const grandFinale=mountGrandFinale({reduced:()=>$('reduced').checked});
+const finaleButton=document.createElement('button');finaleButton.id='open-grand-finale';finaleButton.type='button';finaleButton.hidden=true;finaleButton.textContent='開啟五關全通關慶典';$('result-score').after(finaleButton);
+finaleButton.onclick=async()=>{if(!await grandFinale.show())$('status').textContent='尚未確認完整五關通關成果，原成績保留。請重新讀取確認。';};
 motionPreference.addEventListener('change',event=>{if(event.matches){$('reduced').checked=true;$('reduced').dispatchEvent(new Event('change'));}});
 const ended=()=>['victory','defeat'].includes(state.phase);
 function questionView(q){
@@ -38,6 +42,7 @@ function render(){
  document.body.dataset.phase=state.phase;document.body.dataset.attackStage=attackStage||'';$('intro').hidden=!intro;$('battle').hidden=intro||state.phase==='defeat';$('defeat-ending').hidden=state.phase!=='defeat';
  $('start').disabled=state.assets!=='ready'||!loaded||busy||!store.view().canStart;$('start').textContent=state.assets==='failed'?'素材載入失敗，請重新整理':'拯救人質！';
  const saved=store.view();admissionUI(saved.admission);
+ finaleButton.hidden=state.phase!=='victory'||!state.endingPlayed||!saved.status.saved||!saved.admission.allowed;
  $('save-status').textContent=busy?'正在安全保存…':saved.status.saved&&loaded?(saved.status.code==='read-only-no-locks'?'唯讀：Web Locks不可用':'已確認保存 · r'+saved.revision):'尚未確認保存';
  $('status').textContent=!assetsReady?'正在檢查題庫與角色素材。':!loaded?'正在讀取保存紀錄。':!saved.status.saved||saved.status.code==='read-only-no-locks'?'保存異常：'+saved.status.code+'；已停止新寫入。請重新讀取確認，勿清除網站資料。':busy?'正在安全交易，尚未確認本次結果。':!saved.admission.allowed?'原紀錄已保留；請完成前置正式通關後接續。':saved.state?.phase==='settled'?saved.challengeStatus+'；正式結算已保存，此回合唯讀。':saved.state?.phase==='awaiting-settlement'?'十題與必要訂正已保存；請明確確認正式結算。':saved.state?saved.challengeStatus+'；已確認保存，可於同一瀏覽器恢復。':'按下「拯救人質！」後才建立並保存正式回合。';
  $('reload-saved').hidden=busy||!loaded||saved.status.saved&&saved.status.code!=='read-only-no-locks';
@@ -139,7 +144,8 @@ async function rescue(){
   animate($('rescue-glow'),[{opacity:.7},{opacity:.15}],650,'forwards')
  ]);
  if(owner!==epoch)return;
- update(transition(state,'ending-finished'));$('result-title').focus({preventScroll:true});
+ if(owner!==epoch)return;
+ update(transition(state,'ending-finished'));$('result-title').focus({preventScroll:true});await grandFinale.show();
 }
 async function commit(command){
  if(busy||!loaded)return false;busy=true;render();
@@ -156,7 +162,7 @@ function restoreSaved(){
  // Ending animations are presentation only. Restoring an acknowledged ending
  // shows its final pose directly rather than replaying attacks or settlement.
  if(round?.phase==='settled')state={...state,endingPlayed:true};
- render();if(state.phase==='victory'){ $('boss-actor').style.opacity='0';$('hostage').style.opacity='0';$('rescued-actor').hidden=false; }
+ render();if(state.phase==='victory'){ $('boss-actor').style.opacity='0';$('hostage').style.opacity='0';$('rescued-actor').hidden=false;void grandFinale.show(); }
 }
 $('answer-form').onsubmit=async e=>{
  e.preventDefault();if(busy||store.view().readOnly||store.view().state?.phase!=='active')return;

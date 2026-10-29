@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "workPackage": "WP16",
   "siteBase": "/math-game-garden/",
-  "buildId": "82fcb5ea72a657dac823662271f4dc1abca509ba70d26d4ec7cd2a0430afecb1",
+  "buildId": "0ffbbde03081feecd99968ef4f2150430ca5748f07fc1b32ad02ab634d25283e",
   "files": [
     {
       "path": ".nojekyll",
@@ -990,9 +990,15 @@
     },
     {
       "path": "platform/rescue-battle-formal/formal.css",
-      "bytes": 323,
-      "sha256": "b794870060a6bfca79cae5ecd735e03ee4c3bf6769e8be85c0be75b5c3f2e707",
+      "bytes": 9661,
+      "sha256": "52b47d4106e0c89271d1a285c9a7a6a431748226a618b1e56e750546fc6acb0b",
       "source": "workspaces/WP16/site/platform/rescue-battle-formal/formal.css"
+    },
+    {
+      "path": "platform/rescue-battle-formal/grand-finale.mjs",
+      "bytes": 7761,
+      "sha256": "6c8e9313bd411742ba4a33c3bbb757f61950bb081b3e89fd3f1c5e16e71ac58c",
+      "source": "workspaces/WP16/site/platform/rescue-battle-formal/grand-finale.mjs"
     },
     {
       "path": "platform/rescue-battle-formal/index.html",
@@ -1002,8 +1008,8 @@
     },
     {
       "path": "platform/rescue-battle-formal/main.mjs",
-      "bytes": 20345,
-      "sha256": "f0b3ab2d3188da5efcb832f09dd77d0275f864a970768cc4ce909f82de1fab60",
+      "bytes": 21070,
+      "sha256": "1d90b3e8d74c34d9cd498a71194b2c28d4156990a23fca0ad893526a97a75217",
       "source": "workspaces/WP16/site/platform/rescue-battle-formal/main.mjs"
     },
     {
