@@ -1,10 +1,11 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#5b903b"><title>根式打地鼠｜五關挑戰</title><link rel="stylesheet" href="style.css"></head><body>
+<nav id="unit-navigation" aria-label="單元導引"><a id="garden-return" href="../game-garden/">返回大觀園</a><a id="continue-unit-two" href="../marble-formal/" hidden>前往第二關：根式彈珠工坊</a></nav>
 <main><canvas id="garden" tabindex="0" aria-label="三隻答案地鼠。可點地鼠、木牌或按 1、2、3。"></canvas>
 <header><div><span class="eyebrow">地鼠的午後 · 正式五關測試</span><h1>根式打地鼠</h1></div><div class="actions"><button id="start" disabled>載入中…</button><button id="pause" hidden>暫停</button><button id="reload">重新讀取</button><button id="reduce" aria-pressed="false">減少動畫</button></div></header>
 <nav id="stages" aria-label="五關進度"></nav>
 <section class="question-board" aria-label="本題根式"><span id="progress">五關十五題</span><div id="question">讓根式變簡單</div><button id="ready" hidden>準備好了！</button><button id="next" hidden>前往下一關</button><button id="settle" hidden>確認完成並結算</button></section>
 <div id="answers" aria-label="答案木牌"></div><div id="combo" aria-live="polite"></div><p id="status" role="status">正在準備地鼠與木槌</p>
 <div class="caption">不比速度，只比思考。<small>點地鼠或木牌 · 鍵盤 1 上／2 左／3 右</small><small id="saved" role="status"></small></div>
-<section id="ending" class="ending" hidden><span class="eyebrow">五關成果</span><h2>午後的冒險完成了！</h2><p id="results"></p><button id="again">新回合，從第一關開始</button><button id="history">回顧歷史成果</button></section>
+<section id="ending" class="ending" hidden><span class="eyebrow">第一單元成果</span><h2>午後的冒險完成了！</h2><p id="results"></p><a id="next-unit" href="../marble-formal/" hidden>挑戰第二關：根式彈珠工坊 →</a><button id="again">新回合，從第一關開始</button><button id="history">回顧歷史成果</button></section>
 <dialog id="review"><h2>關卡成果回顧</h2><div id="review-content"></div><button id="close-review">返回草地</button></dialog>
 <p id="error" role="alert" hidden></p></main><script type="module" src="main.js"></script></body></html>

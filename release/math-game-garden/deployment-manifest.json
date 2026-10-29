@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "workPackage": "WP16",
   "siteBase": "/math-game-garden/",
-  "buildId": "79e9fa24402c070b8e490152630566901046335545ff38789625b3358717bdb7",
+  "buildId": "82fcb5ea72a657dac823662271f4dc1abca509ba70d26d4ec7cd2a0430afecb1",
   "files": [
     {
       "path": ".nojekyll",
@@ -840,14 +840,14 @@
     },
     {
       "path": "platform/mole-formal/index.html",
-      "bytes": 1908,
-      "sha256": "abd1bd24d3b5361f566c223f924309ed93956d976baf9d20fe8ee1adcba91d1f",
+      "bytes": 2229,
+      "sha256": "54411f6c34d1c19f12d8884099e4aa29c4d29536b9afc931b33f5a52c6fd7311",
       "source": "workspaces/WP16/site/platform/mole-formal/index.html"
     },
     {
       "path": "platform/mole-formal/main.js",
-      "bytes": 8802,
-      "sha256": "dd37422490222e295b0d32a82396d5635c333858ee9396f8c4ba3fe06255c1a9",
+      "bytes": 9951,
+      "sha256": "ff52e69be526a2f15e89a871499db58b574cb2058f05a8ef6d7ed536a4cfc7ed",
       "source": "workspaces/WP16/site/platform/mole-formal/main.js"
     },
     {
@@ -888,8 +888,8 @@
     },
     {
       "path": "platform/mole-formal/style.css",
-      "bytes": 2330,
-      "sha256": "be18e5de48d263c0f87b70fdd2ec3cc1e87a5be151bce72b8cf47e353dba2b77",
+      "bytes": 2866,
+      "sha256": "e09756463f4c8714e5d76b263b557a63445e4b662467d1d8f8de94437033d7ca",
       "source": "workspaces/WP16/site/platform/mole-formal/style.css"
     },
     {

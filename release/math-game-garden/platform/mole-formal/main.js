@@ -3,15 +3,21 @@ import {browserStore} from './store.js';
 import {STAGES,display} from './questions.js';
 import {summary} from './state.js';
 import {mountRemediationEntry} from '../src/ui/remediation-entry.js';
+import {browserAdmission} from '../src/learning/cross-unit-admission.mjs';
 const $=id=>document.getElementById(id),canvas=$('garden'),garden=createGarden(canvas),store=browserStore(),tags=[];
 const updateRemediation=mountRemediationEntry({anchor:$('ending').querySelector('h2'),href:'remediation.html',linkId:'mole-remediation-entry'});
 let loaded=false,busy=false,last=0,selected=null,renderedPhase='',reduced=matchMedia('(prefers-reduced-motion: reduce)').matches,cachedView=store.view();
 const state=()=>cachedView.state;
+const nextAdmission=browserAdmission();let nextRequest=0;
+async function refreshNextUnit(){const own=++nextRequest;try{const gate=await nextAdmission.check(2);if(own!==nextRequest)return;const confirmed=store.view().status.saved&&gate.allowed;$('continue-unit-two').hidden=!confirmed;$('next-unit').hidden=!confirmed||state()?.phase!=='settled'||!state()?.settlement?.passed;document.body.dataset.nextUnit=confirmed?'allowed':'locked';}catch{if(own!==nextRequest)return;$('continue-unit-two').hidden=$('next-unit').hidden=true;document.body.dataset.nextUnit='read-error';}}
+for(const id of ['continue-unit-two','next-unit'])$(id).onclick=async e=>{e.preventDefault();if(busy||cachedView.pending)return;await refreshNextUnit();if(document.body.dataset.nextUnit==='allowed')location.assign($(id).href);};
+$('garden-return').onclick=e=>{if(busy||cachedView.pending){e.preventDefault();$('status').textContent='正在確認保存，請稍候再返回大觀園。';}};
 const formula=s=>{const m=/^(\d*)sqrt\((\d+)\)$/.exec(s);return m?`${m[1]}<span class="radical">√<span class="radicand">${m[2]}</span></span>`:String(Number(s));};
 function questionHTML(q){const rad=q.powers?q.powers.map(([b,e])=>`${b}<sup>${e}</sup>`).join(' × '):q.radicand;return `${q.coefficient===1?'':q.coefficient}<span class="radical">√<span class="radicand">${rad}</span></span>`;}
 function syncScene(){const s=state();garden.reset();selected=null;if(!s)return;garden.setStage(s.questions[s.index].stage);if(s.phase==='choosing')garden.show();renderedPhase=s.phase;}
 function update(){const v=store.view();cachedView=v;const s=v.state,locked=busy||v.readOnly||!loaded,q=s?.questions[s.index],t=s?summary(s):null;
  const required=s?.phase==='settled'&&!s.settlement.passed;
+ $('again').hidden=s?.phase==='settled'&&s.settlement.passed;
  updateRemediation(v,{required,roundId:s?.id});
  $('start').hidden=!!s;$('start').disabled=locked;$('start').textContent='開始五關';$('again').disabled=locked||required&&!v.unlock;$('pause').hidden=!s||s.phase==='settled';$('pause').textContent=s?.phase==='paused'?'繼續':'暫停';$('pause').disabled=locked||['correct-feedback','wrong-feedback'].includes(s?.phase);
  $('ready').hidden=s?.phase!=='thinking';$('next').hidden=s?.phase!=='stage-complete';$('settle').hidden=s?.phase!=='awaiting-settlement';for(const id of ['ready','next','settle'])$(id).disabled=locked;
@@ -25,12 +31,12 @@ function update(){const v=store.view();cachedView=v;const s=v.state,locked=busy|
  const visible=s&&['choosing','wrong-feedback','correct-feedback'].includes(s.phase);tags.forEach((b,i)=>{b.hidden=!visible;if(visible)b.innerHTML=`<span class="key">${i+1}</span>${formula(q.options[i].expression)}`;b.disabled=locked||s?.phase!=='choosing'||!garden.canHit(i);});
  if(s?.phase==='settled'){$('results').textContent=`首次正確 ${t.firstCorrect}／15 · 訂正 ${t.corrected} 題\n最佳首次連擊 ${t.bestCombo}\n${s.settlement.passed?'已正式結算，達標通關！':v.unlock?'指定補救已達標，已取得一次重新挑戰資格；開始新回合時才消耗。':'本次未達標，需要完成根式化簡指定補救：十題首次至少八題正確。'}\n舊正式成績與補救歷史保留，訂正不改寫首次結果。`;document.body.classList.toggle('celebrating',!reduced);}else document.body.classList.remove('celebrating');
 }
-async function commit(command){if(busy)return false;busy=true;update();const r=await store.commit(command);busy=false;update();return r.saved;}
+async function commit(command){if(busy)return false;busy=true;update();const r=await store.commit(command);busy=false;update();await refreshNextUnit();return r.saved;}
 async function event(type,more={}){return commit({event:{id:crypto.randomUUID(),roundId:state()?.id,at:new Date().toISOString(),type,...more}});}
 async function start(){if(await commit({start:{id:crypto.randomUUID(),seed:crypto.getRandomValues(new Uint32Array(1))[0],at:new Date().toISOString()}})){syncScene();$('status').textContent='先慢慢想，準備好再讓地鼠出場。';update();}}
 for(let i=0;i<3;i++){const b=document.createElement('button');b.className='answer-tag';b.dataset.hole=i;b.hidden=true;b.onclick=()=>attempt(i);b.onkeydown=e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();tags[(i+(e.key==='ArrowRight'?1:2))%3].focus();}};$('answers').append(b);tags.push(b);}
 async function attempt(hole,x,y){const s=state();if(busy||!loaded||s?.phase!=='choosing'||!garden.canHit(hole))return;const q=s.questions[s.index];if(!await event('choose',{questionId:q.id,hole}))return;selected=hole;const correct=state().phase==='correct-feedback';garden.impact(hole,correct,x,y);$('status').textContent=correct?'敲對了！訂正不會改寫首次成績。':'再看看平方因數與剩餘因數，可以再選一次。';update();}
-async function load(){if(busy)return;busy=true;await store.load();cachedView=store.view();busy=false;syncScene();update();$('status').textContent=state()?'已讀取原回合；首次成績與題目保留。':'沒有倒數。五關等你來挑戰。';}
+async function load(){if(busy)return;busy=true;await store.load();cachedView=store.view();busy=false;syncScene();update();await refreshNextUnit();$('status').textContent=state()?'已讀取原回合；首次成績與題目保留。':'沒有倒數。五關等你來挑戰。';}
 function review(stage=null){const v=store.view();$('review-content').replaceChildren();for(const s of v.document.rounds){const heading=document.createElement('p');heading.textContent=`回合 ${s.id} · ${s.phase} · 首次 ${summary(s).firstCorrect}／15`;$('review-content').append(heading);for(const q of s.questions.filter(q=>(!stage||q.stage===stage)&&s.records[q.id]?.resolved)){const r=s.records[q.id],line=document.createElement('p');line.textContent=`${display(q.source)}：首次 ${display(r.first.answer)}（${r.first.accepted?'答對':'答錯'}）${r.corrected?' · 已訂正':''}`;$('review-content').append(line);}}$('review').showModal();}
 $('start').onclick=start;$('again').onclick=start;$('ready').onclick=async()=>{if(await event('ready')){garden.show();renderedPhase='choosing';$('status').textContent='地鼠會一直等你。敲敲你選的答案。';update();}};
 $('next').onclick=async()=>{if(await event('next-stage')){syncScene();update();}};$('settle').onclick=async()=>{if(await event('settle')){garden.reset();update();}};
