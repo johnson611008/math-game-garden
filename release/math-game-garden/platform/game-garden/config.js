@@ -9,5 +9,5 @@ export const games=Object.freeze([
  {name:'拯救人質大作戰',topic:'分母有理化',tag:'尚未開放',art:'assets/cards/card-5-scene.png',scene:'assets/cards/card-5-scene.png',sceneAlt:'左側勇者地鼠、右側黑紅斗篷Boss，後方水晶城堡內的人質仍被囚禁',caption:'運用根式乘法公式，擊敗 Boss 救出人質！',targetPath:'../rescue-battle-formal/'},
 ].map(Object.freeze));
 // Resolve the existing platform-relative entry, never a demo or alternate namespace.
-const gardenUnits=units.map(u=>u.id==='addition-subtraction'?{...u,practiceHref:'./unit-three/'}:u);
+const gardenUnits=units.map(u=>({...u,...({'addition-subtraction':{practiceHref:'./unit-three/'},'mixed-operations':{practiceHref:'./unit-four/'},'conjugate-rationalization':{title:'根式乘法公式與有理化',practiceHref:'./unit-five/'}}[u.id]||{})}));
 export const practice=Object.freeze({units:Object.freeze(gardenUnits.filter(u=>u.practiceHref).map(u=>Object.freeze({title:u.title,href:'../'+u.practiceHref.replace(/^\.\//,'')}))),locked:Object.freeze(gardenUnits.filter(u=>!u.practiceHref).map(u=>u.title))});
