@@ -1,7 +1,7 @@
 import {buildQuestions,validateQuestions,BANK_VERSION,judge} from './questions.js';
 export const CONTRACT='mole15-v1';
 export function summary(s){const a=Object.values(s.records);return {firstCorrect:a.filter(r=>r.first.accepted).length,corrected:a.filter(r=>r.corrected).length,resolved:a.filter(r=>r.resolved).length,firstCount:a.length,bestCombo:s.bestCombo};}
-export function startRound(id,seed,at){return {contract:CONTRACT,bankVersion:BANK_VERSION,id,seed,at,questions:buildQuestions(seed),index:0,phase:'thinking',resumePhase:null,unlocked:1,records:{},events:[],combo:0,bestCombo:0,settlement:null};}
+export function startRound(id,seed,at,bankVersion=BANK_VERSION){return {contract:CONTRACT,bankVersion,id,seed,at,questions:buildQuestions(seed,bankVersion),index:0,phase:'thinking',resumePhase:null,unlocked:1,records:{},events:[],combo:0,bestCombo:0,settlement:null};}
 export function apply(s,e){s=structuredClone(s);if(!e?.id||!e.at)throw Error('事件缺少識別');const old=s.events.find(x=>x.id===e.id);if(old){if(JSON.stringify(old)!==JSON.stringify(e))throw Error('事件識別衝突');return s;}if(s.phase==='settled')throw Error('已結算，僅供回顧');
  const q=s.questions[s.index];
  switch(e.type){
@@ -18,4 +18,4 @@ export function apply(s,e){s=structuredClone(s);if(!e?.id||!e.at)throw Error('�
  default:throw Error('不支援事件');
  }s.events.push(structuredClone(e));return s;
 }
-export function validateRound(s){if(s.contract!==CONTRACT||s.bankVersion!==BANK_VERSION)throw Error('不相容版本，禁止覆寫');validateQuestions(s.questions,s.seed);let rebuilt=startRound(s.id,s.seed,s.at);for(const e of s.events)rebuilt=apply(rebuilt,e);if(JSON.stringify(rebuilt)!==JSON.stringify(s))throw Error('事件與快照不一致');return s;}
+export function validateRound(s){if(s.contract!==CONTRACT||!['mole-bank-1',BANK_VERSION].includes(s.bankVersion))throw Error('不相容版本，禁止覆寫');validateQuestions(s.questions,s.seed,s.bankVersion);let rebuilt=startRound(s.id,s.seed,s.at,s.bankVersion);for(const e of s.events)rebuilt=apply(rebuilt,e);if(JSON.stringify(rebuilt)!==JSON.stringify(s))throw Error('事件與快照不一致');return s;}

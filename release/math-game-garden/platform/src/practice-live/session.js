@@ -8,6 +8,7 @@ import {evaluateAst} from '../math/operations.js';
 import {serialize} from '../math/radical-value.js';
 import {evaluateExpression} from '../assessment/evaluator.js';
 import {largestSquareFactor} from '../math/integer-factorization.js';
+import {withDecimalPractice} from '../questions/unit-one/decimal-practice.js';
 
 export function directSimplification(q) {
   if(q.taskType!=='largest-square-factor')return q;
@@ -28,7 +29,7 @@ export function freshSeed(random = globalThis.crypto) {
 }
 export function createPracticeSession({ seed = freshSeed(), now = () => new Date().toISOString(), savedRecord = null } = {}) {
   const restored = savedRecord ? decodePracticeRecord(savedRecord) : null;
-  const questions = restored?.attempt.questions || generateQuestions({ unitId: 'simplification', mode: 'practice', count: 10, seed }).map(directSimplification);
+  const questions = restored?.attempt.questions || withDecimalPractice(generateQuestions({ unitId: 'simplification', mode: 'practice', count: 10, seed }).map(directSimplification),seed);
   let attempt = restored?.attempt || createAttempt({ id: `practice:${seed}`, mode: 'practice', questions, startedAt: now() });
   let index = restored?.index || 0, showResults = restored?.showResults || false, serial = 0, version = 0;
   const drafts = restored?.drafts || questions.map(blank), listeners = new Set();

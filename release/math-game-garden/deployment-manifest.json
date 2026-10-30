@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "workPackage": "WP16",
   "siteBase": "/math-game-garden/",
-  "buildId": "8e067775e55141a57597b47451c6954a71c85758e82b82f6864a13c4bb5814c3",
+  "buildId": "25c95ae234f8cc7480159614ad9727ced125a9c1080a6f92267e23f2910c5580",
   "files": [
     {
       "path": ".nojekyll",
@@ -846,14 +846,14 @@
     },
     {
       "path": "platform/mole-formal/main.js",
-      "bytes": 9951,
-      "sha256": "ff52e69be526a2f15e89a871499db58b574cb2058f05a8ef6d7ed536a4cfc7ed",
+      "bytes": 9929,
+      "sha256": "f48470a260778a7c5e2918e8d0736863d81c16a10984119c0e66cbfb75320b7b",
       "source": "workspaces/WP16/site/platform/mole-formal/main.js"
     },
     {
       "path": "platform/mole-formal/questions.js",
-      "bytes": 3001,
-      "sha256": "40b18563a2af5625d9940879eb46bfe2c5062e49471b4fb8a42507589e0a35a6",
+      "bytes": 4491,
+      "sha256": "e80436505441177e0e40463837733669904959eed303b62524c2717e3a415f06",
       "source": "workspaces/WP16/site/platform/mole-formal/questions.js"
     },
     {
@@ -876,8 +876,8 @@
     },
     {
       "path": "platform/mole-formal/state.js",
-      "bytes": 3297,
-      "sha256": "57005bd8a82bc1f241c66ef2a1e7ed2cfb954a0429c967a5e628547279af0da6",
+      "bytes": 3374,
+      "sha256": "5ca49070f7cacda7ae141c606423aae6669e5540bf2d37f2dfccb5f8e06229a9",
       "source": "workspaces/WP16/site/platform/mole-formal/state.js"
     },
     {
@@ -1050,8 +1050,8 @@
     },
     {
       "path": "platform/src/assessment/hint-planner.js",
-      "bytes": 1644,
-      "sha256": "cd59f1c2c6b456ddde04baadb081a184e0682a8267ebb2d09d4c0059cbe79356",
+      "bytes": 1807,
+      "sha256": "232e51822ac03236169d72001618c523a1bffddc62f9d6ee734596358bc49014",
       "source": "workspaces/WP16/site/platform/src/assessment/hint-planner.js"
     },
     {
@@ -1230,8 +1230,8 @@
     },
     {
       "path": "platform/src/practice-live/session.js",
-      "bytes": 8181,
-      "sha256": "1d1a7fa1228bed0b452e109afb550a658d10e9875c00b9b1ac1a19c127ce31be",
+      "bytes": 8286,
+      "sha256": "ddbed5ce3eb7573754557ffb392bce36b03b6a94fe9013c68a9d89433599c0c4",
       "source": "workspaces/WP16/site/platform/src/practice-live/session.js"
     },
     {
@@ -1293,6 +1293,12 @@
       "bytes": 499,
       "sha256": "ce95b2b6f4e34a01a6793715de7027f5b45cc7a96c754d6381d582f3509c4e99",
       "source": "workspaces/WP16/site/platform/src/questions/unit-one/blueprints.js"
+    },
+    {
+      "path": "platform/src/questions/unit-one/decimal-practice.js",
+      "bytes": 1198,
+      "sha256": "bc25f8bdd9a61c9a8bac5d2875d96ed95c139330901cdf8802bb0483659797bd",
+      "source": "workspaces/WP16/site/platform/src/questions/unit-one/decimal-practice.js"
     },
     {
       "path": "platform/src/questions/unit-one/station-a.js",
