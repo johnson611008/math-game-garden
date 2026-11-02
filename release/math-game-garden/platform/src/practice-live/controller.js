@@ -13,7 +13,7 @@ export function mountLivePractice(root, session, { onRestart = () => {}, onHome 
   function activeInput() {
     const preferred = get(lastInput), details = preferred?.closest('details');
     if (preferred && !preferred.closest('[hidden]') && (!details || details.open)) return preferred;
-    return get(state().attempt.questions[state().index].station === 'B' ? 'correction-input' : 'answer-input');
+    return get(state().attempt.questions[state().index].taskType === 'judge-and-correct' ? 'correction-input' : 'answer-input');
   }
   function safely(action) {
     try { action(); } catch (e) { error = `目前無法完成這個操作，請保留本頁再試一次。${e.code === 'resource-limit' ? '本回合事件已達上限。' : ''}`; }
@@ -36,8 +36,8 @@ export function mountLivePractice(root, session, { onRestart = () => {}, onHome 
     });
     if (error) {
       const s = state(), q = s.attempt.questions[s.index], d = s.drafts[s.index];
-      if (q.station === 'B' && d.judgment === null) root.querySelector('input[name="judgment"]').focus();
-      else get(q.station === 'B' ? 'correction-input' : 'answer-input').focus();
+      if (q.taskType === 'judge-and-correct' && d.judgment === null) root.querySelector('input[name="judgment"]').focus();
+      else get(q.taskType === 'judge-and-correct' ? 'correction-input' : 'answer-input').focus();
     }
   }
   function click(event) {

@@ -23,7 +23,7 @@ export function displayStatus(result) {
   return result?.judgmentCorrect && result.correction?.status === 'equivalent-not-simplest' ? 'equivalent-not-simplest' : result?.status || 'unsubmitted';
 }
 export function renderLive(root, state, hints, summary, error = '') {
-  const get = id => root.querySelector(`#${id}`), q = state.attempt.questions[state.index], d = state.drafts[state.index], r = state.attempt.responses[q.id];
+  const get = id => root.querySelector(`#${id}`), original = state.attempt.questions[state.index], q = original.practiceLabel ? {...original,station:'A'} : original, d = state.drafts[state.index], r = state.attempt.responses[q.id];
   const result = r?.submissions.at(-1)?.result, latestCorrect = !!r?.latest?.accepted, viewed = !!r?.solutionViews?.length;
   const locked = state.attempt.status !== 'in-progress';
   get('round-view').hidden = state.showResults; get('completion-view').hidden = !state.showResults;
@@ -35,7 +35,7 @@ export function renderLive(root, state, hints, summary, error = '') {
     const record = state.attempt.responses[item.id], done = record?.latest?.accepted || record?.solutionViews?.length;
     return `<li class="${i === state.index ? 'current' : ''} ${done ? 'submitted' : ''}"><button type="button" data-question="${i}" ${i === state.index ? 'aria-current="step"' : ''} aria-label="第 ${i + 1} 題，${done ? '已完成' : '未完成'}">${i + 1}</button></li>`;
   }).join('');
-  get('station-tag').textContent = `${q.station} · ${stationNames[q.station]}`; get('question-title').textContent = stationNames[q.station];
+  get('station-tag').textContent = q.practiceLabel || `${q.station} · ${stationNames[q.station]}`; get('question-title').textContent = q.practiceLabel || stationNames[q.station];
   get('question-instruction').textContent = q.instruction; get('question-expression').innerHTML = questionFormula(q);
   get('question-expression').setAttribute('aria-label', questionLabel(q));
   get('answer-label').textContent = '最簡答案';
