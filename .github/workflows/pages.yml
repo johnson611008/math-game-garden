@@ -48,7 +48,7 @@ jobs:
               data = (root / relative).read_bytes()
               assert len(data) == item['bytes'], item['path']
               assert hashlib.sha256(data).hexdigest() == item['sha256'], item['path']
-          assert manifest['buildId'] == 'e269343d5b87e664268d63d933b593c4504ab4da7e0eccc88f2b36cbcee47772'
+          assert manifest['buildId'] == 'dcf4e6cf3b3fde7b12c2a5c7f68b08124aa8d79feb6530827bd9ffc071d9002c'
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload only the verified website

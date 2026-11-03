@@ -1,9 +1,12 @@
 import {browserStore} from '../marble-formal/store.js';
+import * as formal from '../marble-formal/store.js';
+import * as learning from './learning.js';
+import {browserIndependentStore} from '../src/practice-live/independent-store.mjs';
 import {grade} from '../marble-formal/state.js';
 import {summary,hintText} from './learning.js';
 import {editWithSymbol} from '../src/ui/math-input.js';
 import {mountMathKeyboard} from '../src/ui/math-keyboard-focus.js';
-const $=id=>document.getElementById(id),mode=location.pathname.endsWith('/remediation.html')?'remediation':'practice',store=browserStore();
+const $=id=>document.getElementById(id),mode=location.pathname.endsWith('/remediation.html')?'remediation':'practice',store=mode==='practice'?browserIndependentStore(formal,learning):browserStore();
 let view=store.view(),busy=false,selected=null,localDraft='',draftDirty=false;
 for(const symbol of [...'1234567890','*','-','+','clear']){const b=document.createElement('button');b.type='button';b.dataset.symbol=symbol;b.textContent=({clear:'清除','*':'×','-':'−'})[symbol]||symbol;$('symbols').append(b);}
 const keyboard=mountMathKeyboard(document,[$('answer')],$('symbols'));
@@ -17,7 +20,7 @@ function render(){
  $('new').textContent=mode==='practice'?'開始新的十題練習':'開始新的指定補救';$('pause').disabled=locked||!a||a.status==='completed';$('pause').textContent=a?.status==='paused'?'繼續練習':'暫停並保存';
  $('workspace').hidden=!a;$('result').hidden=!a||a.status!=='completed';
  if(a){
-  $('progress').textContent=`第 ${a.index+1}／10 題 · 已完成 ${s.resolved} 題${a.status==='paused'?'（暫停中）':''}`;$('progress-bar').value=s.resolved;$('question').textContent=q.text;
+  $('progress').textContent=`第 ${a.index+1}／10 題 · 已完成 ${s.resolved} 題${a.status==='paused'?'（暫停中）':''}`;$('progress-bar').value=s.resolved;$('question').textContent=(q.practiceLabel?q.practiceLabel+'｜':'')+q.text;
   $('answer').value=localDraft;$('answer').disabled=locked||a.status!=='in-progress';for(const b of $('symbols').querySelectorAll('button'))b.disabled=$('answer').disabled;
   $('submit').disabled=$('answer').disabled;$('hint').disabled=locked||a.status!=='in-progress';$('previous').disabled=locked||a.index===0||a.status==='completed';$('next').disabled=locked||a.index===9||a.status==='completed';
   const r=a.responses[q.id],last=r?.submissions.at(-1);$('feedback').textContent=last?last.result.accepted?'這次答案正確！'+(r.first?.result.accepted?'':'訂正成功，首次結果保留。'):last.result.status==='equivalent-not-simplest'?'數值等值，但尚未最簡。再找找可以提出或約分的部分。':last.result.consumesFirst?'再試試看，先檢查係數的乘除與根號內的運算。首次結果已保留。':last.result.message+' 這次不消耗首次作答。':'';
@@ -39,7 +42,7 @@ $('hint').onclick=async()=>{if(!await saveDraft())return;const q=question(),leve
 for(const [name,delta]of [['previous',-1],['next',1]])$(name).onclick=async()=>{if(!await saveDraft())return;await send('navigate',{index:current().index+delta});};
 $('pause').onclick=async()=>{if(!await saveDraft())return;await send(current().status==='paused'?'resume':'pause');};
 $('finish').onclick=()=>send('finish-practice');
-$('new').onclick=async()=>{selected=null;const attemptId=id();const ok=await send('begin-practice',{attemptId,mode,seed:crypto.getRandomValues(new Uint32Array(1))[0],...(mode==='remediation'?{remediationId:id(),sourceRoundId:view.state?.roundId}:{})});if(ok){selected=attemptId;localDraft='';render();}};
+$('new').onclick=async()=>{selected=null;const attemptId=id();const ok=await send('begin-practice',{attemptId,mode,seed:crypto.getRandomValues(new Uint32Array(1))[0],...(mode==='practice'?{questionPolicy:'independent-progressive-v2'}:{}),...(mode==='remediation'?{remediationId:id(),sourceRoundId:view.state?.roundId}:{})});if(ok){selected=attemptId;localDraft='';render();}};
 $('reload').onclick=load;
 $('export').onclick=async()=>{const blob=new Blob([JSON.stringify({challengeRaw:await store.exportRaw().catch(e=>({error:e.message})),learningRaw:await store.exportLearning().catch(e=>({error:e.message})),namespaceAudit:store.namespaceAudit(),unconfirmedDraft:draftDirty?{attemptId:current()?.attemptId,questionId:question()?.id,answer:localDraft}:null},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='unit-two-recovery.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 window.addEventListener('beforeunload',e=>{if(draftDirty||busy){e.preventDefault();e.returnValue='';}});

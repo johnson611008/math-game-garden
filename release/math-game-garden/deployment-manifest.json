@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "workPackage": "WP16",
   "siteBase": "/math-game-garden/",
-  "buildId": "e269343d5b87e664268d63d933b593c4504ab4da7e0eccc88f2b36cbcee47772",
+  "buildId": "dcf4e6cf3b3fde7b12c2a5c7f68b08124aa8d79feb6530827bd9ffc071d9002c",
   "files": [
     {
       "path": ".nojekyll",
@@ -1218,8 +1218,8 @@
     },
     {
       "path": "platform/src/practice-live/advanced.mjs",
-      "bytes": 4057,
-      "sha256": "8e0191854426beda3a00beccfab732789fa1ebdcb1bc059719b8e0f175faa267",
+      "bytes": 4065,
+      "sha256": "4ab29f8407d38b9b91f7f85c43f44d0b06f9e0cce8ddd8929210e92a109b7cad",
       "source": "workspaces/WP16/site/platform/src/practice-live/advanced.mjs"
     },
     {
@@ -1229,6 +1229,18 @@
       "source": "workspaces/WP16/site/platform/src/practice-live/controller.js"
     },
     {
+      "path": "platform/src/practice-live/independent-store.mjs",
+      "bytes": 3773,
+      "sha256": "298063afd0ec2aaceec297f837168ca0966a3f4e0187bbf63ede219ad6ca5d73",
+      "source": "workspaces/WP16/site/platform/src/practice-live/independent-store.mjs"
+    },
+    {
+      "path": "platform/src/practice-live/progressive-bank.mjs",
+      "bytes": 2064,
+      "sha256": "de7b508d44c138b8f4a62eb5228376452f8e832f3af78c0b0034b7c9c212cbb0",
+      "source": "workspaces/WP16/site/platform/src/practice-live/progressive-bank.mjs"
+    },
+    {
       "path": "platform/src/practice-live/session.js",
       "bytes": 8266,
       "sha256": "7cc6d0dbec9c03a642231c35f8ac126ded547f369e525e5ec99187da05db4dc4",
@@ -1236,8 +1248,8 @@
     },
     {
       "path": "platform/src/practice-live/view.js",
-      "bytes": 14387,
-      "sha256": "ba622a51b029155760c14486de75079e894bd27df6f6df0ed3ceb3a52c6b50bc",
+      "bytes": 14389,
+      "sha256": "f184aa3337c4fb37197a6d1dab04bd430397df3747875977f54ffccf2c0afd06",
       "source": "workspaces/WP16/site/platform/src/practice-live/view.js"
     },
     {
@@ -1398,8 +1410,8 @@
     },
     {
       "path": "platform/unit-five/index.html",
-      "bytes": 2023,
-      "sha256": "f81bccf0a768e5d8af11ff116a428fec4f19e89c52aeb523e5f31e35f69da957",
+      "bytes": 2161,
+      "sha256": "5053d6b41c60fe6bb19c52400bce8fa4cffb7d6031f6d89958a14aebcacb1df8",
       "source": "workspaces/WP16/site/platform/unit-five/index.html"
     },
     {
@@ -1440,8 +1452,8 @@
     },
     {
       "path": "platform/unit-four/index.html",
-      "bytes": 1999,
-      "sha256": "d6dfaddaa94171d960e768295bf406e4bd50a1848daca3475b0c17a795da6a94",
+      "bytes": 2137,
+      "sha256": "2770a784d3cd5a61340a9207e6d12d9df88dab4997474ab0bb221ea817113894",
       "source": "workspaces/WP16/site/platform/unit-four/index.html"
     },
     {
@@ -1476,26 +1488,26 @@
     },
     {
       "path": "platform/unit-three/index.html",
-      "bytes": 2286,
-      "sha256": "4850addd9a02bfb8f04570514bb730b09555e30d330884604077d9dc367f177b",
+      "bytes": 2374,
+      "sha256": "aba5831c18e8eeb9631f61c85da07ecd5a8a8a349f8b9db146f9895fc9f96548",
       "source": "workspaces/WP16/site/platform/unit-three/index.html"
     },
     {
       "path": "platform/unit-three/learning.js",
-      "bytes": 7712,
-      "sha256": "8cd0d513c29cdeffcb5de58b8b303375d4ca03bfbdf1e3df6f6ab95fc49a1f06",
+      "bytes": 8021,
+      "sha256": "976c89f00e896866ebfeee828a1dedb358ffbaed4f4729ef19e45ef0a4001ffa",
       "source": "workspaces/WP16/site/platform/unit-three/learning.js"
     },
     {
       "path": "platform/unit-three/main.js",
-      "bytes": 9527,
-      "sha256": "5859fbb6f931fbcf50b2a0f8d6f19733020568bea71ec2ac087eafdfdcfd66e2",
+      "bytes": 9881,
+      "sha256": "979e712ddfdfe87a93e5fb6fe2b0416cccd7dc109e6273b4ee26c6b1cda64dca",
       "source": "workspaces/WP16/site/platform/unit-three/main.js"
     },
     {
       "path": "platform/unit-three/remediation.html",
-      "bytes": 2244,
-      "sha256": "ce5fcfe0a00efb8a4182cc7c9a7c5532ad5d317db8b9748df984fb63571e309e",
+      "bytes": 2332,
+      "sha256": "89e9f63b318062a4c0ad5c98b5a6de4c897cfa54d081f7eb33243d8133d6d918",
       "source": "workspaces/WP16/site/platform/unit-three/remediation.html"
     },
     {
@@ -1512,20 +1524,20 @@
     },
     {
       "path": "platform/unit-two/index.html",
-      "bytes": 2279,
-      "sha256": "224c9d6eb426d3e5a435dd1deae6cac251e0cbde9537bdf82313fede7d41e778",
+      "bytes": 2367,
+      "sha256": "d859e104acb23b445551d29ec478994559358a306349fa6c8b958e26b3012ab0",
       "source": "workspaces/WP16/site/platform/unit-two/index.html"
     },
     {
       "path": "platform/unit-two/learning.js",
-      "bytes": 8106,
-      "sha256": "d1e216716f5bd1e99ea7710d059491f4568c84af7fa5373b5ef61ce6f9030d29",
+      "bytes": 8415,
+      "sha256": "dbb918bc1c812fae59dec6886f5a07cf96eeb95c32c3a4ed3f88f1a39c05267f",
       "source": "workspaces/WP16/site/platform/unit-two/learning.js"
     },
     {
       "path": "platform/unit-two/main.js",
-      "bytes": 8568,
-      "sha256": "d70dc0919906896857e950668142aa170513bdeab518a274bf3332476f4d3300",
+      "bytes": 8922,
+      "sha256": "68c7318c244e20e24b5988b881b0c05f7e723e8553438037bd0f730fe71d3c04",
       "source": "workspaces/WP16/site/platform/unit-two/main.js"
     },
     {
@@ -1536,8 +1548,8 @@
     },
     {
       "path": "platform/unit-two/remediation.html",
-      "bytes": 2237,
-      "sha256": "e5e60e10c14b55646fa53760936b432179078f53bbd267473de0e80cf9ef8086",
+      "bytes": 2325,
+      "sha256": "6fe7a965282062d62ff5e6b982dd3f8bbf919f5324565b08ab4dda0e2b5552f3",
       "source": "workspaces/WP16/site/platform/unit-two/remediation.html"
     },
     {

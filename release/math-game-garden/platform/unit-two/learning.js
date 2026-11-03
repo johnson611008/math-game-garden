@@ -1,3 +1,4 @@
+import {planProgressive,POLICY as PRACTICE_POLICY} from '../src/practice-live/progressive-bank.mjs';
 import {questionDeck} from '../marble-demo/b/questions.js';
 import {parse} from '../src/input/parser.js';
 import {evaluateAst} from '../src/math/operations.js';
@@ -34,7 +35,8 @@ export function reduceLearning(authority,event,ledger){
    need(!availableGrant(next,event.sourceRoundId),'unlock-already-issued');
    need(!next.attempts.some(a=>a.remediationId===event.remediationId),'duplicate-remediation-id');
   }else need(event.sourceRoundId==null&&event.remediationId==null,'practice-cannot-request-unlock');
-  next.attempts.push({contractVersion:'unit-two-practice-v1',unitId:'multiplication-division',policyVersion:POLICY,mode:event.mode,attemptId:event.attemptId,remediationId:event.mode==='remediation'?event.remediationId:null,sourceRoundId:event.mode==='remediation'?event.sourceRoundId:null,seed:event.seed,startedAt:event.at,status:'in-progress',completedAt:null,index:0,questions:plan(event.seed),responses:{},drafts:{},unlockId:null,events:[]});
+  need(event.questionPolicy===undefined||(event.mode==='practice'&&event.questionPolicy===PRACTICE_POLICY),'unsupported-practice-policy');
+  next.attempts.push({contractVersion:'unit-two-practice-v1',unitId:'multiplication-division',policyVersion:POLICY,mode:event.mode,attemptId:event.attemptId,remediationId:event.mode==='remediation'?event.remediationId:null,sourceRoundId:event.mode==='remediation'?event.sourceRoundId:null,seed:event.seed,startedAt:event.at,status:'in-progress',completedAt:null,index:0,questions:event.questionPolicy===PRACTICE_POLICY?planProgressive(2,event.seed):plan(event.seed),responses:{},drafts:{},unlockId:null,events:[]});
  }else if(event.type==='consume-unlock'){
   const grant=next.grants.find(g=>g.unlockId===event.unlockId);need(grant&&grant.sourceRoundId===event.sourceRoundId&&grant.usedByRoundId===null,'invalid-or-used-unlock');
   failedSource(ledger,event.sourceRoundId);need(identifier(event.newRoundId),'invalid-new-round');

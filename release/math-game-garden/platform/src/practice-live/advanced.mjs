@@ -2,7 +2,7 @@ import{banks,key,create,decode,question,resolved,score,submit,next}from'./advanc
 import{editWithSymbol}from'../ui/math-input.js';
 import{mountMathKeyboard}from'../ui/math-keyboard-focus.js';
 const u=Number(document.body.dataset.unit),$=id=>document.getElementById(id),k=key(u);let state=null,raw=null,busy=false,failed=false;
-for(const symbol of[...'1234567890','+','-','*','/','root','parentheses','backspace','clear']){const b=document.createElement('button');b.type='button';b.dataset.symbol=symbol;b.textContent=({root:'√',parentheses:'（ ）',backspace:'刪除',clear:'清除','*':'×','/':'÷'})[symbol]||symbol;$('symbols').append(b);}
+for(const symbol of[...'1234567890','+','-','*','/','root','parentheses','backspace','clear']){const b=document.createElement('button');b.type='button';b.dataset.symbol=symbol;b.textContent=({root:'√',parentheses:'（ ）',backspace:'刪除',clear:'清除','*':'×','/':'分數 a/b'})[symbol]||symbol;$('symbols').append(b);}
 const keyboard=mountMathKeyboard(document,[$('answer')],$('symbols'));
 function error(e){failed=true;$('message').textContent='紀錄尚未安全確認，已停止寫入。請重新整理，勿清除網站資料。錯誤：'+e.message;render();}
 function load(){try{raw=localStorage.getItem(k);state=raw?decode(raw,u):null;failed=false;if(state){$('answer').value=state.responses[question(state).id]?.latest||'';if(state.responses[question(state).id])$('feedback').textContent=resolved(state,question(state).id)?'已恢復已保存的正確結果，可前進。':'已恢復首次結果，請繼續訂正。';}render();}catch(e){error(e);}}
