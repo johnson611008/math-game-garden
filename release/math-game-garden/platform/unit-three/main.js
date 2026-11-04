@@ -1,3 +1,4 @@
+import{mountPracticeReview,expressionHTML}from'../src/practice-live/review.mjs';
 import {browserStore} from '../bubble-formal/store.js';
 import * as formal from '../bubble-formal/store.js';
 import * as learning from './learning.js';
@@ -7,7 +8,7 @@ import {summary,hintText} from './learning.js';
 import {editWithSymbol} from '../src/ui/math-input.js';
 import {mountMathKeyboard} from '../src/ui/math-keyboard-focus.js';
 const $=id=>document.getElementById(id),mode=location.pathname.endsWith('/remediation.html')?'remediation':'practice',store=mode==='practice'?browserIndependentStore(formal,learning):browserStore();
-let view=store.view(),busy=false,selected=null,localDraft='',draftDirty=false;
+let reviewUI=null;let view=store.view(),busy=false,selected=null,localDraft='',draftDirty=false;
 for(const symbol of [...'1234567890','*','-','+','clear']){const b=document.createElement('button');b.type='button';b.dataset.symbol=symbol;b.textContent=({clear:'清除','*':'×','-':'−'})[symbol]||symbol;$('symbols').append(b);}
 const keyboard=mountMathKeyboard(document,[$('answer')],$('symbols'));
 const current=()=>view.learning.attempts.find(a=>a.attemptId===selected)||view.learning.attempts.filter(a=>a.mode===mode).at(-1),question=()=>current()?.questions[current().index];
@@ -21,7 +22,7 @@ function render(){
  $('new').textContent=mode==='practice'?'開始新的十題練習':'開始新的指定補救';$('pause').disabled=locked||!a||a.status==='completed';$('pause').textContent=a?.status==='paused'?'繼續練習':'暫停並保存';
  $('workspace').hidden=!a;$('result').hidden=!a||a.status!=='completed';
  if(a){
-  $('progress').textContent=`第 ${a.index+1}／10 題 · 已完成 ${s.resolved} 題${a.status==='paused'?'（暫停中）':''}`;$('progress-bar').value=s.resolved;$('question').textContent=(q.practiceLabel?q.practiceLabel+'｜':'')+q.text;
+  $('progress').textContent=`第 ${a.index+1}／10 題 · 已完成 ${s.resolved} 題${a.status==='paused'?'（暫停中）':''}`;$('progress-bar').value=s.resolved;$('question').innerHTML=(q.practiceLabel?'<small>'+q.practiceLabel+'</small><br>':'')+expressionHTML(q.expression);
   $('answer').value=localDraft;$('answer').disabled=locked||a.status!=='in-progress';for(const b of $('symbols').querySelectorAll('button'))b.disabled=$('answer').disabled;
   $('submit').disabled=$('answer').disabled;$('hint').disabled=locked||a.status!=='in-progress';$('previous').disabled=locked||a.index===0||a.status==='completed';$('next').disabled=locked||a.index===9||a.status==='completed';
   const r=a.responses[q.id],last=r?.submissions.at(-1);$('feedback').textContent=last?last.result.accepted?'這次答案正確！'+(r.first?.result.accepted?'':'訂正成功，首次結果保留。'):last.result.status==='equivalent-not-simplest'?'數值等值，但尚未最簡。再找找可以提出或約分的部分。':last.result.consumesFirst?'再試試看，先檢查係數的乘除與根號內的運算。首次結果已保留。':last.result.message+' 這次不消耗首次作答。':'';
@@ -29,9 +30,10 @@ function render(){
   $('finish').hidden=a.status==='completed'||s.resolved!==10;$('finish').disabled=locked;
   if(a.status==='completed')$('result-text').textContent=`首次正確 ${s.firstCorrect}／10（${s.rate}%）；需要加強：${s.wrongConcepts.map(conceptLabel).join('、')||'持續練習'}。`+(a.mode==='practice'?'這是自主練習，不產生解鎖資格。':a.unlockId?(view.learning.grants.find(g=>g.unlockId===a.unlockId)?.usedByRoundId?'本次一次性資格已使用。':'補救已達標，已確認核發一次重新挑戰資格。'):'本次補救未達標，可以開始新的補救回合。');
  }
- renderReview(a);
+ if(mode==='remediation')renderReview(a);
  $('history').replaceChildren(...view.learning.attempts.filter(a=>a.mode===mode).map(a=>{const li=document.createElement('li'),b=document.createElement('button'),s=summary(a);b.textContent=`${a.startedAt.slice(0,10)} · ${a.status==='completed'?'已完成':a.status==='paused'?'暫停中':'進行中'} · 首次 ${s.firstCorrect}/10`;b.disabled=busy;b.onclick=()=>{if(draftDirty){message('請先提交、換題或暫停，保存目前輸入後再查看歷史。');return;}selected=a.attemptId;localDraft=a.drafts[a.questions[a.index].id]||'';render();};li.append(b);return li;}));
  if(mode==='remediation'&&!a&&!open)message(view.readOnly?'資料尚未安全確認，請先匯出紀錄。':view.unlock?'已取得一次資格，請返回泡泡派對。':source?.phase!=='settled'?'請先完成並明確結算原挑戰；未完成回合應優先恢復。':grade(source).status!=='not-met'?'目前沒有需要補救的正式回合。':'開始補救後，會綁定目前未達標的正式回合。');
+ reviewUI?.refresh();
 }
 function conceptLabel(code){return ({COMBINE_LIKE_RADICALS:'\u540c\u985e\u6839\u5f0f\u5408\u4f75',SUBTRACT_COEFFICIENTS:'\u4fc2\u6578\u76f8\u6e1b',SIMPLIFY_BEFORE_COMBINING:'\u5148\u5316\u7c21\u518d\u5408\u4f75',SIGNS_AND_LIKE_TERMS:'\u6e1b\u865f\u8207\u540c\u985e\u9805',SIMPLIFY_AND_SIGNS:'\u5316\u7c21\u8207\u6b63\u8ca0\u865f'})[code]||'\u6aa2\u67e5\u6700\u7c21\u5f62\u5f0f';}
 async function send(type,more={}){if(busy||view.readOnly)return false;busy=true;render();const event={id:id(),type,at:new Date().toISOString(),...(current()?{attemptId:current().attemptId}:{}),...more};const result=await store.commit({learning:event});view=store.view();busy=false;if(!result.saved){message('尚未保存，已停止後續寫入：'+result.code);render();return false;}draftDirty=false;localDraft=current()?.drafts[question()?.id]||'';message('');render();return true;}
@@ -48,4 +50,5 @@ $('new').onclick=async()=>{selected=null;const attemptId=id();const ok=await sen
 $('reload').onclick=load;
 $('export').onclick=async()=>{const blob=new Blob([JSON.stringify({challengeRaw:await store.exportRaw().catch(e=>({error:e.message})),learningRaw:await store.exportLearning().catch(e=>({error:e.message})),namespaceAudit:store.namespaceAudit(),unconfirmedDraft:draftDirty?{attemptId:current()?.attemptId,questionId:question()?.id,answer:localDraft}:null},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='unit-three-recovery.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 window.addEventListener('beforeunload',e=>{if(draftDirty||busy){e.preventDefault();e.returnValue='';}});
+if(mode==='practice')reviewUI=mountPracticeReview({unit:3,getAttempts:()=>view.learning.attempts.filter(a=>a.mode==='practice'),onNew:()=>$('new').click(),onReturn:attemptId=>{if(attemptId){selected=attemptId;localDraft=current()?.drafts[question()?.id]||'';}render();},onExport:()=>$('export').click(),isBusy:()=>busy||view.readOnly||draftDirty});
 load();
